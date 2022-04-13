@@ -129,11 +129,6 @@ do contrato)</li>
 
 | Tarefas  |
 | ------|
-| Documentação e Github |
-| Organização de via de comunicação |
-| Organização de Daylies |
-| Organização de Wireframes|
-| Burndown |
 | Tela Login dos Colaboradores |
 | Tela de trabalho Administrador|
 | Tela de trabalho Gestor|
