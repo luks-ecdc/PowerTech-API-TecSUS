@@ -39,7 +39,8 @@
 
 | Tarefas  | Responsáveis|
 | ------| ------|
-| Documentação, DoR e Github | Lucas, Dante , Lucca, Vinicius |
+| Documentação e DoR | Lucas, Dante , Lucca, Vinicius |
+| Github  | Lucas|
 | Organização de via de comunicação | Thamires, Carlos|
 | Organização de Daylies | Lucas, Thamires |
 | Organização de Wireframes| Thamires, Dante, Lucas |
