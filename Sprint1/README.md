@@ -37,18 +37,18 @@
 
 ### :runner: Sprint Planning
 
-| Tarefas  |
-| ------|
-| Documentação e Github |
-| Organização de via de comunicação |
-| Organização de Daylies |
-| Organização de Wireframes|
-| Burndown |
-| Tela Login dos Colaboradores |
-| Tela de trabalho Administrador |
-| Tela de trabalho Gestor |
-| Tela de trabalho Digitador |
-| Estudo do banco de dados |
+| Tarefas  | Responsáveis|
+| ------| ------|
+| Documentação, DoR e Github | Lucas, Dante , Lucca, Vinicius |
+| Organização de via de comunicação | Thamires, Carlos|
+| Organização de Daylies | Lucas, Thamires |
+| Organização de Wireframes| Thamires, Dante, Lucas |
+| Burndown | Lucas, Thamires | 
+| Tela Login dos Colaboradores | Nicolas, Frederico, Carlos |
+| Tela de trabalho Administrador | Nicolas, Frederico, Carlos |
+| Tela de trabalho Gestor | Nicolas, Frederico, Carlos |
+| Tela de trabalho Digitador | Nicolas, Frederico, Carlos |
+| Estudo do banco de dados | Lucca, Vinicius |
 
 <hr>
 
