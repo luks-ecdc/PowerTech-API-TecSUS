@@ -152,7 +152,7 @@ do contrato)</li>
 
 ### Planejamento
 - :heavy_check_mark: Kick-off - 14/03 a 18/03 - Concluído 
-- [ ] [Sprint 1] - 25/03 a 14/04 
+- [ ] [Sprint 1](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint1)- 25/03 a 14/04 
 - [ ] [Sprint 2] - 25/04 a 15/05
 - [ ] [Sprint 3]-  16/05 a 05/06
 
@@ -212,6 +212,12 @@ do contrato)</li>
 <hr>
 
 ###  :thumbsup: Tecnologias Utilizadas
+
+*  Ferramentas: Figma, IDE Eclipse, Excel , Visual Studio Code, GitHub, Trello;
+*  Meios de Comunicação da Equipe: Discord, WhatsApp;
+*  Programação Back-End: Java;
+*  Programação Front-End: Springboot, Bootstrap
+*  Banco de Dados: PostgreSQL
 
 <hr>
 
