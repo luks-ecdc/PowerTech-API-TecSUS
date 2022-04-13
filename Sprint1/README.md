@@ -42,6 +42,7 @@
 | Documentação e Github |
 | Organização de via de comunicação |
 | Organização de Daylies |
+| Organização de Wireframes|
 | Burndown |
 | Tela Login dos Colaboradores |
 | Tela de trabalho Administrador |
@@ -61,3 +62,13 @@
 <hr>
 
 ### :clapper: Gif de Apresentação
+
+<hr>
+
+###  :thumbsup: Tecnologias Utilizadas
+
+*  Ferramentas: Figma, IDE Eclipse, Excel , Visual Studio Code, GitHub, Trello;
+*  Meios de Comunicação da Equipe: Discord, WhatsApp;
+*  Programação Back-End: Java;
+*  Programação Front-End: Springboot, Bootstrap, HTML, CSS
+*  Banco de Dados: PostgreSQL
