@@ -6,7 +6,7 @@
 <p align="center">  
   •<a href ="#space_invader-quem-somos-nós">   Quem somos nós </a> • 
   <a href ="#wrench-dev-team">  Dev Team </a> • 
-  <a href ="#speech_balloon-pedido-do-cliente">  Pedido do Cliente </a> •   
+  <a href ="#speech_balloon-desafio">  Desafio </a> •   
   <a href ="#triangular_flag_on_post-proposta">  Proposta </a>  • 
   <a href ="#flags-backlog-do-produto"> Backlog do Produto </a>   • 
   <a href ="#tv-wireframe"> Wireframe </a>  • 
@@ -20,8 +20,7 @@
 
 ###  :space_invader: Quem somos nós:
 
-  Somos um grupo criado para o API do 3º Semestre de Analise e Desenvolvimento de Sistemas da Faculdade Tecnológica Prof. Jessen Vidal - FATEC São José dos Campos. 
- Estamos na busca de solucionar o problema apresentado, adquirindo experiência na meotodologia de aprendizado via API, conhecimento de novas tecnologias que até então desconhecidas por nós, com isso aplicaremos esse conhecimento da melhor forma para alcançar o objetivo do grupo.
+  Somos um grupo criado para o API do 3º Semestre de Analise e Desenvolvimento de Sistemas da Faculdade Tecnológica Prof. Jessen Vidal - FATEC São José dos Campos. Estamos na busca de solucionar o problema apresentado, adquirindo experiência na metodologia de aprendizado via API, conhecimento de novas tecnologias que até então desconhecidas por nós, com isso aplicaremos esse conhecimento da melhor forma para alcançar o objetivo do grupo.
 
 <hr> 
   
@@ -47,22 +46,16 @@
 
 <hr>
 
-### :speech_balloon: Pedido do Cliente
+### :speech_balloon: Desafio
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/103540033/163196828-e4bc63cc-f045-4d7f-9860-b93ac6bed193.png" width="150px" />
 </div>
-  A TecSUS realiza a coleta e processamento de contas de energia, água e gás para diversas empresas 
-dos setores do atacado e varejo. Cada conta coletada precisa ter todos os seus campos digitados e 
-salvos em banco de dados para eventuais consultas e análises técnicas/financeiras que podem 
-trazer ao cliente oportunidades de redução de custos e alteração de contratos.
-Cada unidade do cliente pode possuir vários contratos (água, energia ou gás), cada contrato pode 
-possuir uma ou mais contas (faturas de água, energia ou gás) por mês. Todos esses contratos estão 
-ligados a uma concessionária de abastecimento.
 
-  É importante observar que a interface de digitação (cadastro) das contas, deve possuir um UX que 
-facilite a operação de visualização da conta em PDF para digitação dos campos da conta, com uso 
-de atalhos no teclado e navegação via teclas.
+  A TecSUS realiza a coleta e processamento de contas de energia, água e gás para diversas empresas dos setores do atacado e varejo. Cada conta coletada precisa ter todos os seus campos digitados e salvos em banco de dados para eventuais consultas e análises técnicas/financeiras que podem trazer ao cliente oportunidades de redução de custos e alteração de contratos. Cada unidade do cliente pode possuir vários contratos (água, energia ou gás), cada contrato pode possuir uma ou mais contas (faturas de água, energia ou gás) por mês. Todos esses contratos estão ligados a uma concessionária de abastecimento.
+  
+ É importante observar que a interface de digitação (cadastro) das contas, deve possuir um UX que facilite a operação de visualização da conta em PDF para digitação dos campos da conta, com uso de atalhos no teclado e navegação via teclas.
+
 
 
 ###  Requisitos Funcionais
@@ -113,14 +106,15 @@ do contrato)</li>
 
 ###  :triangular_flag_on_post: Proposta
 
-  A PowerTech fará um sistema de cadastro com os valores de faturas de energia, água e gás, onde o cliente da TecSus envia suas faturas para a empresa e o digitador trabalhará digitando os campos da fatura que vai ser referente ao serviço contratado com a TecSus, pois infelizmente as faturas são geradas em PDF/IMG formato que não tem como fazer um tratamento inteligente de dados. Após feito a digitação dos dados de consumo, faremos um Dashboard de alta complexidade que vai mostrar dados para  as análises mensais e anuais e médias de consumo para o setor de Gestão contatar os clientes caso seja emitida um alerta de alto consumo.
-  
-  Criaremos uma forma de que os colaboradores (Administradores) da TecSUS consigam fazer alterações e deleções em contratos de concessionárias, cliente e contratos. O colaborador Administrador também terá acesso às outras áreas (Gestão e Digitação). Os Gestores não terão os mesmos acessos que o Administrador, mas poderão fazer alterações nos campos de faturas cadastradas no sistema. O usuário gestor vai ter acesso para fazer upload de faturas de PDF/IMG para o banco de dados e ela será atrelada ao contrato do cliente e terá data para sinalizar o periodo da fatura, feito isso, o colaborador Digitador receberá uma notificação de fatura nova para ser cadastrada no sistema.
-  
-  O colaborador Digitador tera uma area de trabalho quando entrar no sistema poderá acessar a lista de contratos e as faturas já cadastradas no sistema, ele poderá criar novas faturas para ser cadastradas e fazer alterações caso necessário.
-  Todos os usuários terão um log de acesso com a data e hora da atividade.
-  
-  Esse sistema tem seu princial objetivo melhorar o trabalho de digitação com um melhoramento no workspace prezando a UX, evitar problemas como atrasos e acumulos de serviço com alertas e notificação de tarefas, e um dashboard com gráficos que mostrará o consumo do cliente e também emitirá um aelrta de alto consumo podendo então avisar o cliente para ele estudar uma forma de redução de custos.
+  A PowerTech fará um sistema de cadastro com os valores de faturas de energia, água e gás, onde o cliente da TecSUS envia suas faturas para a empresa e o digitador trabalhará digitando os campos da fatura que vai ser referente ao serviço contratado com a TecSUS, pois infelizmente as faturas são geradas em PDF/IMG formato que não tem como fazer um tratamento inteligente de dados. Após feito a digitação dos dados de consumo, faremos um Dashboard de alta complexidade que vai mostrar dados para as análises mensais e anuais e médias de consumo para o setor de Gestão contatar os clientes caso seja emitida um alerta de alto consumo.
+ 
+ 
+  Criaremos uma forma de que os colaboradores (Administradores) da TecSUS consigam fazer alterações e deleções em contratos de concessionárias, cliente e contratos. O colaborador Administrador também terá acesso às outras áreas (Gestão e Digitação). Os Gestores não terão os mesmos acessos que o Administrador, mas poderão fazer alterações nos campos de faturas cadastradas no sistema. O usuário gestor vai ter acesso para fazer upload de faturas de PDF/IMG para o banco de dados e ela será atrelada ao contrato do cliente e terá data para sinalizar o período da fatura, feito isso, o colaborador Digitador receberá uma notificação de fatura nova para ser cadastrada no sistema.
+
+
+  O colaborador Digitador terá uma área de trabalho quando entrar no sistema poderá acessar a lista de contratos e as faturas já cadastradas no sistema, ele poderá criar novas faturas para ser cadastradas e fazer alterações caso necessário. Todos os usuários terão um log de acesso com a data e hora da atividade.
+Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com um melhoramento no workspace prezando a UX, evitar problemas como atrasos e acúmulos de serviço com alertas e notificação de tarefas, e um dashboard com gráficos que mostrará o consumo do cliente e também emitirá um alerta de alto consumo podendo então avisar o cliente para ele estudar uma forma de redução de custos.
+
   
 
 <hr>
