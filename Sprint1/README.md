@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/102330791/163039449-5e73781f-a340-45b3-a42e-28d95e476e76.png" width="150px" />
 </div>
 
-<hr>
+
 
 <p align="center">
   •<a href ="#wrench-dev-team">  Dev Team </a> •  
@@ -12,6 +12,7 @@
   <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  • 
   <a href ="#thumbsup-tecnologias-utilizadas">  Tecnologias Utilizadas </a> 
   
+  <hr>
   
   ###  :wrench: Dev Team
 
