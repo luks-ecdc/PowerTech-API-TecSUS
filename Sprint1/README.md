@@ -8,7 +8,6 @@
   •<a href ="#wrench-dev-team">  Dev Team </a> •  
   <a href ="#runner-sprint-planning">   Sprint Planning </a> •  
   <a href ="#chart_with_downwards_trend-burndown"> Burndown </a>  • 
-  <a href ="#watch-timeline-da-sprint"> TimeLine da Sprint </a>  • 
   <a href ="#tv-wireframe"> Wireframe </a>  • 
   <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  • 
   <a href ="#thumbsup-tecnologias-utilizadas">  Tecnologias Utilizadas </a> 
@@ -58,14 +57,10 @@
 ### :chart_with_downwards_trend: Burndown
 
 
-<img src="https://user-images.githubusercontent.com/37638307/163489493-298cdc02-78fb-426b-b177-39db38521fa7.png" width="300px" />
+### Houve mudanças de P.O e S.M na equipe no 8º dia da Sprint onde tivemos que fazer tudo do zero e adaptar a Sprint, por conta disso o gráfico Burndown ficou alterado.
 
+<img src="https://user-images.githubusercontent.com/37638307/163489493-298cdc02-78fb-426b-b177-39db38521fa7.png" width="400px" />
 
-
-<hr>
-
-
-### :watch: TimeLine da Sprint
 
 
 <hr>
