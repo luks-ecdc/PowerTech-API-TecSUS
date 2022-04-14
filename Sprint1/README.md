@@ -58,6 +58,10 @@
 ### :chart_with_downwards_trend: Burndown
 
 
+<img src="https://user-images.githubusercontent.com/37638307/163489493-298cdc02-78fb-426b-b177-39db38521fa7.png" width="300px" />
+
+
+
 <hr>
 
 
@@ -76,6 +80,26 @@ Acesse o link para visualizar:
 <hr>
 
 ### :clapper: Gif de Apresentação
+
+Tela Administrador
+* <img src="https://user-images.githubusercontent.com/37638307/163489877-e0dbf493-d854-43b0-8e01-0f90905de515.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/163489885-0f4a366c-ffbe-4256-9297-6c8a1664730e.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/163489887-81892351-dacc-4adc-8f56-c331d88a4d2d.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/163489889-1897c3e8-f395-4e60-a6fa-0dabca3db862.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/163489890-ca6eb383-b08e-4d99-a97c-1cb846c1a6bc.gif" width="500px" />
+
+Tela Gestor
+
+* <img src="https://user-images.githubusercontent.com/37638307/163490301-7766d604-5ca1-4228-8230-7df76e0e6165.gif" width="500px" />
+
+
+
+Tela Digitador
+
+* <img src="https://user-images.githubusercontent.com/37638307/163490427-c2a68f2e-6385-4921-b796-9f35aab85500.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/163490431-0ad77d8d-cb6f-48d3-9834-9547727535af.gif" width="500px" />
+
+
 
 <hr>
 
