@@ -146,7 +146,8 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 ### Planejamento
 - :heavy_check_mark: Kick-off - 14/03 a 18/03 - Concluído 
-- [ ] [Sprint 1](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint1)- 25/03 a 14/04 
+- :heavy_check_mark: [Sprint 1](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint1)- 25/03 a 14/04 
+- [ ] [Apresentação Sprint 1] - 26/04
 - [ ] [Sprint 2] - 25/04 a 15/05
 - [ ] [Sprint 3]-  16/05 a 05/06
 
