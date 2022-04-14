@@ -209,6 +209,10 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 ###  :tv: Wireframe
 
+(Sujeito a mudanças)
+Acesse o link para visualizar:
+> * [Wireframe de média fidelidade Figma.](https://www.figma.com/proto/4QmtUmEOPSSCNPe1OU5zcl/API_Wireframe_V.2?scaling=min-zoom&page-id=0%3A1&node-id=4%3A2)
+
 <hr>
 
 ###  :thumbsup: Tecnologias Utilizadas
