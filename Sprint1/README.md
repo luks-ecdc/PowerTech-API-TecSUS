@@ -70,6 +70,6 @@
 
 *  Ferramentas: Figma, IDE Eclipse, Excel , Visual Studio Code, GitHub, Trello;
 *  Meios de Comunicação da Equipe: Discord, WhatsApp;
-*  Programação Back-End: Java;
-*  Programação Front-End: Springboot, Bootstrap, HTML, CSS
-*  Banco de Dados: PostgreSQL
+*  Programação Back-End: Java, Springboot;
+*  Programação Front-End: javaScript, Bootstrap, HTML, CSS;
+*  Banco de Dados: PostgreSQL;
