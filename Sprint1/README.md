@@ -7,7 +7,8 @@
 <p align="center">
   •<a href ="#wrench-dev-team">  Dev Team </a> •  
   <a href ="#runner-sprint-planning">   Sprint Planning </a> •  
-  <a href ="#fire-burndown">  Burndown </a>  • 
+  <a href ="#chart-with-downwards-trend-burndown">  Burndown </a>  • 
+  <a href ="#watch-da-timeline-da-sprint"> TimeLine da Sprint </a>  • 
   <a href ="#tv-wireframe"> Wireframe </a>  • 
   <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  • 
   <a href ="#thumbsup-tecnologias-utilizadas">  Tecnologias Utilizadas </a> 
@@ -54,7 +55,13 @@
 
 <hr>
 
-### :fire: Burndown
+### :chart_with_downwards_trend: Burndown
+
+
+<hr>
+
+
+### :watch: TimeLine da Sprint
 
 
 <hr>
