@@ -1,0 +1,68 @@
+/* Importando fonte padrao */
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('/assets/fonts/Inter-Regular.ttf') format('truetype');
+  }
+
+  /* Estilização em todos elementos */
+*{
+    font-family: "Inter-Regular";
+}
+
+/* Fundo Login */
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(57.62deg, #D2FFDF 0%, #E7CEFF 100%);
+}
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:'Inter-Regular', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+/* Logos */
+.tecsus{
+    height: 50px;
+}
+
+.powertech{
+    height: 100px;
+}
+
+/* Label login */
+.card-content label {
+    font-size: 22px;
+}
+
+/* Inputs */
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    border: 0px;
+    padding: 6px 5px;
+    background-color: #C4C4C4;
+    outline: none;
+    color: #000 ;
+}
+
+/* Botão entrar */
+.entrar{
+    cursor: pointer;
+    font-family: "Inter";
+    border:  none;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #B9FFB8;
+    
+}
+.entrar:hover{
+    background-color: #a2fda0;
+}

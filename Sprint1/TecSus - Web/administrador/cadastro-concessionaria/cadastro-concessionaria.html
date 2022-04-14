@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cadastro-concessionaria.css" rel="stylesheet" ;>
+    
+    <!-- css-bootstrap -->
+    <link href="../../lib/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cadastro de Contatos</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="container-fluid bg-primary-color pb-2">
+        <div class="row d-flex justify-content-between align-items-center">
+            <img src="../../assets/tecsus.png" class="logo ml-4">
+            <div>
+                <img src="../../assets/powertech.png" class="logo2 mr-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- tabs -->
+    <div class="row justify-content-around">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="../administrador.html">Informações do Usuário</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="../cadastro-cliente/cadastro-cliente.html">Cadastro de Cliente</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active" href="#">Cadastro de
+                    Concessionárias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="../cadastro-contrato/cadastro-contrato.html">Cadastro de Contrato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Clientes e Concessionárias</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row justify-content-center">
+        <!-- dropdown -->
+        <select class="servico col-3 mt-4">
+            <option value="" selected hidden>Tipo de Serviço</option>
+            <option value="Gás">Gás</option>
+            <option value="Energia">Energia</option>
+            <option value="Água">Água</option>
+        </select>
+
+    </div>
+    <!-- inputs -->
+    <div class="nome cadastro row justify-content-start mb-4">
+        <div class="cadastro col-5 d-flex justify-content-end ">
+            <label class="mr-4">Nome da Concessionária</label>
+        </div>
+        <div class="col">
+            <input type="text" name="Nome">
+        </div>
+
+    </div>
+
+    <div class=" cadastro  row justify-content-start ">
+        <div class="cadastro col-5 d-flex justify-content-end mb-4">
+            <label class="mr-5">CNPJ</label>
+        </div>
+        <div class="col">
+            <input type="text" class="" name="Nome">
+        </div>
+    </div>
+
+    <div class=" cadastro  row justify-content-start ">
+        <div class="cadastro col-5 d-flex justify-content-end mb-4">
+            <label class="mr-4">Endereço</label>
+        </div>
+        <div class="col">
+            <input type="text" class="" name="Nome">
+        </div>
+    </div>
+    <!-- fim inputs -->
+    <div class="row  offset-7 col-3 justify-content-end">
+        <a href="../administrador.html" class="mr-4">
+            <button class="salvar redondo ">Salvar</button>
+        </a>
+        <button href="#" class="cancelar redondo ml-2">Cancelar
+
+        </button>
+    </div>
+
+
+</body>
+
+</html>

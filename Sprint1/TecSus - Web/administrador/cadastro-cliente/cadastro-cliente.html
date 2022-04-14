@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cadastro-cliente.js"></script>
+    <link href="cadastro-cliente.css" rel="stylesheet" ;>
+    <link href="../../lib/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cadastro de Cliente</title>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div class="container-fluid bg-primary-color pb-2">
+        <div class="row d-flex justify-content-between align-items-center">
+            <img src="../../assets/tecsus.png" class="logo ml-4">
+            <div>
+                <img src="../../assets/powertech.png" class="logo2 mr-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- tabs -->
+    <div class="row justify-content-around">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="../administrador.html">Informações do Usuário</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active   " href="../cadastro-cliente/cadastro-cliente.html">Cadastro de Cliente</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="../cadastro-concessionaria/cadastro-concessionaria.html">Cadastro de
+                    Concessionárias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="../cadastro-contrato/cadastro-contrato.html">Cadastro de Contrato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Clientes e Concessionárias</a>
+            </li>
+        </ul>
+    </div>
+
+    <div><br><br><br>
+        <div class="row my-5">
+            <div class="offset-1 col-5">
+                <label class="mr-2" for="name">Nome</label>
+                <input class="redondo" type="name" id="nome" autocomplete="off">
+            </div>
+
+            <div class="col-5 ">
+                <label class="" for="cpf/cnpj">CPF/CNPJ</label>
+                <input class=" redondo" type="cpf/cnpj" id="cpf" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="offset-1 col-5">
+                <label class="mr-4" for="cep">CEP</label>
+                <input class="redondo" type="cep" id="cep" autocomplete="off">
+            </div>
+
+            <div class="col-5">
+                <label class="mr-2" for="endereço">Endereço</label>
+                <input class="redondo" type="endereço" id="endereco" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-3 col ">
+            <label class="mr-4" for="complemento">Complemento</label>
+            <input class=" redondo" type="complemento" id="complemento" autocomplete="on">
+        </div>
+    </div>
+
+
+    <div class="row offset-7 col-3 justify-content-end">
+        <a  href="../administrador.html" class="mr-4">
+            <button onclick="criarCliente()" class="salvar redondo ">Salvar</button>
+        </a>
+        <button href="../administrador.html" class="cancelar redondo ml-2" >
+            Cancelar
+        </button>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

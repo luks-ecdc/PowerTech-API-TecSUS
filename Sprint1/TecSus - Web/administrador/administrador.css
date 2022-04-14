@@ -1,0 +1,26 @@
+.bg-primary-color{
+    background: linear-gradient(89.17deg, #D5FEE2 0%, #E7D1FF 100%);
+}
+
+.logo {
+    width: 272px;
+    height: 48px;
+}
+
+.logo2{
+    width: 125px;
+    height: 129px;
+}
+
+
+li > a{
+    color: black;
+    text-align: center;
+    margin: 10px 3rem 0px 3rem ;
+    font-size: 22px;
+    width: 200px;
+    height: 82px;
+    background: #C4C4C4;
+    font-family: 'Inter';
+    margin-left: 2rem;
+}

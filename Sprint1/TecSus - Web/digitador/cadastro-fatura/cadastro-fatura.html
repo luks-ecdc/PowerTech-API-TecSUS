@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="cadastro-cliente.js"></script> -->
+    <link href="cadastro-fatura.css" rel="stylesheet" ;>
+    <link href="../../lib/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cadastro de Fatura Luz</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid bg-primary-color pb-2">
+        <div class="row d-flex justify-content-between align-items-center">
+            <img src="../../assets/tecsus.png" class="logo ml-4">
+            <div>
+                <a href="../login/login.html">Sair do sistema</a>
+                <img src="../../assets/powertech.png" class="logo2 mr-4">
+            </div>
+        </div>
+    </div>
+    <!-- Fim navbar -->
+        <!-- tabs -->
+        <div class="row justify-content-around">
+
+            <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../digitador.html">Lista de Contratos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cadastro de Fatura</a>
+                    </li>   
+            </ul>
+            <!-- Fim tabs -->
+        </div>
+ <!--inputs-->
+ <div class="container-fliud mt-2">
+    <div class="row border-bottom my-1">
+        <div class="col-4 ">
+            <label for="numero">Numero de instalação</label>
+            <input class="redondo input2" type="numero" id="numero" autocomplete="0ff">
+        </div>
+        <div class="col-4">
+            <label for="valor">Valor da fatura</label>
+            <input class="redondo input3" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-4">
+            <label for="consumo">Consumo mês</label>
+            <input class="redondo input3" type="consumo" id="consumo" autocomplete="0ff">
+        </div>
+
+    </div>
+    <div class="row mt-4">
+        <div class="col-2 ">
+            <label for="numero">Descrição do Produto</label>
+        </div>
+        <div class="col-2 ">
+            <label for="valor">Valor fornecido</label>
+        </div>
+        <div class="col-2 ">
+            <label for="consumo">Valor ICMS</label>
+        </div>
+        <div class="col-2 ">
+            <label for="numero">Valor PIS</label>
+        </div>
+        <div class="col-2 ">
+            <label for="valor">Valor COFINS</label>
+        </div>
+        <div class="col-2 ">
+            <label for="consumo">Valor Total</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-2">
+            <label for="numero">TUSD - Consumo</label>
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="consumo" id="consumo" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-2">
+            <label for="numero">TE - Consumo</label>
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="consumo" id="consumo" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+
+    <div class="row my-1">
+        <div class="col-2">
+            <label for="numero">Adicional Bandeira Escassez Hidrica</label>
+        </div>
+        <div class="col-2 offset-8 justify-content-end">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+    <div class="row border-top ">
+        <div class="col-2">
+            <label for="numero">Itens Financeiros</label>
+        </div>
+    </div>
+    <div class="row border-bottom ">
+        <div class="col-2">
+            <label for="numero">TE - Consumo</label>
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="consumo" id="consumo" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+        <div class="col-2">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-2">
+            <label for="numero">Tributos</label>
+        </div>
+        <div class="col-2 offset-8 justify-content-end">
+            <label for="numero">Valor (R$)</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-2">
+            <label for="numero">PIS</label>
+        </div>
+        <div class="col-2 offset-8 justify-content-end">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-2">
+            <label for="numero">COFINS</label>
+        </div>
+        <div class="col-2 offset-8 justify-content-end">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-2">
+            <label for="numero">ICMS</label>
+        </div>
+        <div class="col-2 offset-8 justify-content-end">
+            <input class="redondo" type="valor" id="valor" autocomplete="0ff">
+        </div>
+    </div>
+</div>
+
+<div class="row col-10 justify-content-end">
+    <a href="../administrador.html" class="mr-4">
+        <button class="salvar redondo ">Salvar</button>
+    </a>
+    <button href="#" class="cancelar redondo ml-2">Cancelar
+
+    </button>
+</div>
+
+
+    </div>
+</body>
+
+</html>
