@@ -1,4 +1,4 @@
-package com.tecsus.API.resources;
+package com.tecsus.API.controller;
 
 import java.util.List;
 
@@ -13,41 +13,41 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tecsus.API.entities.Unidade;
-import com.tecsus.API.repository.UnidadeRepository;
+import com.tecsus.API.entities.Cliente;
+import com.tecsus.API.repository.ClienteRepository;
 
 @RestController // Permiti spring reconhecer como uma controller	
 @CrossOrigin // impede conflito de CORS, assim o frontend consegue receber o back
 @RequestMapping// defini url que vai consultar a entidade
-public class UnidadeResource {
+public class ClienteController {
 	
 	@Autowired 
-	UnidadeRepository unidadeRepository;
+	ClienteRepository clienteRepository;
 	
-	@GetMapping("/unidades") // metodo GET
-	public List<Unidade> getUnidades(){
-		return unidadeRepository.findAll();
+	@GetMapping("/clientes") // metodo GET
+	public List<Cliente> getClientes(){
+		return clienteRepository.findAll();
 	}
 	
-	@GetMapping("/unidade/{id}") // metodo GET
-	public  Unidade getUnidadeId(@PathVariable(value = "id") long id){
-		return unidadeRepository.findById(id);
+	@GetMapping("/cliente/{id}") // metodo GET
+	public  Cliente getClienteId(@PathVariable(value = "id") long id){
+		return clienteRepository.findById(id);
 	}
 	
-	@PostMapping("/unidade")
-	public  Unidade createUnidade(@RequestBody Unidade unidade) {
-		return unidadeRepository.save(unidade);
+
+	@PostMapping("/cliente")
+	public  Cliente createCliente(@RequestBody Cliente cliente) {
+		return clienteRepository.save(cliente);
 	}
 	
-	@PutMapping("/unidade")
-	public  Unidade atualizarUnidade(@RequestBody Unidade unidade) {
-		return unidadeRepository.save(unidade);
+	@PutMapping("/cliente")
+	public  Cliente atualizarCliente(@RequestBody Cliente cliente) {
+		return clienteRepository.save(cliente);
 	}
 	
-	@DeleteMapping("/unidade")
-	public  void deleteUnidade(@RequestBody Unidade unidade) {
-		unidadeRepository.delete(unidade);
+	@DeleteMapping("/cliente")
+	public  void deleteCliente(@RequestBody Cliente cliente) {
+		clienteRepository.delete(cliente);
 	}
 	
-	 
 }

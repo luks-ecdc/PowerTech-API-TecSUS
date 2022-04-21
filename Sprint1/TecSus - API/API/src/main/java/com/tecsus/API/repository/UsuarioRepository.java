@@ -1,8 +1,12 @@
 package com.tecsus.API.repository;
 
-import com.tecsus.API.entities.Usuario;
-import org.springframework.stereotype.Repository;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.tecsus.API.entities.Usuario;
+import com.tecsus.API.entities.enums.Funcao;
 
 //Repositorios serve para extender os metodos do JpaRepository, que consegue fazer persistencia dos arquivos no BD
 
@@ -12,5 +16,8 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	Usuario findById(long id );
 	
 	Usuario findByUsername(String username );
+	
+	//Usar list para retornar mais de um objeto
+	List<Usuario> findByFuncao(Funcao funcao );
 
 }

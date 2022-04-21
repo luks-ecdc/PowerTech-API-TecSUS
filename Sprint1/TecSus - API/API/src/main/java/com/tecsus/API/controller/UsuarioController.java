@@ -1,4 +1,4 @@
-package com.tecsus.API.resources;
+package com.tecsus.API.controller;
 
 import java.util.List;
 
@@ -13,46 +13,51 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.tecsus.API.entities.Usuario;
+import com.tecsus.API.entities.enums.Funcao;
 import com.tecsus.API.repository.UsuarioRepository;
 
 @RestController // Permiti spring reconhecer como uma controller	
 @CrossOrigin // impede conflito de CORS, assim o frontend consegue receber o back
-@RequestMapping// defini url que vai consultar a entidade
-public class UsuarioResource {
+@RequestMapping(value = "/usuario")// defini url que vai consultar a entidade
+public class UsuarioController {
 	
 	@Autowired 
 	UsuarioRepository usuarioRepository;
 	
-	@GetMapping("/usuarios") // metodo GET
+	@GetMapping // metodo GET
 	public List<Usuario> getUsuarios(){
-	//	Usuario u = new Usuario (1L, "Fred",Funcao.ADMINISTRADOR,"fred@teste.com","123456",1);
-		//return ResponseEntity.ok().body(u);
 		return usuarioRepository.findAll();
 	}
 	
-	@GetMapping("/usuario/{id}") // metodo GET
+	@GetMapping("byId/{id}") // metodo GET
 	public  Usuario getUsuarioId(@PathVariable(value = "id") long id){
 		return usuarioRepository.findById(id);
 	}
 	
-	@GetMapping("/usuarios/{username}") // metodo GET
+	@GetMapping("byUsername/{username}") // metodo GET
 	public  Usuario getUsuarioByUsername(@PathVariable(value = "username") String username){
 		return usuarioRepository.findByUsername(username);
 	}
 	
-	@PostMapping("/usuario")
+	@GetMapping("byFuncao/{funcao}") // metodo GET
+	public  List<Usuario> getUsuarioByFuncao(@PathVariable(value = "funcao") Funcao funcao){
+		return usuarioRepository.findByFuncao(funcao);
+	}
+	
+	
+	@PostMapping
 	public  Usuario createUsuario(@RequestBody Usuario usuario) {
 		return usuarioRepository.save(usuario);
 	}
 	
-	@PutMapping("/usuario")
+	@PutMapping
 	public  Usuario atualizarUsuario(@RequestBody Usuario usuario) {
 		return usuarioRepository.save(usuario);
 	}
 	
-	@DeleteMapping("/usuario")
-	public  void deleteUsuario(@RequestBody Usuario usuario) {
-		usuarioRepository.delete(usuario);
+	@DeleteMapping("{id}")
+	public  void deleteUsuario(@PathVariable(value = "id") long id) {
+		usuarioRepository.deleteById(id);
 	}
 	
 	 
