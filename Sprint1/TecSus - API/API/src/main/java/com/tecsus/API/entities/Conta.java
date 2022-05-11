@@ -13,13 +13,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.MappedSuperclass;
+
 import javax.persistence.Table;
 
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "tipo", length = 1, discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorColumn(name = "tipo", length = 4, discriminatorType = DiscriminatorType.STRING)
 @DiscriminatorValue("Conta")
 @Table(name = "tb_conta")
 public abstract class Conta implements Serializable{
