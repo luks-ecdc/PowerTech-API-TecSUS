@@ -1,0 +1,35 @@
+<div class="container mt-2">
+  <form [formGroup]="form">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <label>Nº Cont</label>
+        <input formControlName="instalacao" class="ml-2 input-cinza">
+      </div>
+      <div class="col-3">
+        <label class="mr-2">Tipo de Conta</label>
+        <select (change)="carregarConta()" formControlName="tipoConta" class="drop-servico">
+          <option selected hidden>Tipo de Serviço</option>
+          <option value="energia">Energia</option>
+          <option value="agua">Água</option>
+          <option value="gas">Gás</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label class="mr-2">Tipo de Conta</label>
+        <select  formControlName="concessionaria" class="drop-servico">
+          <option>Concessionaria 1</option>
+          <option>Concessionaria 2</option>
+          <option>Concessionaria 3</option>
+        </select>
+      </div>
+    </div>
+  </form>
+  <a class="mx-2" routerLink="luz">Energia</a>
+  <a class="mx-2" routerLink="gas">Gás</a>
+  <a class="mx-2" routerLink="agua">Agua</a>
+</div>
+<div class="border-top mt-2"></div>
+<router-outlet></router-outlet>
+<!-- <app-luz *ngIf="tipoConta === 'energia'"></app-luz>
+<app-agua *ngIf="tipoConta =='agua'"></app-agua>
+<app-gas *ngIf="tipoConta =='gas'"></app-gas> -->
