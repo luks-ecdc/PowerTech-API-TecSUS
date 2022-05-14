@@ -1,0 +1,4 @@
+<form [formGroup]="form">
+  <input type="file" formControlName="pdf">
+  <button (click)="setPdf(form.value.pdf)">enviar</button>
+</form>

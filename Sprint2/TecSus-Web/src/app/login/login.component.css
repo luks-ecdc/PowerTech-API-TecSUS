@@ -1,0 +1,50 @@
+/* Fundo Login */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Logos */
+.tecsus{
+  height: 40px;
+}
+
+.powertech{
+  height: 75px;
+}
+
+/* Label login */
+.card-content label {
+  font-size: 20px;
+}
+
+/* Inputs */
+.card-content-area {
+  display: flex;
+  flex-direction: column;
+  padding:10px 0;
+}
+
+.card-content-area input {
+  border: 0px;
+  padding: 5px 4px;
+  background-color: #C4C4C4;
+  outline: none;
+  color: #000 ;
+  height: 1.8rem;
+}
+
+/* Botão entrar */
+.entrar{
+  cursor: pointer;
+  border:  none;
+  font-size: 20px;
+  padding: 8px 16px;
+  background-color: #B9FFB8;
+
+}
+.entrar:hover{
+  background-color: #a2fda0;
+}

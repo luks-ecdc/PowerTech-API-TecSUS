@@ -1,0 +1,18 @@
+<div class="container-fluid mt-2">
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <form [formGroup]="form">
+        <label class="mr-2">Tabela de</label>
+        <select formControlName="tabela" class="drop-servico">
+          <option value="cliente">Unidade</option>
+          <option value="concessionaria">Concessionaria</option>
+          <option value="contrato">Contrato</option>
+        </select>
+      </form>
+    </div>
+  </div>
+
+</div>
+<app-tabela-cliente *ngIf="form.value.tabela == 'cliente' "></app-tabela-cliente>
+<app-tabela-concessionaria *ngIf="form.value.tabela == 'concessionaria' "></app-tabela-concessionaria>
+<app-tabela-contrato *ngIf="form.value.tabela == 'contrato' "></app-tabela-contrato>
