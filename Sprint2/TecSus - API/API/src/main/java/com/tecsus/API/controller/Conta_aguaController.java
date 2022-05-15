@@ -57,7 +57,7 @@ public class Conta_aguaController {
 	}
 	
 	
-	@PutMapping("/{rgi_agua}/contrato/{instalacao_cont}")
+	@PutMapping("/conta_agua/{rgi_agua}/contrato/{instalacao_cont}")
 	public Conta_agua ColocarContratoNaConta(
 	            @PathVariable Long rgi_agua,
 	            @PathVariable Long instalacao_cont

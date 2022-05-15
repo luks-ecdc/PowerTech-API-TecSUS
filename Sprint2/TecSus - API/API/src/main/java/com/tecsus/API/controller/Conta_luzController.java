@@ -68,7 +68,7 @@ public class Conta_luzController {
 	
 	
 	
-	@PutMapping("/{instalacao_luz}/contrato/{instalacao_cont}")
+	@PutMapping("/conta_luz/{instalacao_luz}/contrato/{instalacao_cont}")
 	 public Conta_luz ColocarContratoNaConta(
 	            @PathVariable Long instalacao_luz,
 	            @PathVariable Long instalacao_cont

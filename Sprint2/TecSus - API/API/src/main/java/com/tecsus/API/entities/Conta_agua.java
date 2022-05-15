@@ -1,8 +1,10 @@
 package com.tecsus.API.entities;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,7 +12,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.tecsus.API.repository.ContratoRepository;
 
 @Entity
 @Table(name="tb_conta_agua")
@@ -73,11 +79,23 @@ public class Conta_agua {
 	private double data;
 	private double periodo;
 	
+	
+	//@JsonBackReference
+	
 	@JsonIgnore
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="rgi_agua_fk", referencedColumnName = "instalacao_cont")
 	private Contrato contrato;
+	
+	
+	
+	 @Column(name="rgi_agua_fk", updatable=false, insertable=false) 
+	    private Long rgi_agua_fk;
+	
 
+
+	
+	
 	public Conta_agua() {}
 	public Conta_agua(Long id_conta_agua, double ate10ConsumoAgua, double de11ate20ConsumoAgua,
 			double de21ate30ConsumoAgua, double de31ate50ConsumoAgua, double acima51ConsumoAgua, double ate10TarifaAgua,
@@ -90,7 +108,7 @@ public class Conta_agua {
 			double ate10ValorEsgoto, double de11ate20ValorEsgoto, double de21ate30ValorEsgoto,
 			double de31ate50ValorEsgoto, double acima51ValorEsgoto, double consumoTotalAgua, double valorTotalAgua,
 			double consumoTotalEsgoto, double valorTotalEsgoto, double jurosMora, double atMonetaria, double multa,
-			double taxaDeRegulacao, double data, double periodo, Contrato contrato) {
+			double taxaDeRegulacao, double data, double periodo, Contrato contrato,Long rgi_agua_fk) {
 		super();
 		this.id_conta_agua = id_conta_agua;
 		this.ate10ConsumoAgua = ate10ConsumoAgua;
@@ -134,6 +152,7 @@ public class Conta_agua {
 		this.data = data;
 		this.periodo = periodo;
 		this.contrato = contrato;
+		this.rgi_agua_fk= rgi_agua_fk;
 	}
 
 
@@ -554,6 +573,12 @@ public class Conta_agua {
 
 	public void setContrato(Contrato contrato) {
 		this.contrato = contrato;
+	}
+	public Long getRgi_agua_fk() {
+		return rgi_agua_fk;
+	}
+	public void setRgi_agua_fk(Long rgi_agua_fk) {
+		this.rgi_agua_fk = rgi_agua_fk;
 	}
 	
 	
