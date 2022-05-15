@@ -121,27 +121,8 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 ###  :flags: Backlog do Produto
 
-| Tarefas  |
-| ------|
-| Tela Login dos Colaboradores |
-| Tela de trabalho Administrador|
-| Tela de trabalho Gestor|
-| Tela de trabalho Digitador|
-| Cadastro Cliente|
-| Cadastro de Concessionaria|
-| Cadastro Contrato|
-| Tela de upload de PDF/IMG|
-| Visualização de faturas cadastradas|
-| Tela digitação de cadastro Energia|
-| Tela digitação de cadastro de água|
-| Tela digitação de cadastro de gás|
-| Lista de unidade e contratos cadastrados|
-| Lista de concessionarias cadastradas|
-| Dashboard de relatórios das contas cadastradas|
-| Modificação e deleção de informações|
-| Relatatório de falhas|
-| Emissão de alertas para os setores|
-|Refinamento do Sistema (UX)|
+<img src="https://user-images.githubusercontent.com/37638307/168491314-25242a68-582e-41b1-b0bd-24cc29bd3afc.png" width="400px" />
+
 
 
 ### Planejamento
@@ -178,11 +159,9 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 | Cadastro Cliente|
 | Cadastro de Concessionaria|
 | Cadastro de Contrato|
-| Tela de upload de PDF/IMG|
 | Visualização de faturas cadastradas|
 | Tela digitação de cadastro Energia|
 | Tela digitação de cadastro de água|
-| Tela digitação de cadastro de gás|
 | Lista de unidade e contratos cadastrados|
 | Lista de concessionarias cadastradas|
 
@@ -190,6 +169,8 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 | Tarefas  |
 | ------|
+| Tela digitação de cadastro de gás|
+| Tela de upload de PDF/IMG|
 | Dashboard de relatórios das contas cadastradas|
 | Modificação e deleção de informações|
 | Relatatório de falhas|
