@@ -6,7 +6,8 @@
 
 <p align="center">
   •<a href ="#wrench-dev-team">  Dev Team </a> •  
-  <a href ="#runner-sprint-planning">   Sprint Planning </a> •  
+  <a href ="#runner-sprint-planning">   Sprint Planning </a> •
+  <a href ="#round_pushpin-timeline"> TimeLine </a>  •
   <a href ="#chart_with_downwards_trend-burndown"> Burndown </a>  •  
   <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  • 
   <a href ="#thumbsup-tecnologias-utilizadas">  Tecnologias Utilizadas </a> 
@@ -37,19 +38,13 @@
 
 ### :runner: Sprint Planning
 
-| Tarefas  | Responsáveis|
-| ------| ------|
-| | |
-| | |
-| | |
-| | |
-| | |
-| | | 
-| | |
-| | |
-| | |
-| | |
-| | |
+<img src="" width="500px" />
+
+<hr>
+
+### :round_pushpin: TimeLine
+
+<img src="https://user-images.githubusercontent.com/37638307/168492954-9bedc8c3-ed91-4328-9713-44b1a49fcb68.png" width="1000px" />
 
 <hr>
 
