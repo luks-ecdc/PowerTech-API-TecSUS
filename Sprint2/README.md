@@ -38,7 +38,7 @@
 
 ### :runner: Sprint Planning
 
-<img src="" width="500px" />
+<img src="https://user-images.githubusercontent.com/37638307/168493346-a10613de-e6b0-4c50-84e8-14927ea80f24.png" width="500px" />
 
 <hr>
 
