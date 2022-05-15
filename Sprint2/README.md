@@ -50,10 +50,8 @@
 
 ### :chart_with_downwards_trend: Burndown
 
+<img src="https://user-images.githubusercontent.com/37638307/168494905-a75eb67d-a8a0-4a3f-98a1-0d9827ad1bbe.png" width="600px" />
 
-
-
-<img src="" width="400px" />
 
 
 
