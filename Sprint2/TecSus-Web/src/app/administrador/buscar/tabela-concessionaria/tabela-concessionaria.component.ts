@@ -12,6 +12,8 @@ import { DeletarComponent } from '../../deletar/deletar.component';
 export class TabelaConcessionariaComponent implements OnInit {
 
   concessionarias: Concessionaria[]
+  concessionarias2: Concessionaria[]
+
 
   constructor(private concessionariaService: ConcessionariaService,
     public dialog: MatDialog) { }
@@ -25,13 +27,19 @@ export class TabelaConcessionariaComponent implements OnInit {
       }
     )
 
-    this.concessionarias = [
+    this.concessionarias2 = [
       {
-        nome_conces: 'Nome concessionaria OFF',
-        cnpj: "123123123",
-        fornecimento: "agua",
-        endereco_conces: "rua sabesp 5165"
-      }
+        nome_conces: 'Sabesp',
+        cnpj_conces: "123123123",
+        servico_conces: "Água",
+        cidade_conces: "rua sabesp 5165"
+      },
+      {
+        nome_conces: 'EDP',
+        cnpj_conces: "19323123",
+        servico_conces: "Energia",
+        cidade_conces: "rua bandeirantes 659"
+      },
     ]
   }
   // abrir modal de exlcuir

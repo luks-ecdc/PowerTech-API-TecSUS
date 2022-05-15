@@ -12,6 +12,7 @@ import { DeletarComponent } from '../../deletar/deletar.component';
 export class TabelaContratoComponent implements OnInit {
 
   contratos: Contrato[]
+  contratos2: Contrato[]
 
   constructor(private contratoService: ContratoService,
     public dialog: MatDialog) { }
@@ -25,19 +26,19 @@ export class TabelaContratoComponent implements OnInit {
       }
     )
 
-    this.contratos = [{
+    this.contratos2 = [{
       servico: "Água",
-      cep: "12203-748",
-      rua: "Rua Larryson 748",
-      complemento: "Bloco A",
-      consumo: 121.32
+      cep_cont: "12203-748",
+      rua_cont: "Rua Larryson 748",
+      complemento_cont: "Bloco A",
+      consumo_cont: 121.32
     },
     {
-      servico: "Gás",
-      cep: "74856-712",
-      rua: "Rua Antonio Piovesan 1028",
-      complemento: "Sem complemento",
-      consumo: 92.32
+      servico: "Energia",
+      cep_cont: "74856-712",
+      rua_cont: "Rua Antonio Piovesan 1028",
+      complemento_cont: "Sem complemento",
+      consumo_cont: 92.32
 
     }
     ]

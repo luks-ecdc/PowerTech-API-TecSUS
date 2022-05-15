@@ -17,19 +17,20 @@ export class DigitadorComponent implements OnInit {
     // Inicializa a tabas
     this.navLinks = [
       {
-          label: 'Lista de contratos',
-          link: './lista-contrato',
-          index: 0
+        label: 'Buscar',
+        link: './buscar-digitador',
+        index: 0
       }, {
-          label: 'Cadastro de faturas',
-          link: './cadastro-fatura',
-          index: 1
-      }
-  ];
+        label: 'Cadastro de faturas',
+        link: './cadastro-fatura',
+        index: 1
 
-  this.router.events.subscribe((res) => {
-    this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
-});
+      }
+    ];
+
+    this.router.events.subscribe((res) => {
+      this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
+    });
 
   }
 

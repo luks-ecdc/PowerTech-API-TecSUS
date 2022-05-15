@@ -1,14 +1,17 @@
+import { Cliente } from "./cliente.model"
+import { Concessionaria } from "./concessionaria.model"
+
 export interface Contrato {
-
-  id?: number
-  servico?: string
-  rua?: string
-  bairro?: string
-  cidade?: string
-  estado?: string
-  numero?: number
-  complemento?: string
-  cep?: string
-  consumo?: number
-
+  bairro_cont?: string,
+  cep_cont?: string,
+  cidade_cont?: string,
+  complemento_cont?: string,
+  concessionaria?: Concessionaria,
+  consumo_cont?: number,
+  estado_cont?: string,
+  instalacao_cont?: number,
+  numero_cont?: string,
+  rua_cont?: string,
+  servico?: string,
+  unidade?: Cliente
 }

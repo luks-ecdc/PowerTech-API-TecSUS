@@ -17,7 +17,6 @@ import { PerfilComponent } from './gestor/perfil/perfil.component';
 import { RelatorioComponent } from './gestor/relatorio/relatorio.component';
 import { AddPdfComponent } from './gestor/add-pdf/add-pdf.component';
 import { CadastroFaturaComponent } from './digitador/cadastro-fatura/cadastro-fatura.component';
-import { ListaContratoComponent } from './digitador/lista-contrato/lista-contrato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PdfViewComponent } from './digitador/pdf-view/pdf-view.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -37,6 +36,8 @@ import { TabelaContratoComponent } from './administrador/buscar/tabela-contrato/
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DeletarComponent } from './administrador/deletar/deletar.component';
+import { BuscarDigitadorComponent } from './digitador/buscar-digitador/buscar-digitador.component';
+import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-conta.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,6 @@ import { DeletarComponent } from './administrador/deletar/deletar.component';
     RelatorioComponent,
     AddPdfComponent,
     CadastroFaturaComponent,
-    ListaContratoComponent,
     PdfViewComponent,
     LuzComponent,
     AguaComponent,
@@ -64,6 +64,8 @@ import { DeletarComponent } from './administrador/deletar/deletar.component';
     TabelaConcessionariaComponent,
     TabelaContratoComponent,
     DeletarComponent,
+    BuscarDigitadorComponent,
+    CadastroContaComponent,
 
   ],
   imports: [

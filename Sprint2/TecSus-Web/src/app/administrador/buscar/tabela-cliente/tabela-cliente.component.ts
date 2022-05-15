@@ -16,6 +16,7 @@ export class TabelaClienteComponent implements OnInit {
     public dialog: MatDialog) { }
 
   clientes: Cliente[]
+  clientes2:any[]
   // Verificar para carregar outros clientes
   ngOnInit(): void {
 
@@ -27,22 +28,21 @@ export class TabelaClienteComponent implements OnInit {
       }
     )
 
-    this.clientes = [{
-      nome: "Cliente Testes OFF",
-      cpf: "455471869",
-      cep: "12203-748",
-      rua: "Rua Larryson 748",
+    this.clientes2 = [{
+      nome_uni: "Cliente Testes OFF",
+      id_cpf: "455471869",
+      cep_uni: "12203-748",
+      rua_uni: "Rua Larryson 748",
       complemento: "Bloco A",
     },
     {
-      nome: "Cliente Teste OFF 2",
-      cpf: "884454712",
-      cep: "74856-712",
-      rua: "Rua Antonio Piovesan 1028",
+      nome_uni: "Cliente Teste OFF 2",
+      id_cpf: "884454712",
+      cep_uni: "74856-712",
+      rua_uni: "Rua Antonio Piovesan 1028",
       complemento: "Sem complemento",
     }
-    ]
-
+   ]
 
   }
 
@@ -51,6 +51,7 @@ export class TabelaClienteComponent implements OnInit {
       width: '300px',
       data: { name: this.nome }
     });
+
 
   }
 

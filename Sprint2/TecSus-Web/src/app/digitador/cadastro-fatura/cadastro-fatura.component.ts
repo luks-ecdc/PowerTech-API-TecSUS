@@ -8,23 +8,33 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class CadastroFaturaComponent implements OnInit {
 
+  instalacao: string = "Conta"
   form: FormGroup;
   tipoConta: String
 
   constructor(private formBuilder: FormBuilder) { }
 
-   ngOnInit(): void {
+  ngOnInit(): void {
     this.form = this.formBuilder.group({
-      instalacao:[null],
-      tipoConta:[null],
-      concessionaria:[null],
+      instalacao: [null],
+      tipoConta: [null],
+      concessionaria: [null],
     })
   }
-c
-   carregarConta(){
-     this.tipoConta = this.form.value.tipoConta;
-     console.log(`Conta de ${this.tipoConta} selecionada`)
 
-   }
+  carregarConta() {
+    this.tipoConta = this.form.value.tipoConta;
+    this.instalacaoRgi()
+  }
+
+  instalacaoRgi() {
+    if (this.form.value.tipoConta = 'Água') {
+      this.instalacao = "RGI"
+    }
+    else if(this.form.value.tipoConta = 'Energia'){
+      this.instalacao = "Instalação"
+
+     }
+  }
 }
 

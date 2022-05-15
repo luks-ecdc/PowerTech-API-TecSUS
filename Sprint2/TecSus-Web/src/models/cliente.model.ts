@@ -1,15 +1,14 @@
 export interface Cliente{
-  id?: number
-  nome?: string
-  cpf?: string
-  email?: string
-  telefone?: string
-  celular?: string
-  cep?: string
-  rua?: string
-  numero?: string
+  id_cpf?: string
+  nome_uni?: string
+  tel_uni?: string
+  cel_uni?: string
+  cep_uni?: string
+  cidade_uni?: string
+  estado_uni?: string
+  bairro_uni?: string
+  numero_uni?: string
+  rua_uni?: string
   complemento?: string
-  estado?: string
-  cidade?: string
 
 }

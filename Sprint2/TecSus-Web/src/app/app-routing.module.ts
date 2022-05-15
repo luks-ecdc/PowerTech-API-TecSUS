@@ -4,14 +4,15 @@ import { AdministradorComponent } from './administrador/administrador.component'
 import { BuscarComponent } from './administrador/buscar/buscar.component';
 import { CadastroClienteComponent } from './administrador/cadastro-cliente/cadastro-cliente.component';
 import { CadastroConcessionariaComponent } from './administrador/cadastro-concessionaria/cadastro-concessionaria.component';
+import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-conta.component';
 import { CadastroContratoComponent } from './administrador/cadastro-contrato/cadastro-contrato.component';
 import { InformacaoComponent } from './administrador/informacao/informacao.component';
+import { BuscarDigitadorComponent } from './digitador/buscar-digitador/buscar-digitador.component';
 import { CadastroFaturaComponent } from './digitador/cadastro-fatura/cadastro-fatura.component';
 import { AguaComponent } from './digitador/conta/agua/agua.component';
 import { GasComponent } from './digitador/conta/gas/gas.component';
 import { LuzComponent } from './digitador/conta/luz/luz.component';
 import { DigitadorComponent } from './digitador/digitador.component';
-import { ListaContratoComponent } from './digitador/lista-contrato/lista-contrato.component';
 import { AddPdfComponent } from './gestor/add-pdf/add-pdf.component';
 import { GestorComponent } from './gestor/gestor.component';
 import { PerfilComponent } from './gestor/perfil/perfil.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
       { path: 'cadastro-cliente', component: CadastroClienteComponent },
       { path: 'cadastro-contrato', component: CadastroContratoComponent },
       { path: 'cadastro-concessionaria', component: CadastroConcessionariaComponent },
+      { path: 'cadastro-conta', component: CadastroContaComponent },
       { path: 'buscar', component: BuscarComponent ,}
     ]
   },
@@ -45,8 +47,8 @@ const routes: Routes = [
         {path: 'luz', component: LuzComponent},
         {path: 'agua', component: AguaComponent},
         {path: 'gas', component: GasComponent},
-      ]},
-    {path: 'lista-contrato', component: ListaContratoComponent}
+      ]}
+      ,{path: 'buscar-digitador', component: BuscarDigitadorComponent}
   ]},
 ];
 
