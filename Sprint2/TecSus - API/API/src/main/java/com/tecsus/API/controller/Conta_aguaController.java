@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tecsus.API.entities.Conta_agua;
+import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_aguaRepository;
+import com.tecsus.API.repository.ContratoRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +31,9 @@ public class Conta_aguaController {
 	
 	@Autowired 
 	Conta_aguaRepository conta_aguaRepository;
+	
+	@Autowired 
+	ContratoRepository contratoRepository;
 	
 	@GetMapping("/Contas_agua") // metodo GET
 	public List<Conta_agua> getContas_agua(){
@@ -50,6 +55,18 @@ public class Conta_aguaController {
 	public  Conta_agua atualizarConta_agua(@RequestBody Conta_agua conta_agua) {
 		return conta_aguaRepository.save(conta_agua);
 	}
+	
+	
+	@PutMapping("/{rgi_agua}/contrato/{instalacao_cont}")
+	public Conta_agua ColocarContratoNaConta(
+	            @PathVariable Long rgi_agua,
+	            @PathVariable Long instalacao_cont
+	    ) {
+	    	 Conta_agua  conta_agua = conta_aguaRepository.findById(rgi_agua).get();
+	        Contrato contrato = contratoRepository.findById(instalacao_cont).get();
+	        conta_agua.setContrato(contrato);
+	        return conta_aguaRepository.save(conta_agua);
+	    }
 	
 	@DeleteMapping("/Conta_agua")
 	public  void deleteConta_agua(@RequestBody Conta_agua conta_agua) {
