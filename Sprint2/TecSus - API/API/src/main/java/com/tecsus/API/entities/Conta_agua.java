@@ -90,7 +90,7 @@ public class Conta_agua {
 	
 	
 	 @Column(name="rgi_agua_fk", updatable=false, insertable=false) 
-	    private Long rgi_agua_fk;
+	    private Long rgiAguaFk;
 	
 
 
@@ -152,7 +152,7 @@ public class Conta_agua {
 		this.data = data;
 		this.periodo = periodo;
 		this.contrato = contrato;
-		this.rgi_agua_fk= rgi_agua_fk;
+		this.rgiAguaFk= rgi_agua_fk;
 	}
 
 
@@ -575,10 +575,10 @@ public class Conta_agua {
 		this.contrato = contrato;
 	}
 	public Long getRgi_agua_fk() {
-		return rgi_agua_fk;
+		return rgiAguaFk;
 	}
 	public void setRgi_agua_fk(Long rgi_agua_fk) {
-		this.rgi_agua_fk = rgi_agua_fk;
+		this.rgiAguaFk = rgi_agua_fk;
 	}
 	
 	

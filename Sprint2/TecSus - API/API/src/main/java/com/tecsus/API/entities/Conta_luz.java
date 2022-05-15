@@ -54,6 +54,14 @@ public class Conta_luz {
 	
 	private int bandeiraTarifaria;
 	
+	private double  bandeiraTarifariaValorFornecido;
+	private double  bandeiraTarifariaValorICMS;
+	private double  bandeiraTarifariaValorPIS;
+	private double  bandeiraTarifariaValorCOFINS;
+	private double  bandeiraTarifariaValorValorTotal;
+	
+	
+	
 	private double cipValorFornecido;
 	private double cipConsumoValorICMS;
 	private double cipConsumoValorPIS;
@@ -74,13 +82,17 @@ public class Conta_luz {
 
 	
 	public Conta_luz() {}
+
+
 	public Conta_luz(Long id_conta_luz, String data_luz, String periodo_luz, double consumoMes,
 			double tusdConsumoValorFornecido, double tusdConsumoValorICMS, double tusdConsumoValorPIS,
 			double tusdConsumoValorCOFINS, double tusdConsumoValorTotal, double teConsumoValorFornecido,
 			double teConsumoValorICMS, double teConsumoValorPIS, double teConsumoValorCOFINS,
-			double teConsumoValorTotal, int bandeiraTarifaria, double cipValorFornecido, double cipConsumoValorICMS,
+			double teConsumoValorTotal, int bandeiraTarifaria, double bandeiraTarifariaValorFornecido,
+			double bandeiraTarifariaValorICMS, double bandeiraTarifariaValorPIS, double bandeiraTarifariaValorCOFINS,
+			double bandeiraTarifariaValorValorTotal, double cipValorFornecido, double cipConsumoValorICMS,
 			double cipConsumoValorPIS, double cipConsumoValorCOFINS, double cipConsumoValorTotal, double cofinsValor,
-			double pisValor, double iCMSValor, Contrato contrato,Long instalacao_luz_fk) {
+			double pisValor, double iCMSValor, Contrato contrato, Long instalacao_luz_fk) {
 		super();
 		this.id_conta_luz = id_conta_luz;
 		this.data_luz = data_luz;
@@ -97,6 +109,11 @@ public class Conta_luz {
 		this.teConsumoValorCOFINS = teConsumoValorCOFINS;
 		this.teConsumoValorTotal = teConsumoValorTotal;
 		this.bandeiraTarifaria = bandeiraTarifaria;
+		this.bandeiraTarifariaValorFornecido = bandeiraTarifariaValorFornecido;
+		this.bandeiraTarifariaValorICMS = bandeiraTarifariaValorICMS;
+		this.bandeiraTarifariaValorPIS = bandeiraTarifariaValorPIS;
+		this.bandeiraTarifariaValorCOFINS = bandeiraTarifariaValorCOFINS;
+		this.bandeiraTarifariaValorValorTotal = bandeiraTarifariaValorValorTotal;
 		this.cipValorFornecido = cipValorFornecido;
 		this.cipConsumoValorICMS = cipConsumoValorICMS;
 		this.cipConsumoValorPIS = cipConsumoValorPIS;
@@ -106,8 +123,10 @@ public class Conta_luz {
 		this.pisValor = pisValor;
 		this.ICMSValor = iCMSValor;
 		this.contrato = contrato;
-		this.instalacao_luz_fk =instalacao_luz_fk;
+		this.instalacao_luz_fk = instalacao_luz_fk;
 	}
+
+
 	public Contrato getContrato() {
 		return contrato;
 	}
@@ -251,6 +270,36 @@ public class Conta_luz {
 	}
 	public void setICMSValor(double iCMSValor) {
 		ICMSValor = iCMSValor;
+	}
+	public double getBandeiraTarifariaValorFornecido() {
+		return bandeiraTarifariaValorFornecido;
+	}
+	public void setBandeiraTarifariaValorFornecido(double bandeiraTarifariaValorFornecido) {
+		this.bandeiraTarifariaValorFornecido = bandeiraTarifariaValorFornecido;
+	}
+	public double getBandeiraTarifariaValorICMS() {
+		return bandeiraTarifariaValorICMS;
+	}
+	public void setBandeiraTarifariaValorICMS(double bandeiraTarifariaValorICMS) {
+		this.bandeiraTarifariaValorICMS = bandeiraTarifariaValorICMS;
+	}
+	public double getBandeiraTarifariaValorPIS() {
+		return bandeiraTarifariaValorPIS;
+	}
+	public void setBandeiraTarifariaValorPIS(double bandeiraTarifariaValorPIS) {
+		this.bandeiraTarifariaValorPIS = bandeiraTarifariaValorPIS;
+	}
+	public double getBandeiraTarifariaValorCOFINS() {
+		return bandeiraTarifariaValorCOFINS;
+	}
+	public void setBandeiraTarifariaValorCOFINS(double bandeiraTarifariaValorCOFINS) {
+		this.bandeiraTarifariaValorCOFINS = bandeiraTarifariaValorCOFINS;
+	}
+	public double getBandeiraTarifariaValorValorTotal() {
+		return bandeiraTarifariaValorValorTotal;
+	}
+	public void setBandeiraTarifariaValorValorTotal(double bandeiraTarifariaValorValorTotal) {
+		this.bandeiraTarifariaValorValorTotal = bandeiraTarifariaValorValorTotal;
 	}
 	public Long getInstalacao_luz_fk() {
 		return instalacao_luz_fk;

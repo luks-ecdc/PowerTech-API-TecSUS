@@ -45,6 +45,11 @@ public class Conta_aguaController {
 		return conta_aguaRepository.findById(id);
 	}
 	
+	@GetMapping("/Conta_agua_rgi/{rgi_fk}") // metodo GET
+	public  List<Conta_agua> getConta(@PathVariable(value = "rgi_fk") long rgi_fk){
+		return conta_aguaRepository.findByRgiAguaFk(rgi_fk);
+	}
+	
 
 	@PostMapping("/Conta_agua")
 	public  Conta_agua createConta_agua(@RequestBody Conta_agua conta_agua) {
@@ -68,6 +73,7 @@ public class Conta_aguaController {
 	        return conta_aguaRepository.save(conta_agua);
 	    }
 	
+
 	@DeleteMapping("/Conta_agua")
 	public  void deleteConta_agua(@RequestBody Conta_agua conta_agua) {
 		conta_aguaRepository.delete(conta_agua);
