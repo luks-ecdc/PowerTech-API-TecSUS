@@ -38,6 +38,8 @@
 
 ### :runner: Sprint Planning
 
+<img src="https://user-images.githubusercontent.com/37638307/168495233-a9936cd9-7414-415a-b94b-57e57ef8967e.png" width="300px" />
+
 <img src="https://user-images.githubusercontent.com/37638307/168493346-a10613de-e6b0-4c50-84e8-14927ea80f24.png" width="500px" />
 
 <hr>
