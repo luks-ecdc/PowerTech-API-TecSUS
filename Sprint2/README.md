@@ -86,8 +86,7 @@ Tela Digitador
 
 ###  :thumbsup: Tecnologias Utilizadas
 
-*  Ferramentas: Figma, IDE Eclipse, Excel , Visual Studio Code, GitHub, Trello, Swagger;
-*  Meios de Comunicação da Equipe: Discord, WhatsApp;
-*  Programação Back-End: Java, Springboot, Angular;
-*  Programação Front-End: TypeScript, Bootstrap, HTML, CSS;
-*  Banco de Dados: PostgreSQL;
+<img src="https://user-images.githubusercontent.com/37638307/168495829-5aee7c4f-46d8-4e1a-be98-7e6f2e2c6b76.png" width="600px" />
+
+<hr>
+
