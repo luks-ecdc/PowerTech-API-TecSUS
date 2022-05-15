@@ -123,7 +123,11 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 <img src="https://user-images.githubusercontent.com/37638307/168491314-25242a68-582e-41b1-b0bd-24cc29bd3afc.png" width="400px" />
 
+### Sprint BackLog
 
+<img src="https://user-images.githubusercontent.com/37638307/168494602-8582c043-c194-4476-ac71-27f86bc0814a.png" width="600px" />
+
+<hr>
 
 ### Planejamento
 
