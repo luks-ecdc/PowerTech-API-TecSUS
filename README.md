@@ -80,26 +80,7 @@ do contrato)</li>
 
 ### User Story
 
- 
-| Usuário        | Quer/Precisa     | Para...|
-| ------|-----|-----|
-| Administrador, Gestor e Digitador  	| Ter Entrada no sistema com meu usuário e senha cadastrada. Quero ter Saída do sistema. 	| Entrar na sua própria página de trabalho e também dar saída da área de trabalho, para se ter um nível de segurança dos usuários.|
-| Administrador, Gestor e Digitador  	| Quero fácil acesso e simplicidade para um bom entendimento em cada tela e teclas de atalho inteligente. 	| Para ser mais ágil e objetivo no trabalho. 	|
-| Administrador, Gestor e Digitador	| Quero ter um modo para mudar informações do perfil de usuário. 	| Para poder atualizar informações pertinentes ao usuário, do mesmo modo fazer a modificação de senha de acesso.	|
-| Administrador	| Quero poder cadastrar as concessionárias, clientes, contratos e novos usuários "Gestor e Digitador".| Para guardar no sistema e ter acesso a essas informações diariamente.|
-| Administrador	| Quero ter acesso aos registros Data/Hora (Log) de atividades de todos os usuários colaboradores.| Para analisar possíveis erros e saber qual usuário cometeu esse erro.|
-| Administrador	| Quero ter acesso a todos os Cadastros de clientes, contratos e concessionárias. 	| Para modificar, excluir os dados.|
-| Administrador 	| Quero ter acesso a todas as áreas de trabalho (Gestão e Digitação) além da minha área. 	|  Para saber, auxiliar e analisar todas as telas de serviços prestados.	|
-| Gestor	| Quero ter acesso a pasta de todos os contratos.	| Para visualizar a situação cadastral de cada contrato.|
-| Gestor	| Quero adicionar e atualizar arquivo PDF de cada contrato com seu respectivo serviço de gerenciamento.	| Para outros colaboradores poder visualizar as informações. 	|
-| Gestor	| Quero analisar gráficos de consumo mensal e anual de cada contrato.	|  Para poder reportar para o cliente os dados de consumos.	|
-| Gestor	| Ter acesso a todas as faturas cadastradas no sistema e poder fazer possíveis modificações se necessário.	|  Para se ter uma análise individual dos serviços. Para analisar possíveis erros e corrigi-los.	|
-| Digitador 	| Quero ter facilidade ao encontrar a minha pasta de clientes	|   Para acessar e visualizar informações do contrato.	|
-| Digitador	| Quero ter acesso aos arquivos PDF que o Gestor adicionar no sistema.	| Para poder fazer o trabalho de preenchimento dos valores das faturas no sistema.	|
-| Digitador	| Quero ter acesso as faturas já cadastradas no sistema.|  Para fazer modificações ou exclusões caso necessário. 	|
-| Digitador	| Quero ter facilidade na digitação dos campos de cada serviço (Água, Energia e Gás).	|  Para acelerar a produtividade na parte da digitação.	|
-| Digitador	| Quero ter busca de faturas no sistema através de filtros mensais e anuais.	| Para acelerar a busca dos dados necessários.	|
-| Digitador	| Quero ter notificações de quando um Gestor adicionar um PDF no sistema.	| Para eu poder adicionar com rapidez os dados do PDF no sistema.	|
+
 
 
 <hr>
@@ -123,9 +104,7 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 
 <img src="https://user-images.githubusercontent.com/37638307/168491314-25242a68-582e-41b1-b0bd-24cc29bd3afc.png" width="400px" />
 
-### Sprint BackLog
 
-<img src="https://user-images.githubusercontent.com/37638307/168494602-8582c043-c194-4476-ac71-27f86bc0814a.png" width="600px" />
 
 <hr>
 
