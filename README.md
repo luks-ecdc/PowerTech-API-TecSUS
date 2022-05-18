@@ -114,8 +114,8 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 - :heavy_check_mark: Kick-off - 14/03 a 18/03 - Concluído 
 - :heavy_check_mark: [Sprint 1](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint1)- 25/03 a 14/04 - Concluído
 - :heavy_check_mark: Apresentação Sprint 1 - 26/04 - Concluído
-- [ ] [Sprint 2](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint2) - 25/04 a 15/05
-- [ ] Apresentação Sprint 2 - 
+- :heavy_check_mark: [Sprint 2](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint2) - 25/04 a 15/05 - Concluído
+- :heavy_check_mark: Apresentação Sprint 2 - 17/05 - Concluído
 - [ ] [Sprint 3]-  16/05 a 05/06
 - [ ] Apresentação Sprint 3 -
 
