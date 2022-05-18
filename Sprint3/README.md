@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  •<a href ="#wrench-dev-team">  Dev Team </a> •  
+  
   <a href ="#runner-sprint-planning">   Sprint Planning </a> •
   <a href ="#round_pushpin-timeline"> TimeLine </a>  •
   <a href ="#chart_with_downwards_trend-burndown"> Burndown </a>  •  
@@ -14,7 +14,7 @@
   
   <hr>
   
-  ###  :wrench: Dev Team
+  
 
 
 
