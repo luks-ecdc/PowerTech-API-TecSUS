@@ -78,7 +78,7 @@ public class Conta_luz {
 	private Contrato contrato;
 	
 	 @Column(name="instalacao_luz_fk", updatable=false, insertable=false) 
-	    private Long instalacao_luz_fk;
+	    private Long instalacaoluzFK;
 
 	
 	public Conta_luz() {}
@@ -123,7 +123,7 @@ public class Conta_luz {
 		this.pisValor = pisValor;
 		this.ICMSValor = iCMSValor;
 		this.contrato = contrato;
-		this.instalacao_luz_fk = instalacao_luz_fk;
+		this.instalacaoluzFK = instalacao_luz_fk;
 	}
 
 
@@ -302,10 +302,10 @@ public class Conta_luz {
 		this.bandeiraTarifariaValorValorTotal = bandeiraTarifariaValorValorTotal;
 	}
 	public Long getInstalacao_luz_fk() {
-		return instalacao_luz_fk;
+		return instalacaoluzFK;
 	}
 	public void setInstalacao_luz_fk(Long instalacao_luz_fk) {
-		this.instalacao_luz_fk = instalacao_luz_fk;
+		this.instalacaoluzFK = instalacao_luz_fk;
 	}
 	
 	
