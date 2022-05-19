@@ -1,0 +1,68 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+*{
+  font-family:Helvetica;
+}
+.fundo-degrade {
+  background: linear-gradient(57.62deg, #D2FFDF 0%, #E7CEFF 100%);
+}
+
+/* Menu de navegação */
+.tab{
+  color: black;
+  text-align: center;
+  margin: 8px 3rem 0px 3rem ;
+  font-size: 14px;
+  line-height: 21px;
+  width: 140px;
+  height: 50px;
+  background: #C4C4C4;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+/* Botoes */
+.btn-cinza{
+  cursor: pointer;
+  background-color: #C4C4C4;
+  border: 0px;
+  border-radius:12px ;
+
+  padding:12px 21px;
+  font-size: 18px;
+}
+
+.btn-cinza:hover{
+  background-color: #ada7a7;
+}
+
+/* Input */
+.input-cinza{
+  border-radius: 12px;
+  border: 0px;
+  background-color: #C4C4C4;
+  color: black;
+  font-size: 15px;
+
+  height: 30px;
+  width: 300px;
+}
+
+/* Dropdown */
+.drop-servico{
+  padding: 7px;
+  font-size: 16px;
+  background-color: #C4C4C4;
+}
+
+/* icones das tabela */
+
+.btn-icon:hover{
+  cursor: pointer;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0;}

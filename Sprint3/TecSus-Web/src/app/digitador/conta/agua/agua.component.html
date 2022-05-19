@@ -1,0 +1,303 @@
+<div class="container mt-2">
+  <form [formGroup]="form">
+    <div class="row my-2">
+      <div class="col-2 ml-2">
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="Data" formControlName="data">
+        </div>
+      </div>
+      <div class="col-2">
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="Período" formControlName="periodo">
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top row  pt-2 justify-content-center">
+      <div class="col-3 pl-5 ">
+        <label>Detalhamento do Consumo</label>
+      </div>
+    </div>
+
+    <!-- Campo agua -->
+    <div class="border-bottom row ml-1">
+      <div class="col-6">
+        <div class="row justify-content-center  ">
+          <label>Água</label>
+        </div>
+        <div class="row">
+          <div class=" row col-4 justify-content-center">
+            Consumo
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control" placeholder="0 a 10" formControlName="ate10ConsumoAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="11 a 20" formControlName="de11ate20ConsumoAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="21 a 31" formControlName="de21ate30ConsumoAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="31 a 50" formControlName="de31ate50ConsumoAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="Acima de 51" formControlName="acima51ConsumoAgua">
+            </div>
+
+
+          </div>
+          <div class="row col-4 justify-content-center">
+            Tarifa
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control" formControlName="ate10TarifaAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de11ate20TarifaAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de21ate30TarifaAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de31ate50TarifaAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="acima51TarifaAgua">
+            </div>
+
+
+
+          </div>
+          <div class=" row border-right col-4 justify-content-center">
+            Valor
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control"  formControlName="ate10ValorAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de11ate20ValorAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de21ate30ValorAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de31ate50ValorAgua">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="acima51ValorAgua">
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+        <!-- Consumo e valor total Água -->
+        <div class="row my-2 ml-2">
+          <div class="col-md-3">
+
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="Consumo Total" placeholder="Consumo Total" formControlName="consumoTotalAgua">
+            </div>
+
+          </div>
+
+
+
+          <div class="col-md-3 offset-md-4">
+
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="Valor Total" placeholder="Valor Total" formControlName="valorTotalAgua">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Campo Esgoto -->
+      <div class="col-6">
+        <div class="row justify-content-center  ">
+          <label>Esgoto</label>
+        </div>
+        <div class="row">
+          <div class=" row border-left col-4 justify-content-center">
+            Consumo
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control" placeholder="0 a 10" formControlName="ate10ConsumoEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="11 a 20" formControlName="de11ate20ConsumoEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="21 a 30" formControlName="de21ate30ConsumoEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="31 a 50" formControlName="de31ate50ConsumoEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="Acima de 51" formControlName="acima51ConsumoEsgoto">
+            </div>
+
+
+          </div>
+          <div class="row col-4 justify-content-center">
+            Tarifa
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control" formControlName="ate10TarifaEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de11ate20TarifaEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de21ate30TarifaEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de31ate50TarifaEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="acima51TarifaEsgoto">
+            </div>
+
+
+
+          </div>
+          <div class=" row col-4 justify-content-center">
+            Valor
+
+
+            <div class="form-group mt-2">
+
+              <input type="text" class="form-control" formControlName="ate10ValorEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de11ate20ValorEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de21ate30ValorEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="de31ate50ValorEsgoto">
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" formControlName="acima51ValorEsgoto">
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- Consumo e valor total Esgoto -->
+        <div class="row my-2 ml-2">
+          <div class="col-md-3">
+
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="Consumo Total" formControlName="consumoTotalEsgoto">
+            </div>
+
+          </div>
+
+          <div class="col-md-3 offset-md-4">
+
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="Valor Total" formControlName="valorTotalAgua" >
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row my-2 justify-content-center">
+
+      <div class="col-2 pl-5 ">
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="Juros Mora" formControlName="jurosMora">
+        </div>
+
+
+      </div>
+
+      <div class="col-2 pl-5 ">
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="At. Monetária"  formControlName="atMonetaria">
+        </div>
+
+
+      </div>
+
+      <div class="col-2 pl-5 ">
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="Multa" formControlName="multa" formControlName="taxaDeRegulacao">
+        </div>
+
+
+      </div>
+
+      <div class="col-2 pl-5 ">
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control" placeholder="Taxa de Regulação" formControlName="taxaDeRegulacao">
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="row col-12 justify-content-end">
+      <button (click)="criarContaAgua()" type="button" class="btn btn-outline-success mx-3">Salvar</button>
+      <button (click)="criarContaAgua()" type="button" class="btn btn-outline-danger">Cancelar</button>
+    </div>
+
+  </form>
+</div>

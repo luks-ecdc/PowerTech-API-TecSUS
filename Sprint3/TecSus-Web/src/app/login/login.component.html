@@ -1,0 +1,35 @@
+<div  class="login fundo-degrade">
+
+  <div class="col-4 bg-light">
+    <!-- Logos -->
+    <div class="d-flex justify-content-between">
+      <img class="tecsus mt-5 ml-2" src="../../assets/images/tecsus.png">
+      <img class="powertech mt-3 mr-2" src="../../assets/images/powertech.png">
+    </div>
+    <!-- Fim logos -->
+
+  <!-- Formulario -->
+  <form [formGroup]="form">
+  <div  class="row justify-content-center mt-4">
+    <h2>LOGIN</h2>
+  </div>
+  <div class="card-content justify-content-between">
+    <div class="card-content-area offset-1 col-10 my-2">
+      <label for="nome">Nome</label>
+      <input type="text" ngModel formControlName="nome" autocomplete="off">
+    </div>
+
+    <div class="card-content-area offset-1 col-10 ">
+      <label for="password">Senha</label>
+      <input type="password" formControlName="senha" ngModel autocomplete="off">
+    </div>
+
+  </div>
+  <div class="mt-3 d-flex justify-content-center">
+    <a routerLink="/{{funcao}}" class=" mb-4">
+      <button  class="entrar" (click)="redirecionar()">Entrar</button>
+    </a>
+  </div>
+  </form>
+</div>
+<!-- Fim formulario -->

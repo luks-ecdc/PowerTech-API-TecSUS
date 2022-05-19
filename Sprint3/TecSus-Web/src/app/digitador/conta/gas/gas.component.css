@@ -1,0 +1,30 @@
+input{
+  background-color: #C4C4C4;
+  width: 100px;
+}
+.input1{
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.input2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  display: block;
+}
+.input3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 200px;
+}
+.salvar{
+  margin-top: 10px;
+  width: 150px;
+}
+.cancelar{
+  margin-top: 10px;
+  width: 150px;
+}
+

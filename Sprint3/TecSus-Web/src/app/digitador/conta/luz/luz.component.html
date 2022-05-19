@@ -1,0 +1,185 @@
+<form [formGroup]="form">
+  <div class="container">
+    <div>
+      <div class="mt-3 row my-2 ">
+        <div class="ml-3 col-3">
+          <label for="numero">Data</label>
+          <input class="ml-2 form-control" type="valor" formControlName="data_luz">
+        </div>
+
+        <div class="ml-4 col-3">
+          <label for="numero">Período</label>
+          <input class="ml-2 form-control" type="valor" formControlName="periodo_luz">
+        </div>
+
+        <div class=" ml-4 col-3">
+          <label class="mr-2">Bandeira</label> <br>
+          <select formControlName="bandeiraTarifaria" class="form-select">
+            <option value=1>​​Verde</option>
+            <option value=2>​​Amarela</option>
+            <option value=3>​​Vermelho Patamar 1</option>
+            <option value=4>​​Vermelho Patamar 2</option>
+            <option value=5>​​ Escassez Hídrica</option>
+
+          </select>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-2 ">
+        <label for="numero">Descrição do Produto</label>
+      </div>
+      <div class="col-2 ">
+        <label for="valor">Valor fornecido</label>
+      </div>
+      <div class="col-2 ">
+        <label for="consumo">Valor ICMS</label>
+      </div>
+      <div class="col-2 ">
+        <label for="numero">Valor PIS</label>
+      </div>
+      <div class="col-2 ">
+        <label for="valor">Valor COFINS</label>
+      </div>
+      <div class="col-2 ">
+        <label for="consumo">Valor Total</label>
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-2">
+        <label for="numero">TUSD - Consumo</label>
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="tusdConsumoValorFornecido">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="consumo" formControlName="tusdConsumoValorICMS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="tusdConsumoValorPIS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="tusdConsumoValorCOFINS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="tusdConsumoValorTotal">
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-2">
+        <label for="numero">TE - Consumo</label>
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="teConsumoValorFornecido">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="consumo" formControlName="teConsumoValorICMS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="teConsumoValorPIS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="teConsumoValorCOFINS">
+      </div>
+      <div class="col-2">
+        <input class="form-control" type="valor" formControlName="teConsumoValorTotal">
+      </div>
+    </div>
+
+    <div class="row my-1">
+      <div class="offset col-2">
+        <label for="numero">Bandeira Tarifaria</label>
+      </div>
+      <div class="col-2  justify-content-end">
+        <input class="form-control" type="valor" formControlName="bandeiraTarifariaValorFornecido">
+      </div>
+      <div class="col-2  justify-content-end">
+        <input class="form-control" type="valor" formControlName="bandeiraTarifariaValorICMS">
+      </div>
+      <div class="col-2  justify-content-end">
+        <input class="form-control" type="valor" formControlName="bandeiraTarifariaValorPIS">
+      </div>
+      <div class="col-2  justify-content-end">
+        <input class="form-control" type="valor" formControlName="bandeiraTarifariaValorCOFINS">
+      </div>
+      <div class="col-2  justify-content-end">
+        <input class="form-control" type="valor" formControlName="bandeiraTarifariaValorValorTotal  ">
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-2">
+        <label for="numero"></label>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-2">
+        <label for="numero">CIP - Contribuição municipal</label>
+      </div>
+      <div class="offset-8 col-2">
+        <input class="form-control" type="valor" formControlName="cipConsumoValorTotal">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class=" col-2">
+        Juros de mora
+      </div>
+      <div class="offset-8 col-2">
+        <input class="form-control" type="valor" formControlName="">
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-2">
+        Multa
+      </div>
+      <div class="offset-8 col-2">
+        <input class="form-control" type="valor" formControlName="">
+      </div>
+
+    </div>
+
+    <div class="row my-1">
+      <div class="col-2">
+        <label for="numero">Tributos</label>
+      </div>
+      <div class="col-2 offset-8 justify-content-end">
+        <label for="numero">Valor (R$)</label>
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-2">
+        <label for="numero">PIS</label>
+      </div>
+      <div class="col-2 offset-8 justify-content-end">
+        <input class="form-control" type="valor" formControlName="pisValor">
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-2">
+        <label for="numero">COFINS</label>
+      </div>
+      <div class="col-2 offset-8 justify-content-end">
+        <input class="form-control" type="valor" formControlName="cofinsValor">
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-2">
+        <label for="numero">ICMS</label>
+      </div>
+      <div class="col-2 offset-8 justify-content-end">
+        <input class="form-control" type="valor" formControlName="icmsvalor">
+      </div>
+    </div>
+
+    <div class="row col-12 justify-content-end mt-4">
+      <button  type="button" class="btn btn-outline-success mx-3">Salvar</button>
+      <button  type="button" class="btn btn-outline-danger">Cancelar</button>
+    </div>
+
+  </div>
+</form>
+<!-- <app-pdf-view></app-pdf-view> -->

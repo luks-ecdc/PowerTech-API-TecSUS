@@ -1,0 +1,118 @@
+<form [formGroup]="form">
+  <div class="inputs row">
+
+    <div class="col-1 offset-2" >
+      <label>Nome Completo:</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="nome" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">RG:</label>
+    </div>
+    <div>
+      <input formControlName="rg" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row">
+
+    <div class="col-1 offset-2" >
+      <label>CPF/CNPJ:</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="cpf" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">E-mail:</label>
+    </div>
+    <div>
+      <input formControlName="email" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row">
+
+    <div class="col-1 offset-2" >
+      <label>Telefone</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="telefone" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">Celular</label>
+    </div>
+    <div>
+      <input formControlName="celular" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row">
+
+    <div class="col-1 offset-2" >
+      <label>CEP:</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="cep" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">Rua:</label>
+    </div>
+    <div>
+      <input formControlName="rua" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row">
+
+    <div class="col-1 offset-2" >
+      <label>Numero:</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="numero" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">Complem.:</label>
+    </div>
+    <div>
+      <input formControlName="complemento" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row">
+
+    <div class="col-1 offset-2" >
+      <label>Estado:</label>
+    </div>
+    <div class="col-3">
+      <input formControlName="estado" ngModel class="input-cinza">
+    </div>
+
+    <div class="col-1 ">
+      <label class="mt-2">Cidade:</label>
+    </div>
+    <div>
+      <input formControlName="cidade" ngModel class=" input-cinza">
+    </div>
+
+  </div>
+
+  <div class="mt-4 row justify-content-center">
+    <a class="mr-4">
+      <button class="btn-cinza" (click)="criarCliente()">Salvar</button>
+    </a>
+    <button class="btn-cinza ml-2">
+      Cancelar
+    </button>
+  </div>
+</form>

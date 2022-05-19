@@ -1,0 +1,41 @@
+<div class="container-fluid mt-2">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Servico</th>
+        <th scope="col">Cep</th>
+        <th scope="col">Rua</th>
+        <th scope="col">Complemento</th>
+        <th scope="col">Consumo</th>
+        <th scope="col">Opções</th>
+      </tr>
+    </thead>
+    <!-- Para cada item do backend ele criar uma coluna da tabela -->
+    <tbody *ngFor="let contrato of contratos2">
+      <tr>
+        <td>{{contrato.servico}}</td>
+        <td>{{contrato.cep_cont}}</td>
+        <td>{{contrato.rua_cont}}</td>
+        <td>{{contrato.complemento_cont}}</td>
+        <td>{{contrato.consumo_cont}}</td>
+        <td>
+          <div class="row ml-1">
+
+            <button mat-menu-item matTooltip="Editar" matTooltipPosition="above" class="btn-icon">
+              <a><i class="bi bi-pencil-square"></i></a>
+            </button>
+            <button mat-menu-item matTooltip="Excluir" matTooltipPosition="above" class="btn-icon"
+            (click)="openDialog()">
+              <a><i class="bi bi-trash"></i></a>
+            </button>
+            <button mat-menu-item  matTooltip="Dashboard" matTooltipPosition="above" class="btn-icon">
+              <a><i class="bi bi-graph-up"></i></a>
+            </button>
+
+
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
