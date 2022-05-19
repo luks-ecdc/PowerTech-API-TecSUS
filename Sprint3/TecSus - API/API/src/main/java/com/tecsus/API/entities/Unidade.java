@@ -12,7 +12,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity // Mapea a classe como uma tabela no banco de dados
 @Table(name = "tb_unidade")
@@ -21,33 +24,121 @@ public class Unidade implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO) // Incrementa o ID automaticamente
-	private Long id;
-	private String nome;
-	private String cpf;
-	private String cep;
-	private String endereco;
-	private String complemento ;
+	private Long id_CPF;
 	
-	@OneToMany
-	private List<Contrato> contrato;
 	
+	private String nome_uni;
+	private String cep_uni;
+	private String rua_uni;
+	private String bairro_uni;
+	private String numero_uni;
+	private String cidade_uni;
+	private String estado_uni;
+	private String complemento_uni;
+	private String cel_uni;
+	private String tel_uni;
+	
+	@JsonIgnore
+	@OneToOne(mappedBy = "unidade")
+	private Contrato contrato;
+	
+	
+	public Contrato getContrato() {
+		return contrato;
+	}
+
+	public void setContrato(Contrato contrato) {
+		this.contrato = contrato;
+	}
+
 	public Unidade() {}
 	
-	public Unidade(Long id, String nome, String cpf, String cep, String endereco, String complemento) {
+	public Unidade(Long id_CPF, String nome_uni, String cep_uni, String rua_uni, String bairro_uni, String numero_uni,
+			String cidade_uni, String estado_uni, String complemento_uni, String cel_uni, String tel_uni) {
 		super();
-		this.id = id;
-		this.nome = nome;
-		this.cpf = cpf;
-		this.cep = cep;
-		this.endereco = endereco;
-		this.complemento = complemento;
+		this.id_CPF = id_CPF;
+		this.nome_uni = nome_uni;
+		this.cep_uni = cep_uni;
+		this.rua_uni = rua_uni;
+		this.bairro_uni = bairro_uni;
+		this.numero_uni = numero_uni;
+		this.cidade_uni = cidade_uni;
+		this.estado_uni = estado_uni;
+		this.complemento_uni = complemento_uni;
+		this.cel_uni = cel_uni;
+		this.tel_uni = tel_uni;
 	}
 	// Inicio Construtores 
 	
+	public Long getId_CPF() {
+		return id_CPF;
+	}
+	public void setId_CPF(Long id_CPF) {
+		this.id_CPF = id_CPF;
+	}
+	public String getNome_uni() {
+		return nome_uni;
+	}
+	public void setNome_uni(String nome_uni) {
+		this.nome_uni = nome_uni;
+	}
+	public String getCep_uni() {
+		return cep_uni;
+	}
+	public void setCep_uni(String cep_uni) {
+		this.cep_uni = cep_uni;
+	}
+	public String getRua_uni() {
+		return rua_uni;
+	}
+	public void setRua_uni(String rua_uni) {
+		this.rua_uni = rua_uni;
+	}
+	public String getBairro_uni() {
+		return bairro_uni;
+	}
+	public void setBairro_uni(String bairro_uni) {
+		this.bairro_uni = bairro_uni;
+	}
+	public String getNumero_uni() {
+		return numero_uni;
+	}
+	public void setNumero_uni(String numero_uni) {
+		this.numero_uni = numero_uni;
+	}
+	public String getCidade_uni() {
+		return cidade_uni;
+	}
+	public void setCidade_uni(String cidade_uni) {
+		this.cidade_uni = cidade_uni;
+	}
+	public String getEstado_uni() {
+		return estado_uni;
+	}
+	public void setEstado_uni(String estado_uni) {
+		this.estado_uni = estado_uni;
+	}
+	public String getComplemento_uni() {
+		return complemento_uni;
+	}
+	public void setComplemento_uni(String complemento_uni) {
+		this.complemento_uni = complemento_uni;
+	}
+	public String getCel_uni() {
+		return cel_uni;
+	}
+	public void setCel_uni(String cel_uni) {
+		this.cel_uni = cel_uni;
+	}
+	public String getTel_uni() {
+		return tel_uni;
+	}
+	public void setTel_uni(String tel_uni) {
+		this.tel_uni = tel_uni;
+	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(id);
+		return Objects.hash(id_CPF);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -58,43 +149,8 @@ public class Unidade implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Unidade other = (Unidade) obj;
-		return Objects.equals(id, other.id);
+		return Objects.equals(id_CPF, other.id_CPF);
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	public String getCep() {
-		return cep;
-	}
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
-	public String getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-	public String getComplemento() {
-		return complemento;
-	}
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
+	
 				
 }
