@@ -13,7 +13,5 @@ public interface UnidadeRepository extends JpaRepository<Unidade, Long>{
 	
 	Unidade findById(long id );
 
-	Unidade findByCpf(String cpf);
-
-	Unidade findByCep(String cep);
+	
 }

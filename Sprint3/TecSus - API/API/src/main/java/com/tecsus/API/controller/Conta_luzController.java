@@ -16,8 +16,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.tecsus.API.entities.Conta_agua;
 import com.tecsus.API.entities.Conta_luz;
+import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_luzRepository;
+import com.tecsus.API.repository.ContratoRepository;
 
 @RestController // Permiti spring reconhecer como uma controller	
 @CrossOrigin(origins="*") // impede conflito de CORS, assim o frontend consegue receber o back
@@ -26,6 +29,9 @@ public class Conta_luzController {
 	
 	@Autowired 
 	Conta_luzRepository conta_luzRepository;
+	
+	@Autowired 
+	ContratoRepository contratoRepository;
 	
 	@GetMapping("/contas_luz") // metodo GET
 	public List<Conta_luz> getContas_luz(){
@@ -59,6 +65,19 @@ public class Conta_luzController {
 	public  Conta_luz atualizarConta_luz(@RequestBody Conta_luz conta_luz) {
 		return conta_luzRepository.save(conta_luz);
 	}
+	
+	
+	
+	@PutMapping("/conta_luz/{instalacao_luz}/contrato/{instalacao_cont}")
+	 public Conta_luz ColocarContratoNaConta(
+	            @PathVariable Long instalacao_luz,
+	            @PathVariable Long instalacao_cont
+	    ) {
+	    	Conta_luz conta_luz = conta_luzRepository.findById(instalacao_luz).get();
+	        Contrato contrato = contratoRepository.findById(instalacao_cont).get();
+	        conta_luz.setContrato(contrato);
+	        return conta_luzRepository.save(conta_luz);
+	    }
 	
 	@DeleteMapping("/conta_luz")
 	public  void deleteConta_luz(@RequestBody Conta_luz conta_luz) {
