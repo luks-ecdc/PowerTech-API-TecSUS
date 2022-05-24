@@ -1,10 +1,10 @@
 export interface Concessionaria{
-  cnpj_conces?: string,
-  cep_conces?: string,
-  cidade_conces?: string,
+  cnpj_conces?: number,
   nome_conces?: string,
-  numero_conces?: string,
-  rua_conces?: string,
   servico_conces?: string,
-  tel_conces?: string
+  rua_conces?: string,
+  numero_conces?: number,
+  cep_conces?: number,
+  cidade_conces?: string,
+  tel_conces?: number
 }
