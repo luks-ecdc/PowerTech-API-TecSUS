@@ -2,7 +2,7 @@ import { Cliente } from "./cliente.model"
 import { Concessionaria } from "./concessionaria.model"
 
 export interface Contrato {
-  instalacao_cont?: number,
+  instalacao_cont?: string,
   servico?: string,
   servico_cont?: string,
   rua_cont?: string,
@@ -10,11 +10,11 @@ export interface Contrato {
   cidade_cont?: string,
   concessionaria?: Concessionaria,
   estado_cont?: string,
-  numero_cont?: number,
+  numero_cont?: string,
   complemento_cont?: string,
-  cep_cont?: number,
+  cep_cont?: string,
   consumo_cont?: number,
-  Unidade_id_CPF?: number,
+  Unidade_id_CPF?: string,
   Concessionaria_nome_conces?: string,
   unidade?: Cliente
 }
