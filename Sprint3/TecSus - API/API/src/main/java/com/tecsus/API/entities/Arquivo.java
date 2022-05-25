@@ -1,6 +1,10 @@
 package com.tecsus.API.entities;
 
 import org.springframework.hateoas.RepresentationModel;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,8 +34,19 @@ public class Arquivo extends RepresentationModel<Arquivo> {
 	@Lob
 	@Column
 	private byte[] bytes;
-
 	
+	@JsonFormat(pattern = "yyyy-MM-dd", shape = Shape.STRING)
+	@Column
+	private String data;
+	
+	public String getData() {
+		return data;
+	}
+
+	public void setData(String data) {
+		this.data = data;
+	}
+
 	public Long getId() {
 	return id;
 }
