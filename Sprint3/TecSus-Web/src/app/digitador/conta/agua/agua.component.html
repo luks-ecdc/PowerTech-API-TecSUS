@@ -1,6 +1,13 @@
+<div class=" tipo_conta container-fluid">
+  <div class="row justify-content-center"><p class=" text mt-2">Água</p></div>
+</div>
+
 <div class="container mt-2">
+  <div class>
+
+  </div>
   <form [formGroup]="form">
-    <div class="row my-2">
+    <div class=" teste row my-2">
       <div class="col-2 ml-2">
         <div class="form-group mt-2">
           <input type="text" class="form-control" placeholder="Data" formControlName="data">
@@ -23,30 +30,31 @@
     <!-- Campo agua -->
     <div class="border-bottom row ml-1">
       <div class="col-6">
-        <div class="row justify-content-center  ">
+        <div class="row justify-content-center ">
           <label>Água</label>
         </div>
         <div class="row">
           <div class=" row col-4 justify-content-center">
             Consumo
-            <div class="form-group mt-2">
 
+
+            <div class="form-group mt-2 mr-2">
               <input type="text" class="form-control" placeholder="0 a 10" formControlName="ate10ConsumoAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="11 a 20" formControlName="de11ate20ConsumoAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="21 a 31" formControlName="de21ate30ConsumoAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="31 a 50" formControlName="de31ate50ConsumoAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="Acima de 51" formControlName="acima51ConsumoAgua">
             </div>
 
@@ -55,60 +63,52 @@
           <div class="row col-4 justify-content-center">
             Tarifa
 
-
-            <div class="form-group mt-2">
-
+            <div class="form-group mt-2 mr-2">
               <input type="text" class="form-control" formControlName="ate10TarifaAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de11ate20TarifaAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de21ate30TarifaAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de31ate50TarifaAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="acima51TarifaAgua">
             </div>
 
-
-
           </div>
-          <div class=" row border-right col-4 justify-content-center">
+
+          <div class="row border-right col-4 justify-content-center">
             Valor
 
-
             <div class="form-group mt-2">
-
               <input type="text" class="form-control"  formControlName="ate10ValorAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group">
               <input type="text" class="form-control" formControlName="de11ate20ValorAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group">
               <input type="text" class="form-control" formControlName="de21ate30ValorAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group">
               <input type="text" class="form-control" formControlName="de31ate50ValorAgua">
             </div>
-            <div class="form-group">
 
+            <div class="form-group">
               <input type="text" class="form-control" formControlName="acima51ValorAgua">
             </div>
 
-
-
           </div>
-
 
         </div>
 
@@ -121,7 +121,6 @@
             </div>
 
           </div>
-
 
 
           <div class="col-md-3 offset-md-4">
@@ -139,7 +138,7 @@
 
       <!-- Campo Esgoto -->
       <div class="col-6">
-        <div class="row justify-content-center  ">
+        <div class="row justify-content-center">
           <label>Esgoto</label>
         </div>
         <div class="row">
@@ -147,57 +146,55 @@
             Consumo
 
 
-            <div class="form-group mt-2">
-
+            <div class="form-group mt-2 mr-2">
               <input type="text" class="form-control" placeholder="0 a 10" formControlName="ate10ConsumoEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="11 a 20" formControlName="de11ate20ConsumoEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="21 a 30" formControlName="de21ate30ConsumoEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="31 a 50" formControlName="de31ate50ConsumoEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" placeholder="Acima de 51" formControlName="acima51ConsumoEsgoto">
             </div>
 
-
           </div>
+
+
           <div class="row col-4 justify-content-center">
             Tarifa
 
-
-            <div class="form-group mt-2">
-
+            <div class="form-group mt-2 mr-2">
               <input type="text" class="form-control" formControlName="ate10TarifaEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de11ate20TarifaEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de21ate30TarifaEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="de31ate50TarifaEsgoto">
             </div>
-            <div class="form-group">
 
+            <div class="form-group mr-2">
               <input type="text" class="form-control" formControlName="acima51TarifaEsgoto">
             </div>
 
-
-
           </div>
+
+
           <div class=" row col-4 justify-content-center">
             Valor
 
