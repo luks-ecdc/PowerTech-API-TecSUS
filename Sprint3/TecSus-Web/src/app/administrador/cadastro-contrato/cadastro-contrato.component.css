@@ -10,6 +10,7 @@ label{
 .add_cont {
   border-color: #bfbfbf;
   background-color: #ffff;
+  border-radius: 30%;
 }
 
 select{
