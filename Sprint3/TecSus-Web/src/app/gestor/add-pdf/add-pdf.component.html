@@ -1,8 +1,42 @@
-<div class="input-group mt-3 mb-3">
-  <div class="row col-4 offset-4 justify-content-center">
-      <div class="custom-file">
-          <input type="file" class="custom-file-input" id="inputGroupFile01" multiple accept="application/pdf">
-          <label class="custom-file-label" for="inputGroupFile01">Adicionar PDF</label>
-  </div>
-  </div>
+<div class="container">
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class=" row justify-content-center align-items-center">
+      <div class="col-32">
+        <label>Mês</label>
+        <input type="date" class="ml-2">
+      </div>
+
+      <div class="col-5">
+        <div class="input-group mt-3 mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" multiple accept="application/pdf"
+              (change)="onFileSelect($event)" maxlength="15">
+            <label class="custom-file-label">{{fileName}}</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <input (click)="savePdf()" type="submit" class="mt-2 btn btn-outline-success">
+      </div>
+    </div>
+  </form>
+
+  <table  class="mt-3 table table-hover">
+    <thead>
+      <tr>
+        <th>Data Contrato</th>
+        <th>Tipo de Arquivo</th>
+        <th>Visualizar Arquivo</th>
+      </tr>
+    </thead>
+    <!-- Para cada item do backend ele criar uma coluna da tabela -->
+    <tbody>
+      <tr>
+        <td>23/10/2000</td>
+        <td>Pdf</td>
+        <td>download.pdf</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>

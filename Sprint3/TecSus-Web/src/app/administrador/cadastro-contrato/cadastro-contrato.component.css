@@ -12,3 +12,10 @@ label{
   background-color: #ffff;
 }
 
+select{
+  height: 2.3rem;
+}
+
+input{
+  height: 2.3rem;
+}

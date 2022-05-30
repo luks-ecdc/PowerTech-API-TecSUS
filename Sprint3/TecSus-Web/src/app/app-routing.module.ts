@@ -14,6 +14,7 @@ import { GasComponent } from './digitador/conta/gas/gas.component';
 import { LuzComponent } from './digitador/conta/luz/luz.component';
 import { DigitadorComponent } from './digitador/digitador.component';
 import { AddPdfComponent } from './gestor/add-pdf/add-pdf.component';
+import { BuscaGestorComponent } from './gestor/busca-gestor/busca-gestor.component';
 import { GestorComponent } from './gestor/gestor.component';
 import { PerfilComponent } from './gestor/perfil/perfil.component';
 import { RelatorioComponent } from './gestor/relatorio/relatorio.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
       {path: 'perfil', component: PerfilComponent},
       {path: 'relatorio', component: RelatorioComponent},
       {path: 'pdf', component: AddPdfComponent},
+      {path: 'buscas', component: BuscaGestorComponent},
     ]
   },
   { path: 'digitador', component: DigitadorComponent ,

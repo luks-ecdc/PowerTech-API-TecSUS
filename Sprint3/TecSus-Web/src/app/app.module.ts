@@ -18,7 +18,6 @@ import { RelatorioComponent } from './gestor/relatorio/relatorio.component';
 import { AddPdfComponent } from './gestor/add-pdf/add-pdf.component';
 import { CadastroFaturaComponent } from './digitador/cadastro-fatura/cadastro-fatura.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PdfViewComponent } from './digitador/pdf-view/pdf-view.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { LuzComponent } from './digitador/conta/luz/luz.component';
 import { AguaComponent } from './digitador/conta/agua/agua.component';
@@ -38,6 +37,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DeletarComponent } from './administrador/deletar/deletar.component';
 import { BuscarDigitadorComponent } from './digitador/buscar-digitador/buscar-digitador.component';
 import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-conta.component';
+import { BuscaGestorComponent } from './gestor/busca-gestor/busca-gestor.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,6 @@ import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-
     RelatorioComponent,
     AddPdfComponent,
     CadastroFaturaComponent,
-    PdfViewComponent,
     LuzComponent,
     AguaComponent,
     GasComponent,
@@ -66,6 +67,7 @@ import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-
     DeletarComponent,
     BuscarDigitadorComponent,
     CadastroContaComponent,
+    BuscaGestorComponent,
 
   ],
   imports: [
@@ -77,7 +79,9 @@ import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-
     HttpClientModule,
     PdfViewerModule,
     MatSnackBarModule,
+    MatDatepickerModule,
     MatTabsModule,
+    MatFormFieldModule,
     MatMenuModule,
     FontAwesomeModule,
     MatTooltipModule,

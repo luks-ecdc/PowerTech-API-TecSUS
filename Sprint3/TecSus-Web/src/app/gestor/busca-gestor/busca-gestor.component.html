@@ -1,0 +1,61 @@
+<div class="container">
+  <form [formGroup]="filtro">
+    <div class="row justify-content-center mt-2">
+
+      <label class="mt-2"> CPF/CNPJ</label>
+      <div class="col-3">
+        <input type="text" class="form-control" formControlName="cpf">
+      </div>
+
+      <label class=" mr-2 form-label mt-2">Tipo de Conta</label>
+      <div class=" col-2">
+        <select class="form-control" formControlName="conta">
+          <option  value="todas">Todas contas</option>
+          <option value="agua">Água</option>
+          <option value="energia">Energia</option>
+          <option value="gas">Gás</option>
+        </select>
+      </div>
+      <div class="col-1">
+        <button class="btn btn-primary" (click)="showTable = true">Buscar</button>
+      </div>
+    </div>
+
+    <table *ngIf="showTable" class="mt-3 table table-hover">
+      <thead>
+        <tr>
+          <th>Contrato</th>
+          <th>Nome do Contrato</th>
+          <th>Tipo de Serviço</th>
+          <th>Endereço</th>
+          <th>Número</th>
+          <th>Opções</th>
+          <th>Alertas</th>
+        </tr>
+      </thead>
+      <!-- Para cada item do backend ele criar uma coluna da tabela -->
+      <tbody>
+        <tr>
+          <td>123456</td>
+          <td>Apenas um teste</td>
+          <td>Luz</td>
+          <td>Rua testando</td>
+          <td>123</td>
+          <td>
+            <!-- Atualizar icones -->
+            <div class="row ml-1">
+              <button mat-menu-item matTooltip="Editar" matTooltipPosition="above" class="btn-icon">
+                <a><i class="bi bi-pencil-square"></i></a>
+              </button>
+              <button mat-menu-item matTooltip="Excluir" matTooltipPosition="above" class="btn-icon">
+                <a><i class="bi bi-trash"></i></a>
+              </button>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </form>
+</div>

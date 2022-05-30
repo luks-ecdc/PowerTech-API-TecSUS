@@ -21,9 +21,13 @@ export class GestorComponent implements OnInit {
           link: './relatorio',
           index: 1
       }, {
-        label: 'Upload PDF',
+        label: 'Upload',
         link: './pdf',
-        index: 2
+        index: 3
+      }, {
+        label: 'Buscas',
+        link: './buscas',
+        index: 3
       },
   ];
 

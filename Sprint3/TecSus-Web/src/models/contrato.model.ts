@@ -2,16 +2,19 @@ import { Cliente } from "./cliente.model"
 import { Concessionaria } from "./concessionaria.model"
 
 export interface Contrato {
-  bairro_cont?: string,
-  cep_cont?: string,
-  cidade_cont?: string,
-  complemento_cont?: string,
-  concessionaria?: Concessionaria,
-  consumo_cont?: number,
-  estado_cont?: string,
-  instalacao_cont?: number,
-  numero_cont?: string,
-  rua_cont?: string,
+  instalacao_cont?: string,
   servico?: string,
+  servico_cont?: string,
+  rua_cont?: string,
+  bairro_cont?: string,
+  cidade_cont?: string,
+  concessionaria?: Concessionaria,
+  estado_cont?: string,
+  numero_cont?: string,
+  complemento_cont?: string,
+  cep_cont?: string,
+  consumo_cont?: number,
+  Unidade_id_CPF?: string,
+  Concessionaria_nome_conces?: string,
   unidade?: Cliente
 }

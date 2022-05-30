@@ -1,14 +1,15 @@
 <div  *ngIf="verifyLogin()" class="container-fluid fundo-degrade pb-2">
   <div class="row justify-content-between">
-    <img src="../../assets/images/tecsus.png" class="tecsus">
+    <img src="../../assets/images/tecsus.png" class="tecsus mt-4 ml-4">
     <div class="mr-2 mt-2">
-      <label for="name" class="font">Nome do Colaborador(gestor)</label>
+      <img src="../../assets/images/powertech.png" class="powertech mr-4">
+
     </div> 
   </div>
-  <div class="row align-items-center">
-    <img src="../../assets/images/powertech.png" class="powertech ml-4">
-    <div class="offset-10">
-      <a routerLink="login">Sair da conta</a>
+  <div class="row justify-content-between">
+  <label for="name" class="font ml-4">Nome do Colaborador(gestor)</label>    
+    <div class="mr-5">
+      <a routerLink="login"><i class="bi bi-box-arrow-right"></i></a>
     </div>
   </div>
 </div>

@@ -1,5 +1,4 @@
 input{
-  background-color: #C4C4C4;
   width: 100px;
 }
 .input1{
@@ -27,4 +26,6 @@ input{
   margin-top: 10px;
   width: 150px;
 }
-
+.valorfat{
+  margin-top: 120px;
+}

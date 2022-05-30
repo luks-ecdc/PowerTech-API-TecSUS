@@ -5,3 +5,11 @@
 select{
   height: 2.3rem;
 }
+
+.tipo_conta {
+  background-color: rgb(173, 0, 0); 
+}
+
+.text {
+  color: azure;
+}
