@@ -29,3 +29,12 @@ input{
 .valorfat{
   margin-top: 120px;
 }
+
+
+.tipo_conta {
+  background-color: rgba(0, 142, 54, 0.825); 
+}
+
+.text {
+  color: azure;
+}
