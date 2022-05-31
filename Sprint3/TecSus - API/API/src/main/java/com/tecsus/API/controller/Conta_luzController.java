@@ -1,9 +1,11 @@
 package com.tecsus.API.controller;
 
 import java.io.IOException;
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.tecsus.API.entities.Conta_agua;
 import com.tecsus.API.entities.Conta_luz;
 import com.tecsus.API.entities.Contrato;
@@ -41,6 +45,36 @@ public class Conta_luzController {
 	@GetMapping("/conta_luz/{id_conta}") // metodo GET
 	public  Conta_luz getConta_luzId(@PathVariable(value = "id_conta") long id_conta){
 		return conta_luzRepository.findById(id_conta);
+	}
+	
+	@GetMapping("/conta_luz/dashboard/{tempoFinal}/{tempoInicio}") // metodo GET
+	public String getConta_luzdashboard(
+			
+			@DateTimeFormat (pattern="yyyy-MM-dd") @PathVariable(value = "tempoInicio") String tempoinicio,
+			@DateTimeFormat(pattern="yyyy-MM-dd")@PathVariable(value = "tempoFinal")  String tempoFinal){
+		
+		
+		String[] partesinicio = tempoFinal.split("-");
+		int anoinicio = Integer.parseInt(partesinicio[0]);
+		int mesinicio = Integer.parseInt(partesinicio[1]);
+		int diainicio = Integer.parseInt(partesinicio[2]);
+		Date datainicio  = new Date(anoinicio,mesinicio-1,diainicio);
+		
+		String[] partesfim = tempoFinal.split("-");
+		int anofim = Integer.parseInt(partesfim[1]);
+		int mesfim = Integer.parseInt(partesfim[0]);
+		int diafim = Integer.parseInt(partesfim[2]);
+
+		Date datafim  = new Date(anofim,mesfim-1,diafim);
+		
+		
+		
+		return "inicio: "+datainicio+" /n fim :"+datafim ;
+	}
+	
+	@GetMapping("/conta_luz_instalacaoluz/{luz_fk}") // metodo GET
+	public  List<Conta_luz> getConta(@PathVariable(value = "luz_fk") long luz_fk){
+		return conta_luzRepository.findByInstalacaoluzFK(luz_fk);
 	}
 	
 	/*@PostMapping("/conta_luz/upload")

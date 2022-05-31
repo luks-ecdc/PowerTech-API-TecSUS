@@ -27,7 +27,7 @@ public class Unidade implements Serializable{
 	private Long id_CPF;
 	
 	
-	private String nome_uni;
+	private String nomeUni;
 	private String cep_uni;
 	private String rua_uni;
 	private String bairro_uni;
@@ -57,7 +57,7 @@ public class Unidade implements Serializable{
 			String cidade_uni, String estado_uni, String complemento_uni, String cel_uni, String tel_uni) {
 		super();
 		this.id_CPF = id_CPF;
-		this.nome_uni = nome_uni;
+		this.nomeUni = nome_uni;
 		this.cep_uni = cep_uni;
 		this.rua_uni = rua_uni;
 		this.bairro_uni = bairro_uni;
@@ -77,10 +77,10 @@ public class Unidade implements Serializable{
 		this.id_CPF = id_CPF;
 	}
 	public String getNome_uni() {
-		return nome_uni;
+		return nomeUni;
 	}
 	public void setNome_uni(String nome_uni) {
-		this.nome_uni = nome_uni;
+		this.nomeUni = nome_uni;
 	}
 	public String getCep_uni() {
 		return cep_uni;

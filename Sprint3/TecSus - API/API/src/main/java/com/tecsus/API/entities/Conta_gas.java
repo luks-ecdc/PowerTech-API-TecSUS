@@ -39,6 +39,8 @@ public class Conta_gas {
 	private double valorFatura;
 	
 	
+	
+	
 	@JsonIgnore
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="codgas_fk", referencedColumnName = "instalacao_cont")
@@ -47,6 +49,7 @@ public class Conta_gas {
 	 @Column(name="codgas_fk", updatable=false, insertable=false) 
 	    private Long codgasFK;
 		
+	 
 	 
 	 public Long getId_conta_gas() {
 			return id_conta_gas;

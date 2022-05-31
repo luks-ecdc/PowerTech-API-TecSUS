@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tecsus.API.entities.Conta_agua;
 import com.tecsus.API.entities.Conta_gas;
 import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_aguaRepository;
@@ -43,6 +44,11 @@ public class Conta_gasController {
 		return conta_gasRepository.findById(id);
 	}
 	
+	@GetMapping("Conta_gas_codgasfk/{codgasfk}")
+	public List <Conta_gas> getCont_gasPorFk(@PathVariable (value = "codgasfk")long codgasfk){
+		return conta_gasRepository.findByCodgasFK(codgasfk);
+		
+	}
 
 
 	@PostMapping("/Conta_gas")
@@ -55,6 +61,16 @@ public class Conta_gasController {
 		return conta_gasRepository.save(conta_gas);
 	}
 	
+	@PutMapping("/conta_gas/{conta_gasid}/contrato/{instalacao_cont}")
+	public Conta_gas ColocarContratoNaConta(
+	            @PathVariable Long conta_gasid,
+	            @PathVariable Long instalacao_cont
+	    ) {
+	    	 Conta_gas  conta_gas = conta_gasRepository.findById(conta_gasid).get();
+	        Contrato contrato = contratoRepository.findById(instalacao_cont).get();
+	        conta_gas.setContrato(contrato);
+	        return conta_gasRepository.save(conta_gas);
+	    }
 	
 	
 

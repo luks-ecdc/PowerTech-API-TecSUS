@@ -38,32 +38,68 @@ public class Contrato implements Serializable{
 		private String cep_cont;
 		private String consumo_cont;
 		
-		@JsonIgnore
-		@OneToMany(mappedBy = "contrato")
-		private Set<Conta_agua> conta_agua = new HashSet<>();
-		
-		public Set<Conta_agua> getConta() {
-			return conta_agua;
-		}
-		
-		@JsonIgnore
-		@OneToMany(mappedBy = "contrato")
-		private Set<Conta_luz> conta_luz = new HashSet<>();
-		
-		public Set<Conta_luz> Conta_luz() {
-			return conta_luz;
-		}
+//		@JsonIgnore
+//		@OneToMany(mappedBy = "contrato")
+//		private Set<Conta_agua> conta_agua = new HashSet<>();
+//		
+//		public Set<Conta_agua> getConta() {
+//			return conta_agua;
+//		}
+//		
+//		@JsonIgnore
+//		@OneToMany(mappedBy = "contrato")
+//		private Set<Conta_luz> conta_luz = new HashSet<>();
+//		
+//		public Set<Conta_luz> Conta_luz() {
+//			return conta_luz;
+//		}
+//		
+//		@JsonIgnore
+//		@OneToMany(mappedBy = "contrato")
+//		private Set<Conta_gas> conta_gas = new HashSet<>();
+//		
+//		public Set<Conta_gas> Conta_gas() {
+//			return conta_gas;
+//		}
 			
+		
+		@JsonIgnore
 		@OneToOne(cascade=CascadeType.ALL)
 		@JoinColumn(name="id_CPF_fk", referencedColumnName = "id_CPF")
 		private Unidade unidade;
 		
+		 @Column(name="id_cpf_fk", updatable=false, insertable=false) 
+		 private Long cpfunidadefk;
+		 
+		 public Long getCpfunidadefk() {
+				return cpfunidadefk;
+			}
+
+			public void setCpfunidadefk(Long cpfunidadefk) {
+				this.cpfunidadefk = cpfunidadefk;
+			}
+
+		
+		
+		@JsonIgnore
 		@OneToOne(cascade=CascadeType.ALL)
 		@JoinColumn(name="cnpj_conces_fk", referencedColumnName = "cnpj_conces")
 		private Concessionaria concessionaria;
 		
+		 @Column(name="cnpj_conces_fk", updatable=false, insertable=false) 
+		 private Long idcnpjfk;
 		
 		
+	
+		
+		public Long getIdcnpjfk() {
+			return idcnpjfk;
+		}
+
+		public void setIdcnpjfk(Long idcnpjfk) {
+			this.idcnpjfk = idcnpjfk;
+		}
+
 		public Concessionaria getConcessionaria() {
 			return concessionaria;
 		}

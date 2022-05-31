@@ -59,11 +59,25 @@ public class ContratoController {
 	public  Contrato getContratoId(@PathVariable(value = "id_contrato") long id_contrato){
 		return contratoRepository.findById(id_contrato);
 	}
+	
+	@GetMapping("/contrato_unidade/{cpf}")
+	public List<Contrato> getContratoPorCpf(@PathVariable(value = "cpf")long cpf){
+		return contratoRepository.findByCpfunidadefk(cpf);
+	}
+	
+	@GetMapping("/contrato_concessionaria/{cnpj}")
+	public List<Contrato> getContratoPorCnpj(@PathVariable(value = "cnpj")long cnpj){
+		return contratoRepository.findByCpfunidadefk(cnpj);
+	}
+
 
 	@PostMapping("/contrato")
 	public  Contrato createContrato(@RequestBody Contrato contrato) {
 		return contratoRepository.save(contrato);
 	}
+	
+	
+	
 
 	// Recebe
 	@RequestMapping(value = "/contrato/upload",method = RequestMethod.POST,consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
