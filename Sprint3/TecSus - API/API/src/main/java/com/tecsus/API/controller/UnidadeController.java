@@ -38,6 +38,12 @@ public class UnidadeController {
 		return unidadeRepository.findById(id);
 	}
 	
+
+	@GetMapping("/unidade/byNome/{nome}") // metodo GET
+	public  List<Unidade> getUnidadeNome(@PathVariable(value = "nome") String nome){
+		return unidadeRepository.findByNomeUni(nome);
+	}
+	
 	//@ApiOperation(value = "Retorna unidade pelo Cpf")
 	//@GetMapping("/unidade/byCpf/{cpf}") // metodo GET
 	//public  Unidade getUnidadeByCpf(@PathVariable(value = "cpf") String cpf){
@@ -49,6 +55,7 @@ public class UnidadeController {
 	//public  Unidade getUnidadeIdByCep(@PathVariable(value = "cep") String cep){
 	//	return unidadeRepository.findByCep(cep);
 	//}
+	
 	@ApiOperation(value = "Cadastra unidade no banco de dados")
 	@PostMapping("/unidade")
 	public  Unidade createUnidade(@RequestBody Unidade unidade) {
@@ -60,9 +67,12 @@ public class UnidadeController {
 	public  Unidade atualizarUnidade(@RequestBody Unidade unidade) {
 		return unidadeRepository.save(unidade);
 	}
+	
 	@ApiOperation(value = "Deleta cadastro de unidade")
-	@DeleteMapping("/unidade")
-	public  void deleteUnidade(@RequestBody Unidade unidade) {
+	@DeleteMapping("/unidadeD{cpf}")
+	public  void deleteUnidade(@PathVariable long cpf) {
+		
+		Unidade unidade=unidadeRepository.findById(cpf);
 		unidadeRepository.delete(unidade);
 	}
 	

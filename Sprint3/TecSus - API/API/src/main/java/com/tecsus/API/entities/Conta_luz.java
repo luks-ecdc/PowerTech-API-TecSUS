@@ -1,5 +1,7 @@
 package com.tecsus.API.entities;
 
+import java.sql.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
@@ -12,7 +14,11 @@ import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -31,8 +37,8 @@ public class Conta_luz {
 	private Long id_conta_luz;
 	
 	
-	
-	private String data_luz;
+	@JsonFormat(pattern="yyyy-MM-dd")
+	private Date dataLuz;
 	private String periodo_luz;
 	//private int pdf_luz; deixar sem por enquanto
 	
@@ -78,13 +84,13 @@ public class Conta_luz {
 	private Contrato contrato;
 	
 	 @Column(name="instalacao_luz_fk", updatable=false, insertable=false) 
-	    private Long instalacao_luz_fk;
+	    private Long instalacaoluzFK;
 
 	
 	public Conta_luz() {}
 
 
-	public Conta_luz(Long id_conta_luz, String data_luz, String periodo_luz, double consumoMes,
+	public Conta_luz(Long id_conta_luz, Date dataLuz, String periodo_luz, double consumoMes,
 			double tusdConsumoValorFornecido, double tusdConsumoValorICMS, double tusdConsumoValorPIS,
 			double tusdConsumoValorCOFINS, double tusdConsumoValorTotal, double teConsumoValorFornecido,
 			double teConsumoValorICMS, double teConsumoValorPIS, double teConsumoValorCOFINS,
@@ -95,7 +101,7 @@ public class Conta_luz {
 			double pisValor, double iCMSValor, Contrato contrato, Long instalacao_luz_fk) {
 		super();
 		this.id_conta_luz = id_conta_luz;
-		this.data_luz = data_luz;
+		this.dataLuz = dataLuz;
 		this.periodo_luz = periodo_luz;
 		this.consumoMes = consumoMes;
 		this.tusdConsumoValorFornecido = tusdConsumoValorFornecido;
@@ -123,7 +129,7 @@ public class Conta_luz {
 		this.pisValor = pisValor;
 		this.ICMSValor = iCMSValor;
 		this.contrato = contrato;
-		this.instalacao_luz_fk = instalacao_luz_fk;
+		this.instalacaoluzFK = instalacao_luz_fk;
 	}
 
 
@@ -139,11 +145,11 @@ public class Conta_luz {
 	public void setId_conta_luz(Long id_conta_luz) {
 		this.id_conta_luz = id_conta_luz;
 	}
-	public String getData_luz() {
-		return data_luz;
+	public Date getDataLuz() {
+		return dataLuz;
 	}
-	public void setData_luz(String data_luz) {
-		this.data_luz = data_luz;
+	public void setData_luz(Date dataLuz) {
+		this.dataLuz = dataLuz;
 	}
 	public String getPeriodo_luz() {
 		return periodo_luz;
@@ -302,10 +308,10 @@ public class Conta_luz {
 		this.bandeiraTarifariaValorValorTotal = bandeiraTarifariaValorValorTotal;
 	}
 	public Long getInstalacao_luz_fk() {
-		return instalacao_luz_fk;
+		return instalacaoluzFK;
 	}
 	public void setInstalacao_luz_fk(Long instalacao_luz_fk) {
-		this.instalacao_luz_fk = instalacao_luz_fk;
+		this.instalacaoluzFK = instalacao_luz_fk;
 	}
 	
 	
