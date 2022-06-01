@@ -71,6 +71,11 @@ public class Conta_luz {
 	private double cofinsValor;
 	private double pisValor;
 	private double ICMSValor;
+	private double multa;
+	private double jurosMora;
+	private double fic;
+	private double bonificacao;
+	private double total_conta;
 	
 	@JsonIgnore
 	@ManyToOne(cascade=CascadeType.ALL)
@@ -306,6 +311,56 @@ public class Conta_luz {
 	}
 	public void setInstalacao_luz_fk(Long instalacao_luz_fk) {
 		this.instalacao_luz_fk = instalacao_luz_fk;
+	}
+
+
+	public double getMulta() {
+		return multa;
+	}
+
+
+	public void setMulta(double multa) {
+		this.multa = multa;
+	}
+
+
+	public double getJurosMora() {
+		return jurosMora;
+	}
+
+
+	public void setJurosMora(double jurosMora) {
+		this.jurosMora = jurosMora;
+	}
+
+
+	public double getFic() {
+		return fic;
+	}
+
+
+	public void setFic(double fic) {
+		this.fic = fic;
+	}
+
+
+	public double getBonificacao() {
+		return bonificacao;
+	}
+
+
+	public void setBonificacao(double bonificacao) {
+		this.bonificacao = bonificacao;
+	}
+
+
+	public double getTotal_conta() {
+		return total_conta;
+	}
+
+
+	public void setTotal_conta(double total_conta) {
+		this.total_conta = total_conta;
 	}
 	
 	

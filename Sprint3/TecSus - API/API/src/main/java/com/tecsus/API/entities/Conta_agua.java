@@ -78,6 +78,7 @@ public class Conta_agua {
 	
 	private double data;
 	private double periodo;
+	private double total_conta;
 	
 	
 	//@JsonBackReference
@@ -579,6 +580,12 @@ public class Conta_agua {
 	}
 	public void setRgi_agua_fk(Long rgi_agua_fk) {
 		this.rgiAguaFk = rgi_agua_fk;
+	}
+	public double getTotal_conta() {
+		return total_conta;
+	}
+	public void setTotal_conta(double total_conta) {
+		this.total_conta = total_conta;
 	}
 	
 	
