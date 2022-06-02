@@ -2,6 +2,8 @@ package com.tecsus.API.controller;
 
 import java.io.IOException;
 import java.sql.Date;
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,34 +49,29 @@ public class Conta_luzController {
 		return conta_luzRepository.findById(id_conta);
 	}
 	
-	@GetMapping("/conta_luz/dashboard/{tempoFinal}/{tempoInicio}") // metodo GET
-	public String getConta_luzdashboard(
+	@GetMapping("/conta_luz/dashboard/{mes}-{ano}/{mesf}-{anof}") // metodo GET
+	public List<Conta_luz> getConta_luzdashboard(
 			
-			@DateTimeFormat (pattern="yyyy-MM-dd") @PathVariable(value = "tempoInicio") String tempoinicio,
-			@DateTimeFormat(pattern="yyyy-MM-dd")@PathVariable(value = "tempoFinal")  String tempoFinal){
+			@PathVariable(value = "mes") int mes,
+			@PathVariable(value = "ano")  int ano,
+			@PathVariable(value = "mesf") int mesf,
+			@PathVariable(value = "anof")  int anof){
 		
 		
-		String[] partesinicio = tempoFinal.split("-");
-		int anoinicio = Integer.parseInt(partesinicio[0]);
-		int mesinicio = Integer.parseInt(partesinicio[1]);
-		int diainicio = Integer.parseInt(partesinicio[2]);
-		Date datainicio  = new Date(anoinicio,mesinicio-1,diainicio);
+		LocalDate dit = LocalDate.of(ano,mes , 1);
+		java.sql.Date dataInicial = java.sql.Date.valueOf( dit );
 		
-		String[] partesfim = tempoFinal.split("-");
-		int anofim = Integer.parseInt(partesfim[1]);
-		int mesfim = Integer.parseInt(partesfim[0]);
-		int diafim = Integer.parseInt(partesfim[2]);
-
-		Date datafim  = new Date(anofim,mesfim-1,diafim);
+		LocalDate dft2 = LocalDate.of(anof,mesf , 1);
+		java.sql.Date dataFinal = java.sql.Date.valueOf( dft2 );
 		
 		
-		
-		return "inicio: "+datainicio+" /n fim :"+datafim ;
+		return conta_luzRepository.findByDataLuzBetween(dataInicial, dataFinal);
 	}
+	
 	
 	@GetMapping("/conta_luz_instalacaoluz/{luz_fk}") // metodo GET
 	public  List<Conta_luz> getConta(@PathVariable(value = "luz_fk") long luz_fk){
-		return conta_luzRepository.findByInstalacaoluzFK(luz_fk);
+		return conta_luzRepository.findAll(luz_fk);
 	}
 	
 	/*@PostMapping("/conta_luz/upload")
