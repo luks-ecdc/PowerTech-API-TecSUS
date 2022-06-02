@@ -8,3 +8,12 @@
 .border1{
     border-top: 1px solid black;
   }
+.border2{
+    border-left: 1px solid black;
+}
+.border3{
+    border-right: 1px solid black;
+}
+.border4{
+    border: 1px solid black;
+}

@@ -16,3 +16,6 @@ select{
 .border1{
   border-top: 1px solid black;
 }
+.border2{
+  border: 1px solid black;
+}
