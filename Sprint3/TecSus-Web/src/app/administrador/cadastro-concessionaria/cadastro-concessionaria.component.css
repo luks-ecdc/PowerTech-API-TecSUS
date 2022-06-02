@@ -9,3 +9,7 @@ select{
 input{
   height: 2.3rem;
 }
+
+.save{
+  margin-top: 10%
+}
