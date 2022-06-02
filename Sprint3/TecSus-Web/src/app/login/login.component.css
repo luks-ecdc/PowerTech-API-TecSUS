@@ -28,9 +28,8 @@
 }
 
 .card-content-area input {
-  border: 0px;
+  border: 10px;
   padding: 5px 4px;
-  background-color: #C4C4C4;
   outline: none;
   color: #000 ;
   height: 1.8rem;

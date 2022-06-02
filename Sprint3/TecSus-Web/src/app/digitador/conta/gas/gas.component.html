@@ -1,8 +1,12 @@
-<div class="container-fluid">
+<div class=" container-fluid">
+  <div class="row justify-content-center"><p class=" mt-2 border-bottom">Gás</p></div>
+</div>
+
+<div class="container border-top" style="background-image: linear-gradient(#b5f8a8, rgb(226, 250, 221))">
 
   <div class="row mt-2">
     <div>
-      <label class="mt-1">Código de Usuário</label>
+      <label class="mt-1 ml-2">Código de Usuário</label>
     </div>
     <div class="offset-4">
       <label class="mt-1">Endereço</label>
@@ -13,59 +17,61 @@
   </div>
   <label class="mt-1">Nome do Cliente</label>
  
-  <div class="row border-top justify-content-center ">
+  <div class="row border-top justify-content-center">
     <div>
       <label>Detalhamento do Consumo e tarifa</label>
     </div>
   </div>
   <div class="border-bottom">
     <div class="row">
-      <label for="numero" class="mt-3">Consumo Faturado</label>
+      <label for="numero" class="mt-3 mr-3 ml-2">Consumo Faturado</label>
       <input class="form-control input2 ml-2" type="numero" autocomplete="0ff">
-      <label for="valor" class="mt-3 offset-1 mr-3">Tarifa ICMS</label>
-      <input class="form-control input2 ml-3" type="numero" autocomplete="0ff">
-      <label for="consumo" class="mt-3 offset-2">Fornecimento Gás</label>
+      <label for="valor" class="mt-3 mr-3 ml-3  ">Tarifa ICMS</label>
+      <input class="form-control input2 margin1" type="numero" autocomplete="0ff">
+      <label for="consumo" class="mt-3 ml-5 mr-3">Fornecimento Gás</label>
       <input class="form-control input2 ml-2" type="numero" autocomplete="0ff">
     </div>
 
   </div>
-  <div class="row border-top justify-content-center ">
+  <div class="row justify-content-center mt-2">
     <div>
       <label>Impostos</label>
     </div>
   </div>
   <div class="justify-content-around">
     <div class="row">
-      <label for="valor"class="mt-3">Base de Calculo</label>
-      <input class="form-control input2 ml-4" type="numero" autocomplete="0ff">
-      <label for="consumo" class="mt-3 offset-1 mr-3">ICMS%</label>
-      <input class="form-control input2 ml-5" type="numero" autocomplete="0ff">
-      <label for="valor"class="mt-3 offset-2 mr-2">Valor ICMS</label>
-      <input class="form-control input2 ml-5" type="numero" autocomplete="0ff">
-    </div>
-    <div class="row">
-      <label for="consumo" class="mt-3 mr-5">Valor PIS</label>
-      <input class="form-control input2 ml-4" type="numero" autocomplete="0ff">
-      <label for="consumo" class="offset-1 mt-3 mr-1">Valor COFINS</label>
+      <label for="valor"class="mt-3 mr-4 ml-2">Base de Calculo</label>
       <input class="form-control input2 ml-3" type="numero" autocomplete="0ff">
+      <label for="consumo" class="mt-3 mr-4 ml-4">ICMS%</label>
+      <input class="form-control input2 margin4" type="numero" autocomplete="0ff">
+      <label for="valor"class="mt-3 mr-3 ml-5">Valor ICMS  </label>
+      <input class="form-control input2 margin1" type="numero" autocomplete="0ff">
     </div>
     <div class="row">
-      <label for="consumo" class="mt-3">Impostos Estaduais</label>
+      <label for="consumo" class="mt-3 mr-5 ml-2">Valor PIS</label>
+      <input class="form-control input2 margin3" type="numero" autocomplete="0ff">
+      <label for="consumo" class=" mt-3 mr-3 ml-4 ">Valor COFINS  </label>
+      <input class="form-control input2 margin2" type="numero" autocomplete="0ff">
+    </div>
+    <div class="row">
+      <label for="consumo" class="mt-3 mr-3 ml-2">Impostos Estaduais</label>
       <input class="form-control input2 ml-1" type="numero" autocomplete="0ff">
-      <label for="consumo" class="offset-1 mt-3">Impostos Federais</label>
-      <input class="form-control input2" type="numero" autocomplete="0ff">
-      <label for="valor" class="offset-2 mt-3">Total de Impostos</label>
-      <input class="form-control input2 ml-3" type="valor" autocomplete="0ff">
+      <label for="consumo" class=" mt-3 mr-3 ml-4">Impostos Federais</label>
+      <input class="form-control input2 ml-1" type="numero" autocomplete="0ff">
+      <label for="valor" class=" mt-3 ml-5   mr-4">Total de Impostos</label>
+      <input class="form-control input2 ml-1" type="valor" autocomplete="0ff">
     </div>
   </div>
 
   <div class="row border-bottom valorfat">
-    <label for="numero" class="mt-3 mr-3">Valor da fatura</label>
-    <input class="form-control input2 ml-3" type="numero" autocomplete="0ff">
+    <label for="numero" class="mt-3 mr-4 ml-2">Valor da fatura</label>
+    <input class="form-control input2 margin2" type="numero" autocomplete="0ff">
+  </div>
+
+  <div class="row justify-content-end mr-3 mb-3 mt-3">
+    <button  type="button" class="btn btn-outline-success mx-3">Salvar</button>
+    <button  type="button" class="btn btn-outline-danger">Voltar</button>
   </div>
 </div>
 
-<div class="row justify-content-end mr-3 mb-3 mt-3">
-  <button  type="button" class="btn btn-outline-success mx-3">Salvar</button>
-  <button  type="button" class="btn btn-outline-danger">Cancelar</button>
-</div>
+
