@@ -2,13 +2,13 @@
   <table class="table table-hover">
     <thead>
       <tr>
+        <th scope="col">Contrato</th>
         <th scope="col">Nome</th>
-        <th scope="col">Número de contrato</th>
         <th scope="col">Tipo de serviço</th>
-        <th scope="col">Concessionaria</th>
-        <th scope="col">Rua</th>
+        <th scope="col">Endereço</th>
         <th scope="col">Número</th>
         <th scope="col">Opções</th>
+        <th scope="col">Alerta</th>
       </tr>
     </thead>
     <!-- Para cada item do backend ele criar uma coluna da tabela -->
@@ -23,7 +23,16 @@
         <td>85</td>
         <td>
           <div class="row ml-1">
-            <button mat-menu-item matTooltip="Visualizar" matTooltipPosition="above" class="btn-icon">
+            <button mat-menu-item matTooltip="Informação de Contrato" matTooltipPosition="above" class="btn-icon">
+              <a><i class="bi bi-eye-fill"></i></a>
+            </button>
+            <button mat-menu-item matTooltip="Ver Arquivos" matTooltipPosition="above" class="btn-icon">
+              <a><i class="bi bi-eye-fill"></i></a>
+            </button>
+            <button mat-menu-item matTooltip="Visualizar Contas Cadastradas" matTooltipPosition="above" class="btn-icon">
+              <a><i class="bi bi-eye-fill"></i></a>
+            </button>
+            <button mat-menu-item matTooltip="Adicionar Catura no Sistema" matTooltipPosition="above" class="btn-icon">
               <a><i class="bi bi-eye-fill"></i></a>
             </button>
             <!-- <button mat-menu-item matTooltip="Excluir" matTooltipPosition="above" class="btn-icon">
