@@ -7,8 +7,8 @@
 
   </div>
   <form [formGroup]="form">
-    <div class=" teste row my-2">
-      <div class="col-2 ml-2">
+    <div class=" teste row my-2 ml-4">
+      <div class="col-2 ml-4">
         <div class="form-group mt-2">
           <input type="text" class="form-control" placeholder="Data" formControlName="data">
         </div>
@@ -21,16 +21,16 @@
       </div>
     </div>
 
-    <div class="border-top row  pt-2 justify-content-center">
-      <div class="col-3 pl-5 ">
+    <div class="border-top border-dark row  pt-2 justify-content-center">
+      <div class="col-3 pl-5">
         <label>Detalhamento do Consumo</label>
       </div>
     </div>
 
     <!-- Campo agua -->
-    <div class="border-bottom row ml-1">
+    <div class="agua row ml-5">
       <div class="col-6">
-        <div class="row justify-content-center ">
+        <div class="aguaDetail row justify-content-center ">
           <label>Água</label>
         </div>
         <div class="row">
@@ -85,7 +85,7 @@
 
           </div>
 
-          <div class="row border-right col-4 justify-content-center">
+          <div class="row border-right border-dark col-4 justify-content-center">
             Valor
 
             <div class="form-group mt-2">
@@ -137,12 +137,12 @@
       </div>
 
       <!-- Campo Esgoto -->
-      <div class="col-6">
-        <div class="row justify-content-center">
+      <div class="col-6 esgoto">
+        <div class="esgotoDetail row justify-content-center">
           <label>Esgoto</label>
         </div>
         <div class="row">
-          <div class=" row border-left col-4 justify-content-center">
+          <div class=" row border-left border-dark col-4 justify-content-center">
             Consumo
 
 
@@ -249,7 +249,7 @@
       </div>
     </div>
 
-    <div class="row my-2 justify-content-center">
+    <div class="border-top border-dark row my-2 justify-content-center">
 
       <div class="col-2 pl-5 ">
 

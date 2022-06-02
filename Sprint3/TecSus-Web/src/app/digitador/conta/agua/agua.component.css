@@ -5,3 +5,21 @@
 .text {
     color: azure;
 }
+
+/* margem dos inputs de Agua e Esgoto */
+.esgoto{
+    padding-right: 2px 
+} 
+
+.agua{
+    padding-left: 12px;
+}
+
+/* margem dos subtitulos Agua e Esgoto no Detalhamento do Consumo */
+.aguaDetail{
+    margin-right: 73px;
+}
+
+.esgotoDetail{
+    margin-right: 73px;
+}
