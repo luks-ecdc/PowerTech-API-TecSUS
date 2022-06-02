@@ -16,8 +16,9 @@ export class ClienteService {
 
   getClienteById(id: number): Observable<any> {
     return this.httpClient.get(`${API_PATH}/unidade/${id}`)
+
   }
-  // Para fazer o put é preciso passar o objeto pelo body, como segudno argumento
+
   createCliente(unidade: Cliente) {
     return this.httpClient.post(`${API_PATH}/unidade`, unidade).subscribe(data => {
       console.log(data)

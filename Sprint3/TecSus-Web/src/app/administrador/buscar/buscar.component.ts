@@ -14,8 +14,9 @@ export class BuscarComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      tabela: ['cliente']
+      tabela: [null]
     })
+    this.form.value.tabela = "Unidade"
   }
 
 

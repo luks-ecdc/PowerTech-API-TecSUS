@@ -16,33 +16,13 @@ export class TabelaClienteComponent implements OnInit {
     public dialog: MatDialog) { }
 
   clientes: Cliente[]
-  clientes2:any[]
-  // Verificar para carregar outros clientes
   ngOnInit(): void {
 
-    //Pega todos clientes do backend
     this.clienteService.getClientes().subscribe(
       data => {
         this.clientes = data
-        console.log(data);
       }
     )
-
-    this.clientes2 = [{
-      nome_uni: "Cliente Testes OFF",
-      id_cpf: "455471869",
-      cep_uni: "12203-748",
-      rua_uni: "Rua Larryson 748",
-      complemento: "Bloco A",
-    },
-    {
-      nome_uni: "Cliente Teste OFF 2",
-      id_cpf: "884454712",
-      cep_uni: "74856-712",
-      rua_uni: "Rua Antonio Piovesan 1028",
-      complemento: "Sem complemento",
-    }
-   ]
 
   }
 

@@ -1,10 +1,11 @@
- <!-- Contrato -->
- <div class=" mt-5 row mb-4">
+<!-- Contrato -->
+<form [formGroup]="form">
+  <div class=" mt-5 row mb-4">
     <div class="col-6 cadastro d-flex justify-content-end ">
       <label class="mt-2 mr-4 ml-4 ">CPF/CNPJ:</label>
     </div>
     <div>
-      <input class="form-control offset-1 ml-5" type="text" name="Nome">
+      <input ngModel formControlName="Unidade_id_CPF" class="form-control offset-1 ml-5" type="text">
     </div>
   </div>
 
@@ -13,25 +14,25 @@
       <label class="mt-2 mr-4 ml-4 ">Endereço do Contrato:</label>
     </div>
     <div>
-      <input class="form-control offset-1 ml-5" type="text" name="Nome">
+      <input ngModel formControlName="rua_cont" class="form-control offset-1 ml-5" type="text">
     </div>
   </div>
 
   <div class="col-6 cadastro d-flex justify-content-end mt-3">
     <label class="mt-2 mr-4">Tipo de Serviço</label>
-  <select  formControlName="concessionaria" class="form-select">
-      <option>Energia</option>
-      <option>Água</option>
-      <option>Gás</option>
+    <select ngModel formControlName="servico" class="form-select">
+      <option value="energia">Energia</option>
+      <option value="agua">Água</option>
+      <option value="gas">Gás</option>
     </select>
   </div>
 
-<div class="mt-3 row mb-4">
+  <div class="mt-3 row mb-4">
     <div class="col-6 cadastro d-flex justify-content-end ">
       <label class="mt-2 mr-4 ml-4 ">Nome da Concessionária:</label>
     </div>
     <div>
-      <input class="form-control offset-1 ml-5" type="text" name="Nome">
+      <input ngModel formControlName="Concessionaria_nome_conces" class="form-control offset-1 ml-5" type="text">
     </div>
   </div>
 
@@ -40,20 +41,21 @@
       <label class="mt-2 mr-4 ml-4 ">Instalação (RGI):</label>
     </div>
     <div>
-      <input class="form-control offset-1 ml-5" type="text" name="Nome">
+      <input ngModel formControlName="instalacao_cont" class="form-control offset-1 ml-5" type="text">
     </div>
   </div>
 
-<div class="row  offset-7 col-3 pb-4 justify-content-end">
+  <div class="row  offset-7 col-3 pb-4 justify-content-end">
     <label class="mr-2">Adicionar outro contrato</label>
     <a class="mr-4">
-        <button class="add_cont">
-          <i class="bi bi-plus-lg"></i>
-        </button>
+      <button class="add_cont">
+        <i class="bi bi-plus-lg"></i>
+      </button>
     </a>
-</div>
-
-<div class="row col-12 justify-content-end mt-4 border-top">
-    <button  type="button" class="btn btn-outline-success mx-3">Salvar</button>
-    <button  type="button" class="btn btn-outline-danger">Voltar</button>
   </div>
+
+  <div class="row col-12 justify-content-end mt-4 border-top">
+    <button (click)="cadastrarContrato()" type="button" class="btn btn-outline-success mx-3">Salvar</button>
+    <button type="button" class="btn btn-outline-danger">Voltar</button>
+  </div>
+</form>

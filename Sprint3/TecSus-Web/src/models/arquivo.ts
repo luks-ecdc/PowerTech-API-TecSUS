@@ -1,7 +1,8 @@
 export interface Arquivo {
   id?: number,
   links?: {
-    empty?: true
+    rel?: true,
+    href?: true,
   },
   nome?: string,
   tamanho?: string,

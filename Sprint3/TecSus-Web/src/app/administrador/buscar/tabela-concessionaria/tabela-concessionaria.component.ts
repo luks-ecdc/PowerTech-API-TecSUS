@@ -27,20 +27,20 @@ export class TabelaConcessionariaComponent implements OnInit {
       }
     )
 
-    this.concessionarias2 = [
-      {
-        nome_conces: 'Sabesp',
-        cnpj_conces: "123123123",
-        servico_conces: "Água",
-        cidade_conces: "rua sabesp 5165"
-      },
-      {
-        nome_conces: 'EDP',
-        cnpj_conces: "19323123",
-        servico_conces: "Energia",
-        cidade_conces: "rua bandeirantes 659"
-      },
-    ]
+    // this.concessionarias2 = [
+    //   {
+    //     nome_conces: 'Sabesp',
+    //     cnpj_conces: "123123123",
+    //     servico_conces: "Água",
+    //     cidade_conces: "rua sabesp 5165"
+    //   },
+    //   {
+    //     nome_conces: 'EDP',
+    //     cnpj_conces: "19323123",
+    //     servico_conces: "Energia",
+    //     cidade_conces: "rua bandeirantes 659"
+    //   },
+    // ]
   }
   // abrir modal de exlcuir
   openDialog(): void {

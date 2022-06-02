@@ -1,16 +1,18 @@
 <div class="container-fluid mt-2">
   <div class="row justify-content-center">
     <div class="cadastro mt-3">
-      <label class="mr-2">Tabela de</label>
-    <select  formControlName="concessionaria" class="form-select">
-        <option>Unidade</option>
-        <option>Concessionária</option>
-        <option>Contrato</option>
-      </select>
+      <form [formGroup]="form">
+        <label class="mr-2">Tabela de</label>
+        <select   formControlName="tabela" ngModel class="form-select">
+          <option value="Unidade" >Unidade</option>
+          <option value="Concessionaria" >Concessionária</option>
+          <option value="Contrato">Contrato</option>
+        </select>
+      </form>
     </div>
   </div>
 
 </div>
-<app-tabela-cliente *ngIf="form.value.tabela == 'cliente' "></app-tabela-cliente>
-<app-tabela-concessionaria *ngIf="form.value.tabela == 'concessionaria' "></app-tabela-concessionaria>
-<app-tabela-contrato *ngIf="form.value.tabela == 'contrato' "></app-tabela-contrato>
+<app-tabela-cliente *ngIf="form.value.tabela == 'Unidade' "></app-tabela-cliente>
+<app-tabela-concessionaria *ngIf="form.value.tabela == 'Concessionaria' "></app-tabela-concessionaria>
+<app-tabela-contrato *ngIf="form.value.tabela == 'Contrato' "></app-tabela-contrato>

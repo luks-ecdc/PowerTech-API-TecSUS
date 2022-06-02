@@ -16,22 +16,21 @@ export class CadastroClienteComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      nome: [null, Validators.required],
-      rg: [null, Validators.required],
-      cpf: [null, Validators.required],
-      email: [null, Validators.required],
-      telefone: [null, Validators.required],
-      celular: [null, Validators.required],
-      cep: [null, Validators.required],
-      rua: [null, Validators.required],
-      numero: [null, Validators.required],
-      complemento: [null, Validators.required],
-      estado: [null, Validators.required],
-      cidade: [null, Validators.required],
+      id_CPF:[null, Validators.required],
+      nome_uni:[null, Validators.required],
+      cep_uni:[null, Validators.required],
+      rua_uni:[null, Validators.required],
+      bairro_uni:[null, Validators.required],
+      numero_uni:[null, Validators.required],
+      cidade_uni:[null, Validators.required],
+      estado_uni:[null, Validators.required],
+      complemento_uni:[null, Validators.required],
+      cel_uni:[null, Validators.required],
+      tel_uni:[null, Validators.required],
     })
   }
 
-  criarCliente(){
+  criarCliente() {
     this.clienteService.createCliente(this.form.value)
     console.log(this.form.value)
   }
