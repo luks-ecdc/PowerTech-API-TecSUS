@@ -3,13 +3,13 @@
     <div class=" row justify-content-center align-items-center">
       <div class="col-32">
         <label>Mês</label>
-        <input type="date" class="ml-2">
+        <input type="date" class="ml-2 border1">
       </div>
 
       <div class="col-5">
         <div class="input-group mt-3 mb-3">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" multiple accept="application/pdf"
+          <div class="custom-file ">
+            <input type="file" class="custom-file-input " multiple accept="application/pdf"
               (change)="onFileSelect($event)" maxlength="15">
             <label class="custom-file-label">{{fileName}}</label>
           </div>
