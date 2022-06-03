@@ -39,7 +39,7 @@ input{
   color: azure;
 }
 .margin1{
-margin-left: 53px;
+margin-left: 51px;
 }
 .margin2{
 margin-left: 31px;
@@ -49,4 +49,19 @@ margin-left: 31px;
 }
 .margin4{
   margin-left: 65px;
+}
+.margin5{
+  margin-left: 50px;
+}
+.margin6{
+  margin-left: 13px;
+}
+.margin7{
+  margin-left: 28px;
+}
+.border1{
+  border-top: 1px solid black;
+}
+.border2{
+  border: 1px solid black;
 }
