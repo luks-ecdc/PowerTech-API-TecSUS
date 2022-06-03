@@ -1,10 +1,12 @@
 package com.tecsus.API.entities;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -26,8 +28,8 @@ public class Concessionaria implements Serializable {
 	private String cidade_conces;
 	
 	@JsonIgnore
-	@OneToOne(mappedBy = "concessionaria")
-	private Contrato contrato;
+	@OneToMany(mappedBy = "concessionaria")
+	private List<Contrato> contrato;
 	
 	
 	
@@ -42,7 +44,7 @@ public class Concessionaria implements Serializable {
 	
 	public Concessionaria() {}
 	public Concessionaria(Long cnpj_conces, String nome_conces, String servico_conces, String rua_conces,
-			String numero_conces, String cep_conces, String tel_conces, String cidade_conces, Contrato contrato) {
+			String numero_conces, String cep_conces, String tel_conces, String cidade_conces, List<Contrato> contrato) {
 		super();
 		this.cnpj_conces = cnpj_conces;
 		this.nome_conces = nome_conces;

@@ -49,8 +49,8 @@ public class Conta_luzController {
 		return conta_luzRepository.findById(id_conta);
 	}
 	
-	@GetMapping("/conta_luz/dashboard/{mes}-{ano}/{mesf}-{anof}") // metodo GET
-	public List<Conta_luz> getConta_luzdashboard(
+	@GetMapping("/conta_luz/dashboardteste/{mes}-{ano}/{mesf}-{anof}") // metodo GET
+	public List<Conta_luz> getConta_luzdashboardteste(
 			
 			@PathVariable(value = "mes") int mes,
 			@PathVariable(value = "ano")  int ano,
@@ -68,10 +68,30 @@ public class Conta_luzController {
 		return conta_luzRepository.findByDataLuzBetween(dataInicial, dataFinal);
 	}
 	
+	@GetMapping("/conta_luz/dashboard/FK{fk}/{mes}-{ano}/{mesf}-{anof}") // metodo GET
+	public List<Conta_luz> getConta_luzdashboard(
+			
+			@PathVariable(value = "fk") long fk,
+			@PathVariable(value = "mes") int mes,
+			@PathVariable(value = "ano")  int ano,
+			@PathVariable(value = "mesf") int mesf,
+			@PathVariable(value = "anof")  int anof){
+		
+		
+		LocalDate dit = LocalDate.of(ano,mes , 1);
+		java.sql.Date dataInicial = java.sql.Date.valueOf( dit );
+		
+		LocalDate dft2 = LocalDate.of(anof,mesf , 1);
+		java.sql.Date dataFinal = java.sql.Date.valueOf( dft2 );
+		
+		
+		return conta_luzRepository.findPorIdEmPeriodoDeTempo(fk,dataInicial, dataFinal);
+	}
+	
 	
 	@GetMapping("/conta_luz_instalacaoluz/{luz_fk}") // metodo GET
 	public  List<Conta_luz> getConta(@PathVariable(value = "luz_fk") long luz_fk){
-		return conta_luzRepository.findAll(luz_fk);
+		return conta_luzRepository.findByInstalacaoluzFK(luz_fk);
 	}
 	
 	/*@PostMapping("/conta_luz/upload")
