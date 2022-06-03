@@ -32,11 +32,13 @@ public class Conta_gas {
 	private double icmsporcento;
 	private double valorICMS;
 	private double valorPIS;
-	private double valorCONFIS;
+	private double valorCOFINS;
 	private double impostoEstaduais;
 	private double impostoFederal;
 	private double impostoTotal;
 	private double valorFatura;
+	private double data;
+	private double periodo;
 	
 	
 	
@@ -116,11 +118,11 @@ public class Conta_gas {
 		}
 
 		public double getValorCONFIS() {
-			return valorCONFIS;
+			return valorCOFINS;
 		}
 
 		public void setValorCONFIS(double valorCONFIS) {
-			this.valorCONFIS = valorCONFIS;
+			this.valorCOFINS = valorCONFIS;
 		}
 
 		public double getImpostoEstaduais() {
@@ -169,6 +171,22 @@ public class Conta_gas {
 
 		public void setCodgasFK(Long codgasFK) {
 			this.codgasFK = codgasFK;
+		}
+
+		public double getData() {
+			return data;
+		}
+
+		public void setData(double data) {
+			this.data = data;
+		}
+
+		public double getPeriodo() {
+			return periodo;
+		}
+
+		public void setPeriodo(double periodo) {
+			this.periodo = periodo;
 		}
 		
 
