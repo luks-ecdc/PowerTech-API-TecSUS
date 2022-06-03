@@ -140,7 +140,7 @@ Acesse o link para visualizar:
 
 ###  :thumbsup: Tecnologias Utilizadas
 
-<img src="https://user-images.githubusercontent.com/37638307/168495829-5aee7c4f-46d8-4e1a-be98-7e6f2e2c6b76.png" width="600px" />
+<img src="https://user-images.githubusercontent.com/37638307/171958180-9f2bb8ca-83b0-440f-8624-20cf39c73036.png" width="600px" />
 
 <hr>
 
