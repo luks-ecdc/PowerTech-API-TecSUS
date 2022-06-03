@@ -42,7 +42,6 @@ public class Conta_gas {
 	private double impostoFederal;
 	private double impostoTotal;
 	private double valorFatura;
-	private double data;
 	private double periodo;
 	
 	
@@ -178,13 +177,6 @@ public class Conta_gas {
 			this.codgasFK = codgasFK;
 		}
 
-		public double getData() {
-			return data;
-		}
-
-		public void setData(double data) {
-			this.data = data;
-		}
 
 		public double getPeriodo() {
 			return periodo;
