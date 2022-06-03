@@ -8,7 +8,7 @@
   <a href ="#runner-sprint-planning">   Sprint Planning </a> •
   <a href ="#round_pushpin-timeline"> TimeLine </a>  •
   <a href ="#chart_with_downwards_trend-burndown"> Burndown </a>  •  
-  <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  • 
+  <a href ="#clapper-gif-de-apresentação"> Gif de Apresentação </a>  
   
   
   
@@ -19,9 +19,9 @@
 
 ### :runner: Sprint Planning
 
-<img src="" width="300px" />
+<img src="https://user-images.githubusercontent.com/37638307/171949631-acc66962-c4b3-4407-84cd-79f4aaeb32bb.png" width="800px" />
 
-<img src="" width="500px" />
+
 
 <hr>
 

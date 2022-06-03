@@ -1,10 +1,6 @@
 <div class="container mt-2">
   <form [formGroup]="form">
     <div class="row justify-content-center">
-      <div class="offset-1 col-3">
-        <label>Nº Conta </label>
-        <input formControlName="instalacao" class="ml-2 form-select">
-      </div>
       <div class="col-3">
         <label class="mr-2">Tipo de Conta</label>
       <select (change)="carregarConta()" formControlName="tipoConta" class="form-select">
@@ -12,14 +8,6 @@
           <option value="gas">Gás</option>
           <option value="energia">Energia</option>
           <option value="agua">Água</option>
-        </select>
-      </div>
-      <div class="col-4">
-        <label class="mr-2">Tipo de Concessionaria</label>
-      <select  formControlName="concessionaria" class="form-select">
-          <option>Concessionaria 1</option>
-          <option>Concessionaria 2</option>
-          <option>Concessionaria 3</option>
         </select>
       </div>
     </div>
