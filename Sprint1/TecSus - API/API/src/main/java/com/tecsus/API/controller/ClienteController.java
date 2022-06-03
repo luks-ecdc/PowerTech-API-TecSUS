@@ -17,8 +17,8 @@ import com.tecsus.API.entities.Cliente;
 import com.tecsus.API.repository.ClienteRepository;
 
 @RestController // Permiti spring reconhecer como uma controller	
-@CrossOrigin // impede conflito de CORS, assim o frontend consegue receber o back
-@RequestMapping// defini url que vai consultar a entidade
+@CrossOrigin(origins="*") // impede conflito de CORS, assim o frontend consegue receber o back
+@RequestMapping(value ="")// defini url que vai consultar a entidade
 public class ClienteController {
 	
 	@Autowired 

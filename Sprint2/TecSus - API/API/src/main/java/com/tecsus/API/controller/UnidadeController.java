@@ -38,17 +38,17 @@ public class UnidadeController {
 		return unidadeRepository.findById(id);
 	}
 	
-	@ApiOperation(value = "Retorna unidade pelo Cpf")
-	@GetMapping("/unidade/byCpf/{cpf}") // metodo GET
-	public  Unidade getUnidadeByCpf(@PathVariable(value = "cpf") String cpf){
-		return unidadeRepository.findByCpf(cpf);
-	}
+	//@ApiOperation(value = "Retorna unidade pelo Cpf")
+	//@GetMapping("/unidade/byCpf/{cpf}") // metodo GET
+	//public  Unidade getUnidadeByCpf(@PathVariable(value = "cpf") String cpf){
+	//	return unidadeRepository.findByCpf(cpf);
+	//}
 	
-	@ApiOperation(value = "Retorna unidade pelo Cep")
-	@GetMapping("/unidade/byCep/{cep}") // metodo GET
-	public  Unidade getUnidadeIdByCep(@PathVariable(value = "cep") String cep){
-		return unidadeRepository.findByCep(cep);
-	}
+	//@ApiOperation(value = "Retorna unidade pelo Cep")
+	//@GetMapping("/unidade/byCep/{cep}") // metodo GET
+	//public  Unidade getUnidadeIdByCep(@PathVariable(value = "cep") String cep){
+	//	return unidadeRepository.findByCep(cep);
+	//}
 	@ApiOperation(value = "Cadastra unidade no banco de dados")
 	@PostMapping("/unidade")
 	public  Unidade createUnidade(@RequestBody Unidade unidade) {
@@ -65,5 +65,8 @@ public class UnidadeController {
 	public  void deleteUnidade(@RequestBody Unidade unidade) {
 		unidadeRepository.delete(unidade);
 	}
+	
+	
+	
 	 
 }
