@@ -77,10 +77,6 @@ do contrato)</li>
 <li>Permitir navegação entre campos por TAB ou seta</li>
 
 
-### User Story
-
-
-
 
 <hr>
 
@@ -102,7 +98,7 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 ###  :flags: Backlog do Produto
 
 <img src="https://user-images.githubusercontent.com/37638307/168491314-25242a68-582e-41b1-b0bd-24cc29bd3afc.png" width="400px" />
-
+<img src="https://user-images.githubusercontent.com/37638307/171946928-219e4a71-b299-416f-868f-3ba8243d826b.png"width="120px" />
 
 
 <hr>
@@ -116,7 +112,8 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 - :heavy_check_mark: [Sprint 2](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint2) - 25/04 a 15/05 - Concluído
 - :heavy_check_mark: Apresentação Sprint 2 - 17/05 - Concluído
 - [ ] [Sprint 3]-  16/05 a 05/06
-- [ ] Apresentação Sprint 3 -
+- [ ] Apresentação Sprint 3 - 07/06
+- [ ] Feira de Soluções FATEC 15/06
 
 
 ### :runner: Sprint 1
