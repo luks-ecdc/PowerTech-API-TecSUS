@@ -5,3 +5,6 @@ label{
 .inputs{
   margin-top: 3rem;
 }
+.border1{
+  border: 1px solid black;
+}

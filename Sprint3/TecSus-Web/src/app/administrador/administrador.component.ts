@@ -29,13 +29,9 @@ export class AdministradorComponent implements OnInit {
         link: './cadastro-contrato',
         index: 2
       },{
-        label: 'Cadastro de conta',
-        link: './cadastro-conta',
-        index: 3
-      },{
         label: 'Buscar',
         link: './buscar',
-        index: 4
+        index: 3
       },
 
   ];

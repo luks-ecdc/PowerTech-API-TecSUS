@@ -5,16 +5,18 @@
     <div>
       <label class="mt-1 ml-3">RGI:</label>
     </div>
-    <div class="offset-4">
+    <div class="offset-5">
       <label class="mt-1">Endereço:</label>
     </div>
   </div> 
-  <div>
+  <div class="row mt-2">
     <div>
-      <label class="mt-1 ml-1">Nome do Cliente:</label>
-
+      <label class="mt-1 ml-3">Nome do Cliente:</label>
     </div>
-  </div>
+    <div class="offset-4">
+      <label class="mt-1 ml-3">Nome da Concessionaria:</label>
+    </div>
+  </div> 
   <form [formGroup]="form">
     <div class=" teste row my-2 border1">
       <div class="col-2 ml-2">
@@ -309,10 +311,11 @@
       </div>
 
     </div>
-
-    <div class="row justify-content-end border1">
-      <button (click)="criarContaAgua()" type="button" class="btn btn-outline-success mx-3 mt-2">Salvar</button>
-      <button (click)="criarContaAgua()" type="button" class="btn btn-outline-danger mt-2 mr-4">Voltar</button>
+    <div class="row justify-content-flex border1">
+      <button type="button" class="btn btn-outline-dark mt-2 ml-4 mb-2">Editar</button>
+      <button type="button" class="btn btn-outline-dark mt-2 ml-4 mb-2">Excluir</button>
+      <button (click)="criarContaAgua()" type="button" class="btn btn-outline-success mt-2 mr-4 mb-2 offset-8">Salvar</button>
+      <button type="button" class="btn btn-outline-danger mt-2 mr-4 mb-2">Voltar</button>
     </div>
 
   </form>

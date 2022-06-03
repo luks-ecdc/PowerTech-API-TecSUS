@@ -5,3 +5,6 @@ label{
 .form-control{
   width: 70%;
 }
+.border1{
+  border: 1px solid black;
+}
