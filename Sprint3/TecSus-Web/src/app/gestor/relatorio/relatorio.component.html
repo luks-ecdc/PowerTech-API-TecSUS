@@ -1,3 +1,60 @@
-<div class=" chart container-fluid">
-    <canvas #myChart width="400" height="400"></canvas>
+<div class="mt-3 col-md-2 offset-md-5">
+    <div class="ml-5"><h3>Análise de período</h3></div>
 </div>
+
+<div class="row">
+    <div class="col-md-3 offset-md-3">
+        <div class="marginDe">
+            <label>De</label>
+            <input type="date" class="ml-2">
+        </div>
+        
+    </div>
+
+    <div class="col-md-3">
+        <label>À</label>
+        <input type="date" class="ml-2">
+    </div>
+
+</div>
+
+<div class="row col-12">
+
+    <!-- tabela -->
+    <div class="marginTable col-3 mt-5 ml-3">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Período</th>
+                <th scope="col">Consumo (kWz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">04/2022</th>
+                <td>120</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">05/2022</th>
+                <td>98</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">06/2022</th>
+                <td>110</td>
+                
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+                 <!-- grafico -->
+    <div class="grafico col-6 row mt-5 chart container-fluid">
+            <div class="">
+                <canvas #myChart width="400" height="400"></canvas>
+            </div> 
+    </div>
+
+</div>
+
