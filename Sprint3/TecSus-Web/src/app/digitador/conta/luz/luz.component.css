@@ -1,7 +1,3 @@
-.input-cinza{
-  width: 10rem;
-}
-
 select{
   height: 2.3rem;
 }
@@ -12,4 +8,14 @@ select{
 
 .text {
   color: azure;
+}
+.border1{
+  border-top: 1px solid black;
+}
+.border2{
+  border: 1px solid black;
+}
+.border3{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }

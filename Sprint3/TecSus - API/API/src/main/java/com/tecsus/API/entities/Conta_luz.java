@@ -37,8 +37,9 @@ public class Conta_luz {
 	private Long id_conta_luz;
 	
 	
-	@JsonFormat(pattern="yyyy-MM-dd")
+	@JsonFormat(pattern="dd-MM-yyyy")
 	private Date dataLuz;
+	
 	private String periodo_luz;
 	//private int pdf_luz; deixar sem por enquanto
 	

@@ -1,5 +1,7 @@
 package com.tecsus.API.entities;
 
+import java.sql.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -23,6 +26,8 @@ public class Conta_gas {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id_conta_gas;
 	
+	@JsonFormat(pattern="dd-MM-yyyy")
+	private Date dataGas;
 	
 
 	private double consumoFaturado;
