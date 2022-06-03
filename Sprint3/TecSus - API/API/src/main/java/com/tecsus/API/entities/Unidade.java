@@ -39,16 +39,16 @@ public class Unidade implements Serializable{
 	private String tel_uni;
 	
 	@JsonIgnore
-	@OneToOne(mappedBy = "unidade")
-	private Contrato contrato;
+	@OneToMany(mappedBy = "unidade")
+	private List<Contrato> contrato;
 	
 	
-	public Contrato getContrato() {
+	public List<Contrato> getContrato() {
 		return contrato;
 	}
 
 	public void setContrato(Contrato contrato) {
-		this.contrato = contrato;
+		this.contrato = (List<Contrato>) contrato;
 	}
 
 	public Unidade() {}

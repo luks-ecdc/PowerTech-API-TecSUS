@@ -1,5 +1,6 @@
 package com.tecsus.API.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tecsus.API.entities.Conta_agua;
+import com.tecsus.API.entities.Conta_luz;
 import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_aguaRepository;
 import com.tecsus.API.repository.ContratoRepository;
@@ -50,6 +52,26 @@ public class Conta_aguaController {
 		return conta_aguaRepository.findByRgiAguaFk(rgi_fk);
 	}
 	
+	
+	@GetMapping("/Conta_agua/dashboard/RGI{rgi}/{mes}-{ano}/{mesf}-{anof}") // metodo GET
+	public List<Conta_agua> getConta_aguadashboard(
+			
+			@PathVariable(value = "rgi") long rgi,
+			@PathVariable(value = "mes") int mes,
+			@PathVariable(value = "ano")  int ano,
+			@PathVariable(value = "mesf") int mesf,
+			@PathVariable(value = "anof")  int anof){
+		
+		
+		LocalDate dit = LocalDate.of(ano,mes , 1);
+		java.sql.Date dataInicial = java.sql.Date.valueOf( dit );
+		
+		LocalDate dft2 = LocalDate.of(anof,mesf , 28);
+		java.sql.Date dataFinal = java.sql.Date.valueOf( dft2 );
+		
+		
+		return conta_aguaRepository.findPorIdEmPeriodoDeTempo(rgi,dataInicial, dataFinal);
+	}
 
 	@PostMapping("/Conta_agua")
 	public  Conta_agua createConta_agua(@RequestBody Conta_agua conta_agua) {

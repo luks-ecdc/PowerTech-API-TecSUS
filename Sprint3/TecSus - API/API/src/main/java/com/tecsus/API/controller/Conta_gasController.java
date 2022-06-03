@@ -1,5 +1,6 @@
 package com.tecsus.API.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tecsus.API.entities.Conta_agua;
 import com.tecsus.API.entities.Conta_gas;
+import com.tecsus.API.entities.Conta_luz;
 import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_aguaRepository;
 import com.tecsus.API.repository.Conta_gasRepository;
@@ -48,6 +50,26 @@ public class Conta_gasController {
 	public List <Conta_gas> getCont_gasPorFk(@PathVariable (value = "codgasfk")long codgasfk){
 		return conta_gasRepository.findByCodgasFK(codgasfk);
 		
+	}
+	
+	@GetMapping("/conta_gas/dashboard/CODE{code}/{mes}-{ano}/{mesf}-{anof}") // metodo GET
+	public List<Conta_gas> getConta_luzdashboard(
+			
+			@PathVariable(value = "code") long code,
+			@PathVariable(value = "mes") int mes,
+			@PathVariable(value = "ano")  int ano,
+			@PathVariable(value = "mesf") int mesf,
+			@PathVariable(value = "anof")  int anof){
+		
+		
+		LocalDate dit = LocalDate.of(ano,mes , 1);
+		java.sql.Date dataInicial = java.sql.Date.valueOf( dit );
+		
+		LocalDate dft2 = LocalDate.of(anof,mesf , 1);
+		java.sql.Date dataFinal = java.sql.Date.valueOf( dft2 );
+		
+		
+		return conta_gasRepository.findPorIdEmPeriodoDeTempo(code,dataInicial, dataFinal);
 	}
 
 

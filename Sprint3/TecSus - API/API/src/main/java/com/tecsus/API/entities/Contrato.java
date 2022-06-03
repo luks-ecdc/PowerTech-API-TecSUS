@@ -64,12 +64,12 @@ public class Contrato implements Serializable{
 			
 		
 		@JsonIgnore
-		@OneToOne(cascade=CascadeType.ALL)
+		@OneToOne(cascade=CascadeType.ALL,orphanRemoval = true )
 		@JoinColumn(name="id_CPF_fk", referencedColumnName = "id_CPF")
 		private Unidade unidade;
 		
-		 @Column(name="id_cpf_fk", updatable=false, insertable=false) 
-		 private Long cpfunidadefk;
+		@Column(name="id_cpf_fk", updatable=false, insertable=false ,unique=false) 
+		private Long cpfunidadefk;
 		 
 		 public Long getCpfunidadefk() {
 				return cpfunidadefk;
@@ -82,7 +82,7 @@ public class Contrato implements Serializable{
 		
 		
 		@JsonIgnore
-		@OneToOne(cascade=CascadeType.ALL)
+		@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
 		@JoinColumn(name="cnpj_conces_fk", referencedColumnName = "cnpj_conces")
 		private Concessionaria concessionaria;
 		
