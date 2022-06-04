@@ -17,6 +17,8 @@ export class TabelaContratoComponent implements OnInit {
   constructor(private contratoService: ContratoService,
     public dialog: MatDialog) { }
 
+    ultrapassado: boolean = false
+
   ngOnInit(): void {
     //Pega todos Contrato do backend
     this.contratoService.getContrato().subscribe(

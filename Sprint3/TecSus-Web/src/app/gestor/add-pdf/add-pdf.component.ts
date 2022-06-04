@@ -42,6 +42,7 @@ export class AddPdfComponent implements OnInit {
       (err) => console.log(err)
     );
   }
+
   onFileSelect(event) {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
@@ -59,9 +60,6 @@ export class AddPdfComponent implements OnInit {
     )
   }
   savePdf() {
-    if (this.fileName == "Adicionar arquivo") {
-      alert('selecione um arquivo')
-    }
     this.arquivoService.getArquivos().subscribe(
       data => {
         this.files = data

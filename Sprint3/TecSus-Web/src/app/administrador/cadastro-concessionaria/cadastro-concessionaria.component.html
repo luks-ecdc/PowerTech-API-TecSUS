@@ -3,7 +3,8 @@
     <div class="row justify-content-center">
       <!-- dropdown -->
       <label class="mt-4 mr-2 service">Tipo de Serviço</label>
-      <select ngModel formControlName="servico_conces" class="drop-servico col-2 mt-3">
+      <select ngModel formControlName="servico_conces"
+       class="form-control col-3 mt-4">
         <option value="Tipo de Serviço" selected hidden>Tipo de Serviço</option>
         <option value="gas">Gás</option>
         <option value="energia">Energia</option>
@@ -52,11 +53,12 @@
     <!-- fim inputs -->
     <div class="row  offset-7 col-3 justify-content-end">
       <a href="../administrador.html" class="mr-4">
-        <button (click)="cadastrarConcessionaria()" class="salvar btn-cinza">Salvar</button>
+        <button (click)="cadastrarConcessionaria()" class="salvar btn btn-outline-success">Salvar</button>
       </a>
-      <button href="#" class="cancelar btn-cinza ml-2">Voltar
+      <button href="#" class="cancelar btn btn-outline-danger ml-2">Voltar
 
       </button>
     </div>
   </form>
 </div>
+
