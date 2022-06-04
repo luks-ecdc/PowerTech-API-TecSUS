@@ -15,3 +15,8 @@
 .border1{
   border: 1px solid black;
 }
+
+.saveCancel{
+  margin-top: 10%;
+  margin-left: 90%;
+}

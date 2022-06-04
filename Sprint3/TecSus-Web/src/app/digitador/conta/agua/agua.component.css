@@ -17,3 +17,35 @@
 .border4{
     border: 1px solid black;
 }
+
+
+
+/* margem dos inputs de Agua e Esgoto */
+.esgoto{
+    margin-left: 60px;
+    padding-right: 2px;
+} 
+
+.agua{
+    margin-left: 50px;
+    
+}
+
+/* margem dos subtitulos Agua e Esgoto no Detalhamento do Consumo */
+.aguaDetail{
+    margin-right: 73px;
+}
+
+.esgotoDetail{
+    margin-right: 5px;
+}
+
+/* .consumoTotalEsg{
+    padding-left: 16px;
+    margin-right: 10px;
+}
+
+.valorTotalEsg{
+    padding-right: 16px;
+    margin-left: 10px;
+} */

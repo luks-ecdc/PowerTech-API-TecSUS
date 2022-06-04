@@ -39,13 +39,13 @@
       <div class="col-2">
 
         <div class="form-group mt-2">
-          <input type="text" class="form-control border4" placeholder="Valor da Fatura" formControlName="Valor da Fatura">
+          <input type="text" class="form-control border4" placeholder="Valor da Fatura R$" formControlName="Valor da Fatura">
         </div>
       </div>
     </div>
 
     <div class="row  pt-2 justify-content-center border1">
-      <div class="col-3 pl-5 ">
+      <div class="ml-3 col-3 pl-5 ">
         <label>Detalhamento do Consumo</label>
       </div>
     </div>
@@ -53,12 +53,12 @@
     <!-- Campo agua -->
     <div class=" row ml-1">
       <div class="col-6">
-        <div class="row justify-content-center ">
+        <div class="ml-5 row aguaDetail justify-content-center ">
           <label>Água</label>
         </div>
-        <div class="row">
+        <div class="agua row">
           <div class=" row col-4 justify-content-center">
-            Consumo(m³)
+            Consumo (m³)
 
 
             <div class="form-group mt-2 mr-2">
@@ -109,7 +109,7 @@
           </div>
 
           <div class="row border3 col-4 justify-content-center">
-            Valor
+            Valor R$
 
             <div class="form-group mt-2">
               <input type="text" class="form-control border4"  formControlName="ate10ValorAgua">
@@ -137,19 +137,19 @@
 
         <!-- Consumo e valor total Água -->
         <div class="row">
-          <div class="col-4">
+          <div class="ml-5 col-3">
 
             <div class="form-group mt-2">
-              <input type="text" class="form-control border4" placeholder="Consumo Total" placeholder="Consumo Total" formControlName="consumoTotalAgua">
+              <input type="text" class="form-control border4" placeholder="Total" formControlName="consumoTotalAgua">
             </div>
 
           </div>
 
 
-          <div class="col-4 offset-2">
+          <div class="col-3 offset-3">
 
             <div class="form-group mt-2">
-              <input type="text" class="form-control border4" placeholder="Valor Total" placeholder="Valor Total" formControlName="valorTotalAgua">
+              <input type="text" class="form-control border4" placeholder="Total" formControlName="valorTotalAgua">
             </div>
 
           </div>
@@ -161,12 +161,12 @@
 
       <!-- Campo Esgoto -->
       <div class="col-6">
-        <div class="row justify-content-center">
+        <div class="row esgotoDetail justify-content-center">
           <label>Esgoto</label>
         </div>
-        <div class="row">
+        <div class=" esgoto row">
           <div class=" row border2 col-4 justify-content-center">
-            Consumo(m³)
+            Consumo (m³)
 
 
             <div class="form-group mt-2 mr-2">
@@ -219,7 +219,7 @@
 
 
           <div class=" row col-4 justify-content-center">
-            Valor
+            Valor R$
 
 
             <div class="form-group mt-2">
@@ -250,18 +250,18 @@
 
         <!-- Consumo e valor total Esgoto -->
         <div class="row">
-          <div class="col-4">
+          <div class="ml-5 offset-1 col-3">
 
-            <div class="form-group mt-2">
-              <input type="text" class="form-control border4" placeholder="Consumo Total" formControlName="consumoTotalEsgoto">
+            <div class="form-group consumoTotalEsg mt-2 justify-content-end">
+              <input type="text" class="form-control border4" placeholder="Total" formControlName="consumoTotalEsgoto">
             </div>
 
           </div>
 
-          <div class="col-4 offset-2">
+          <div class="col-3 offset-3">
 
-            <div class="form-group mt-2">
-              <input type="text" class="form-control border4" placeholder="Valor Total" formControlName="valorTotalAgua" >
+            <div class="valorTotalEsg form-group mt-2">
+              <input type="text" class="form-control border4" placeholder="Total" formControlName="valorTotalAgua" >
             </div>
 
           </div>

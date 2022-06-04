@@ -8,3 +8,11 @@ label{
 .border1{
   border: 1px solid black;
 }
+
+.input{
+  border: none;
+}
+
+.enviar{
+  margin-right: 80px;
+}
