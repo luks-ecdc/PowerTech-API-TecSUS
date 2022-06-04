@@ -36,6 +36,11 @@ public class ConcessionariaController {
 		return concessionariaRepository.findById(cnpj);
 	}
 	
+	@GetMapping("/concessionariaNome/{cnpj}") // metodo GET
+	public  String getConcessionariasNome(@PathVariable(value = "cnpj") long cnpj){
+		return concessionariaRepository.findNomePorId(cnpj);
+	}
+	
 	@PostMapping("/concessionaria")
 	public  Concessionaria createContrato(@RequestBody Concessionaria concessionaria) {
 		return concessionariaRepository.save(concessionaria);

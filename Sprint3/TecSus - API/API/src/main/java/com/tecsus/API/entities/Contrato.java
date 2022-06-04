@@ -38,33 +38,27 @@ public class Contrato implements Serializable{
 		private String cep_cont;
 		private String consumo_cont;
 		
-//		@JsonIgnore
-//		@OneToMany(mappedBy = "contrato")
-//		private Set<Conta_agua> conta_agua = new HashSet<>();
-//		
-//		public Set<Conta_agua> getConta() {
-//			return conta_agua;
-//		}
-//		
-//		@JsonIgnore
-//		@OneToMany(mappedBy = "contrato")
-//		private Set<Conta_luz> conta_luz = new HashSet<>();
-//		
-//		public Set<Conta_luz> Conta_luz() {
-//			return conta_luz;
-//		}
-//		
-//		@JsonIgnore
-//		@OneToMany(mappedBy = "contrato")
-//		private Set<Conta_gas> conta_gas = new HashSet<>();
-//		
-//		public Set<Conta_gas> Conta_gas() {
-//			return conta_gas;
-//		}
+		@JsonIgnore
+	    @OneToMany(mappedBy = "contrato",cascade = CascadeType.ALL ,orphanRemoval = true)
+		private Set<Conta_agua> conta_agua = new HashSet<>();
+		
+		
+	
+		@JsonIgnore
+	    @OneToMany(mappedBy = "contrato",cascade = CascadeType.ALL ,orphanRemoval = true)
+		private Set<Conta_luz> conta_luz = new HashSet<>();
+	
+
+		@JsonIgnore
+		@OneToMany(mappedBy = "contrato",cascade = CascadeType.ALL ,orphanRemoval = true)
+		private Set<Conta_gas> conta_gas = new HashSet<>();
+		
+		
+	
 			
 		
 		@JsonIgnore
-		@OneToOne(cascade=CascadeType.ALL,orphanRemoval = true )
+		@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true )
 		@JoinColumn(name="id_CPF_fk", referencedColumnName = "id_CPF")
 		private Unidade unidade;
 		

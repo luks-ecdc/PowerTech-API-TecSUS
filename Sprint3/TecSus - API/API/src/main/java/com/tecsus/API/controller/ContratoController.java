@@ -132,6 +132,13 @@ public class ContratoController {
 		contratoRepository.delete(contrato);
 	}
 	
+	@DeleteMapping("/contratoD{id}")
+	public  void deleteContrato(@PathVariable long id) {
+		
+		Contrato contrato=contratoRepository.findById(id);
+		contratoRepository.delete(contrato);
+	}
+	
 	
 	
 
