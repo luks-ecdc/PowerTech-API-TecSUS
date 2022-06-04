@@ -13,7 +13,7 @@ import { ContratoService } from 'src/services/contrato.service';
 })
 export class AddPdfComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private contratoService: ContratoService,
+  constructor(private formBuilder: FormBuilder,
     private arquivoService: ArquivoService, private httpClient: HttpClient) { }
 
   fileName = "Adicionar arquivo"
@@ -22,22 +22,28 @@ export class AddPdfComponent implements OnInit {
   files: any;
 
   ngOnInit(): void {
+
+    this.get()
+
     this.form = this.formBuilder.group({
       profile: ['']
     })
+
+
   }
 
   //upload do arquivo
-  onSubmit(){
+  onSubmit() {
     const formData = new FormData();
     formData.append('file', this.form.get('profile').value);
 
-    this.httpClient.post<any>(API_PATH +'/arquivo/enviar', formData).subscribe(
+    this.httpClient.post<any>(API_PATH + '/arquivo/enviar', formData).subscribe(
       (res) => console.log(res),
       (err) => console.log(err)
     );
   }
-  onFileSelect(event){
+
+  onFileSelect(event) {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
       this.form.get('profile').setValue(file);
@@ -45,13 +51,19 @@ export class AddPdfComponent implements OnInit {
     }
   }
 
+  get() {
+    this.arquivoService.getArquivos().subscribe(
+      data => {
+        console.log('data')
+        this.arquivo = data
+      }
+    )
+  }
   savePdf() {
-    if(this.fileName == "Adicionar arquivo"){
-      alert('selecione um arquivo')
-    }
     this.arquivoService.getArquivos().subscribe(
       data => {
         this.files = data
+        console.log(data)
       })
 
   }

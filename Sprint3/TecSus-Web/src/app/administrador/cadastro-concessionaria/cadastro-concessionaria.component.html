@@ -1,59 +1,64 @@
 <div class="container">
-<div class="row justify-content-center">
-  <!-- dropdown -->
-  <select class="form-control col-3 mt-4">
-    <option value="" selected hidden>Tipo de Serviço</option>
-    <option value="Gás">Gás</option>
-    <option value="Energia">Energia</option>
-    <option value="Água">Água</option>
-  </select>
+  <form [formGroup]="form">
+    <div class="row justify-content-center">
+      <!-- dropdown -->
+      <label class="mt-4 mr-2 service">Tipo de Serviço</label>
+      <select ngModel formControlName="servico_conces"
+       class="form-control border1 col-3 mt-3">
+        <option value="Tipo de Serviço" selected hidden>Tipo de Serviço</option>
+        <option value="gas">Gás</option>
+        <option value="energia">Energia</option>
+        <option value="agua">Água</option>
+      </select>
+    </div>
+    <!-- inputs -->
 
+    <div class="nome cadastro row mb-4">
+      <div class="cadastro d-flex justify-content-end ">
+        <label class="mr-4 ml-4 mt-2">Nome da Concessionária:</label>
+      </div>
+      <div>
+        <input class="form-control border1 offset-1 ml-5" type="text" name="Nome" ngModel formControlName="nome_conces">
+      </div>
+
+    </div>
+
+    <div class=" cadastro  row justify-content-start ">
+      <div class="cadastro d-flex justify-content-end mb-4">
+        <label class="mr-5 ml-4 mt-2">CNPJ:</label>
+      </div>
+      <div class="offset-2">
+        <input ngModel formControlName="cnpj_conces"
+         type="text" class="form-control border1 ml-4" name="Nome">
+      </div>
+    </div>
+
+    <div class=" cadastro  row justify-content-start ">
+      <div class="cadastro d-flex justify-content-end mb-4">
+        <label class=" ml-4 mt-2">Endereço:</label>
+      </div>
+      <div class="offset-2">
+        <input ngModel formControlName="rua_conces" type="text" class="form-control border1 margin-left" name="Nome">
+      </div>
+    </div>
+
+    <div class=" cadastro  row justify-content-start ">
+      <div class="cadastro d-flex justify-content-end mb-4">
+        <label class="mr-4 ml-4 mt-2">Telefone da Concessionária:</label>
+      </div>
+      <div>
+        <input ngModel formControlName="tel_conces" type="text" class="form-control border1 ml-4" name="Nome">
+      </div>
+    </div>
+    <!-- fim inputs -->
+    <div class="row  offset-7 col-3 justify-content-end">
+      <a href="../administrador.html" class="mr-4">
+        <button (click)="cadastrarConcessionaria()" class="salvar btn btn-outline-success">Salvar</button>
+      </a>
+      <button href="#" class="cancelar btn btn-outline-danger ml-2">Voltar
+
+      </button>
+    </div>
+  </form>
 </div>
-<!-- inputs -->
 
-  <div class="nome cadastro row mb-4">
-    <div class="cadastro d-flex justify-content-end ">
-      <label class="mr-4 ml-4 mt-2">Nome da Concessionária:</label>
-    </div>
-    <div>
-      <input class="form-control offset-1 ml-5 border1" type="text" name="Nome">
-    </div>
-
-  </div>
-
-  <div class=" cadastro  row justify-content-start ">
-    <div class="cadastro d-flex justify-content-end mb-4">
-      <label class="mr-5 ml-4 mt-2">CNPJ:</label>
-    </div>
-    <div class="offset-2">
-      <input type="text" class="form-control ml-4 border1" name="Nome">
-    </div>
-  </div>
-
-  <div class=" cadastro  row justify-content-start ">
-    <div class="cadastro d-flex justify-content-end mb-4">
-      <label class=" ml-4 mt-2">Endereço:</label>
-    </div>
-    <div class="offset-2">
-      <input type="text" class="form-control margin-left border1" name="Nome">
-    </div>
-  </div>
-
-  <div class=" cadastro  row justify-content-start ">
-    <div class="cadastro d-flex justify-content-end mb-4">
-      <label class="mr-4 ml-4 mt-2">Telefone da Concessionária:</label>
-    </div>
-    <div>
-      <input type="text" class="form-control ml-4 border1" name="Nome">
-    </div>
-  </div>
-  <!-- fim inputs -->
-  <div class="row saveCancel offset-7 col-3 justify-content-end">
-    <a href="../administrador.html" class="mr-4">
-      <button class="salvar btn btn-outline-success ">Salvar</button>
-    </a>
-    <button href="#" class="cancelar btn btn-outline-danger ml-2">Voltar
-
-    </button>
-  </div>
-</div>

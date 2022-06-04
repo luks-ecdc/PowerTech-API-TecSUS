@@ -18,6 +18,7 @@ export class ContaAguaService {
   createContaAgua(contaAgua: ContaAgua) {
     return this.httpClient.post(`${API_PATH}/Conta_agua`, contaAgua).subscribe(data => {
       console.log(data)
+      alert("Conta salva com sucesso!")
     });
   }
 

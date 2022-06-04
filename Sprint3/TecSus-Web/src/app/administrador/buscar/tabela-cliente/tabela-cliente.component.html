@@ -11,13 +11,13 @@
       </tr>
     </thead>
     <!-- Para cada item do backend ele criar uma coluna da tabela -->
-    <tbody *ngFor="let cliente of clientes2">
+    <tbody *ngFor="let cliente of clientes">
       <tr>
         <td>{{cliente.nome_uni}}</td>
-        <td>{{cliente.id_cpf}}</td>
+        <td>{{cliente.id_CPF}}</td>
         <td>{{cliente.cep_uni}}</td>
         <td>{{cliente.rua_uni}}</td>
-        <td>{{cliente.complemento}}</td>
+        <td>{{cliente.complemento_uni}}</td>
         <td>
           <div class="row ml-1">
 

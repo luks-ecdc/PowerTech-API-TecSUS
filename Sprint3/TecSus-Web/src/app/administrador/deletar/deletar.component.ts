@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-deletar',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeletarComponent implements OnInit {
 
+  @Input() dado: String
   constructor() { }
 
   ngOnInit(): void {

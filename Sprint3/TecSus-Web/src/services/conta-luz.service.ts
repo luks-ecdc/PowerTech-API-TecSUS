@@ -18,6 +18,7 @@ export class ContaLuzService {
   createContaLuz(contaLuz: ContaLuz) {
     return this.httpClient.post(`${API_PATH}/conta_luz`, contaLuz).subscribe(data => {
       console.log(data)
+      alert("Conta salva com sucesso!")
     });
   }
 }

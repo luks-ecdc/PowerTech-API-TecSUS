@@ -17,6 +17,8 @@ export class TabelaContratoComponent implements OnInit {
   constructor(private contratoService: ContratoService,
     public dialog: MatDialog) { }
 
+    ultrapassado: boolean = false
+
   ngOnInit(): void {
     //Pega todos Contrato do backend
     this.contratoService.getContrato().subscribe(
@@ -26,27 +28,26 @@ export class TabelaContratoComponent implements OnInit {
       }
     )
 
-    this.contratos2 = [{
-      servico: "Água",
-      cep_cont: "12203-748",
-      rua_cont: "Rua Larryson 748",
-      complemento_cont: "Bloco A",
-      consumo_cont: 121.32
-    },
-    {
-      servico: "Energia",
-      cep_cont: "74856-712",
-      rua_cont: "Rua Antonio Piovesan 1028",
-      complemento_cont: "Sem complemento",
-      consumo_cont: 92.32
+    // this.contratos2 = [{
+    //   servico: "Água",
+    //   cep_cont: "12203-748",
+    //   rua_cont: "Rua Larryson 748",
+    //   complemento_cont: "Bloco A",
+    //   consumo_cont: 121.32
+    // },
+    // {
+    //   servico: "Energia",
+    //   cep_cont: "74856-712",
+    //   rua_cont: "Rua Antonio Piovesan 1028",
+    //   complemento_cont: "Sem complemento",
+    //   consumo_cont: 92.32
 
-    }
-    ]
+    // }
+    // ]
   }
   openDialog(): void {
     const dialogRef = this.dialog.open(DeletarComponent, {
       width: '300px',
-      // data: { name: this.nome }
     });
 
   }
