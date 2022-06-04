@@ -27,13 +27,13 @@
 
 ### :round_pushpin: TimeLine
 
-<img src="" width="1000px" />
+<img src="https://user-images.githubusercontent.com/37638307/172027314-94ff2756-ae65-47ad-accf-02db9340d9ff.jpeg" width="1000px" />
 
 <hr>
 
 ### :chart_with_downwards_trend: Burndown
 
-<img src="" width="600px" />
+<img src="https://user-images.githubusercontent.com/37638307/172027313-079395ed-9f51-453a-8803-5a31b9354919.jpeg" width="600px" />
 
 
 
