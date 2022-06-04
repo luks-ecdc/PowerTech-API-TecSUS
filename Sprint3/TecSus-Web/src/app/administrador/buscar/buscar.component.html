@@ -3,7 +3,7 @@
   <label for="numero" class=" mr-3 mt-3">CPF/CNPJ</label>
   <input class="col-3 form-control border1 mt-1" type="valor">
   <label for="numero" class="offset-3 mr-3 mt-3">Pesquisar por</label>
-  <select class="form-control col-3 mt-2">
+  <select class="form-control col-3 mt-2 border1">
     <option value="" selected hidden></option>
     <option value="Gás">Contrato</option>
     <option value="Energia">Unidade</option>
@@ -33,12 +33,12 @@
     <!-- Para cada item do backend ele criar uma coluna da tabela -->
     <!-- <tbody *ngFor="let cliente of clientes"> -->
     <tbody>
-      <tr>
-        <td>Sabesp</td>
-        <td>5115761</td>
+      <tr class="border1">
+        <td>123456</td>
+        <td>Lucas E.C.da Costa</td>
         <td>Água</td>
-        <td>Sabesp</td>
-        <td>Rua Joaquim Teixeira</td>
+        <td>Bartolomeu</td>
+        <td>1044</td>
         <td><div class="row ml-1">
           <button mat-menu-item matTooltip="Informação de Contrato" matTooltipPosition="above" class="btn-icon">
             <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/signing-a-document.png"/></a>
@@ -52,7 +52,7 @@
           <button mat-menu-item matTooltip="Adicionar Fatura no Sistema" matTooltipPosition="above" class="btn-icon">
             <a><img src="https://img.icons8.com/ios/20/undefined/agreement-new.png"/></a>
           </button>
-          <button mat-menu-item matTooltip="Visualizar o Contrato" matTooltipPosition="above" class="btn-icon">
+          <button mat-menu-item matTooltip="Visualizar Faturas do Contrato" matTooltipPosition="above" class="btn-icon">
             <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/view-file.png"/></a>
           </button>
           <!-- <button mat-menu-item matTooltip="Excluir" matTooltipPosition="above" class="btn-icon">
