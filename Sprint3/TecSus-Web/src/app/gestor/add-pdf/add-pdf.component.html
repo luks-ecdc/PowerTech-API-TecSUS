@@ -1,22 +1,20 @@
 <div class="container">
   <form [formGroup]="form" (submit)="onSubmit()">
     <div class=" row justify-content-center align-items-center">
-      <div class="col-32">
-        <label>Mês</label>
-        <input type="date" class="ml-2">
-      </div>
+      <div class="row col-3 form-floating">
+        <label class = "mt-2 mr-2"for="floatingSelect">Mês</label>
+        <input type="date" class="form-control">
+      </div> 
 
       <div class="col-5">
-        <div class="input-group mt-3 mb-3">
+        <div class="input-group ml-5 mt-3 mb-3">
           <div class="custom-file">
-            <input type="file" class="custom-file-input" multiple accept="application/pdf"
-              (change)="onFileSelect($event)" maxlength="15">
-            <label class="custom-file-label">{{fileName}}</label>
+            <input type="file" class="input form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
           </div>
         </div>
       </div>
-      <div class="col-2">
-        <input (click)="savePdf()" type="submit" class="mt-2 btn btn-outline-success">
+      <div>
+        <input (click)="savePdf()" type="submit" class="enviar mt-2 btn btn-outline-success">
       </div>
     </div>
   </form>

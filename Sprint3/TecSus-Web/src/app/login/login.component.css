@@ -30,7 +30,7 @@
 }
 
 .card-content-area input {
-  border: 10px;
+  border: 1px solid black;
   padding: 5px 4px;
   outline: none;
   color: #000 ;

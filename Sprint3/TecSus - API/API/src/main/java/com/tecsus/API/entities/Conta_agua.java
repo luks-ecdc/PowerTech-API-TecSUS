@@ -1,5 +1,7 @@
 package com.tecsus.API.entities;
 
+import java.sql.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
@@ -15,6 +17,7 @@ import javax.persistence.Table;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tecsus.API.repository.ContratoRepository;
 
@@ -76,8 +79,11 @@ public class Conta_agua {
 	private double multa;
 	private double taxaDeRegulacao;
 	
-	private double data;
+	@JsonFormat(pattern="dd-MM-yyyy")
+	private Date dataAgua;
+	
 	private double periodo;
+	private double total_conta;
 	
 	
 	//@JsonBackReference
@@ -108,7 +114,7 @@ public class Conta_agua {
 			double ate10ValorEsgoto, double de11ate20ValorEsgoto, double de21ate30ValorEsgoto,
 			double de31ate50ValorEsgoto, double acima51ValorEsgoto, double consumoTotalAgua, double valorTotalAgua,
 			double consumoTotalEsgoto, double valorTotalEsgoto, double jurosMora, double atMonetaria, double multa,
-			double taxaDeRegulacao, double data, double periodo, Contrato contrato,Long rgi_agua_fk) {
+			double taxaDeRegulacao, double periodo, Contrato contrato,Long rgi_agua_fk, Date dataAgua) {
 		super();
 		this.id_conta_agua = id_conta_agua;
 		this.ate10ConsumoAgua = ate10ConsumoAgua;
@@ -149,7 +155,7 @@ public class Conta_agua {
 		AtMonetaria = atMonetaria;
 		this.multa = multa;
 		this.taxaDeRegulacao = taxaDeRegulacao;
-		this.data = data;
+		this.dataAgua = dataAgua;
 		this.periodo = periodo;
 		this.contrato = contrato;
 		this.rgiAguaFk= rgi_agua_fk;
@@ -546,13 +552,13 @@ public class Conta_agua {
 	}
 
 
-	public double getData() {
-		return data;
+	public Date getdataAgua() {
+		return dataAgua;
 	}
 
 
-	public void setData(double data) {
-		this.data = data;
+	public void setdataAgua(Date dataAgua) {
+		this.dataAgua = dataAgua;
 	}
 
 
@@ -579,6 +585,12 @@ public class Conta_agua {
 	}
 	public void setRgi_agua_fk(Long rgi_agua_fk) {
 		this.rgiAguaFk = rgi_agua_fk;
+	}
+	public double getTotal_conta() {
+		return total_conta;
+	}
+	public void setTotal_conta(double total_conta) {
+		this.total_conta = total_conta;
 	}
 	
 	

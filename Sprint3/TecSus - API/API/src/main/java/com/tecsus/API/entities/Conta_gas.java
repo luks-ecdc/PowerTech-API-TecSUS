@@ -1,5 +1,7 @@
 package com.tecsus.API.entities;
 
+import java.sql.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -23,6 +26,8 @@ public class Conta_gas {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id_conta_gas;
 	
+	@JsonFormat(pattern="dd-MM-yyyy")
+	private Date dataGas;
 	
 
 	private double consumoFaturado;
@@ -32,11 +37,12 @@ public class Conta_gas {
 	private double icmsporcento;
 	private double valorICMS;
 	private double valorPIS;
-	private double valorCONFIS;
+	private double valorCOFINS;
 	private double impostoEstaduais;
 	private double impostoFederal;
 	private double impostoTotal;
 	private double valorFatura;
+	private double periodo;
 	
 	
 	
@@ -116,11 +122,11 @@ public class Conta_gas {
 		}
 
 		public double getValorCONFIS() {
-			return valorCONFIS;
+			return valorCOFINS;
 		}
 
 		public void setValorCONFIS(double valorCONFIS) {
-			this.valorCONFIS = valorCONFIS;
+			this.valorCOFINS = valorCONFIS;
 		}
 
 		public double getImpostoEstaduais() {
@@ -169,6 +175,15 @@ public class Conta_gas {
 
 		public void setCodgasFK(Long codgasFK) {
 			this.codgasFK = codgasFK;
+		}
+
+
+		public double getPeriodo() {
+			return periodo;
+		}
+
+		public void setPeriodo(double periodo) {
+			this.periodo = periodo;
 		}
 		
 

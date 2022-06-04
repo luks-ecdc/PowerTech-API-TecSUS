@@ -5,15 +5,31 @@
 
 <div class="container border-top" style="background-image: linear-gradient(#b5f8a8, rgb(226, 250, 221))">
 
+<div class="container border1" style="background-image: linear-gradient(#b5f8a8, rgb(226, 250, 221))">
   <div class="row mt-2">
     <div>
-      <label class="mt-1 ml-2">Código de Usuário</label>
+      <label class="mt-1 ml-3 mr-1">Código de Usuário:</label>
     </div>
     <div class="offset-4">
-      <label class="mt-1">Endereço</label>
+      <label class="mt-1">Endereço:</label>
     </div>
-    <div class="offset-3">
-      <label class="mt-1 ">mês de referência</label>
+  </div>
+  <div class="row mt-2">
+    <div>
+      <label class="mt-1 ml-3">Nome do Cliente:</label>
+    </div>
+    <div class="offset-4">
+      <label class="mt-1 ml-3">Nome da Concessionaria:</label>
+    </div>
+  </div>
+  <div >
+    <div class="row border1 mb-3">
+      <label for="numero" class="mt-3 mr-3 ml-2">Mês de referência</label>
+      <input class="form-control input2 margin6 border2" type="numero" autocomplete="0ff">
+      <label for="valor" class="mt-3 mr-3 ml-3">Dias de consumo</label>
+      <input class="form-control input2 margin6 border2" type="numero" autocomplete="0ff">
+      <label for="consumo" class="mt-3 ml-5 mr-3">Valor da Fatura</label>
+      <input class="form-control input2 margin7 border2" type="numero" autocomplete="0ff" placeholder="R$">
     </div>
   </div>
   <label class="mt-1">Nome do Cliente</label>
@@ -23,8 +39,7 @@
       <label>Detalhamento do Consumo e tarifa</label>
     </div>
   </div>
-  <div class="border-bottom">
-    <div class="row">
+    <div class="row mb-3">
       <label for="numero" class="mt-3 mr-3 ml-2">Consumo Faturado</label>
       <input ngModel formControlName="consumoFaturado" class="form-control input2 ml-2" type="numero" autocomplete="0ff">
       <label for="valor" class="mt-3 mr-3 ml-3  ">Tarifa ICMS</label>
@@ -33,13 +48,12 @@
       <input ngModel formControlName="fornecimentoGas$" class="form-control input2 ml-2" type="numero" autocomplete="0ff">
     </div>
 
-  </div>
-  <div class="row justify-content-center mt-2">
+  <div class="row justify-content-center mt-2 border1">
     <div>
       <label>Impostos</label>
     </div>
   </div>
-  <div class="justify-content-around">
+  <div class="justify-content-around mb-3">
     <div class="row">
       <label for="valor"class="mt-3 mr-4 ml-2">Base de Calculo</label>
       <input ngModel formControlName="baseDeCalculo" class="form-control input2 ml-3" type="numero" autocomplete="0ff">
@@ -73,6 +87,7 @@
     <button (click)="createContaGas()" type="button" class="btn btn-outline-success mx-3">Salvar</button>
     <button  type="button" class="btn btn-outline-danger">Voltar</button>
   </div>
+
 </div>
 
 
