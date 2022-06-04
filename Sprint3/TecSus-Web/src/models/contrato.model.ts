@@ -8,7 +8,6 @@ export interface Contrato {
   rua_cont?: string,
   bairro_cont?: string,
   cidade_cont?: string,
-  concessionaria?: Concessionaria,
   estado_cont?: string,
   numero_cont?: string,
   complemento_cont?: string,
@@ -16,5 +15,4 @@ export interface Contrato {
   consumo_cont?: number,
   Unidade_id_CPF?: string,
   Concessionaria_nome_conces?: string,
-  unidade?: Cliente
 }

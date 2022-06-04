@@ -48,7 +48,7 @@ export class LuzComponent implements OnInit {
     })
   }
 
-  criarContaAgua() {
+  criarContaLuz() {
     this.contaLuzService.createContaLuz(this.form.value)
     console.log(this.form.value)
   }

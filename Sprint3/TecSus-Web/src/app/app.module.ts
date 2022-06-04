@@ -40,6 +40,7 @@ import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-
 import { BuscaGestorComponent } from './gestor/busca-gestor/busca-gestor.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BuscarDigitadorComponent,
     CadastroContaComponent,
     BuscaGestorComponent,
+    ModalDeleteComponent,
 
   ],
   imports: [

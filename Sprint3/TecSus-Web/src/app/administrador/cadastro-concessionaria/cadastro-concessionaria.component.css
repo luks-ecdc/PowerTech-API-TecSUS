@@ -1,4 +1,6 @@
-
+.service{
+  font-size: 16px;
+}
 /* Campos Input */
 .nome{
   margin-top: 100px;

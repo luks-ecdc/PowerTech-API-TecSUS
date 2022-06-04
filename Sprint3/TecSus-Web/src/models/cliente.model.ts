@@ -1,6 +1,5 @@
 export interface Cliente{
-  id_cpf?: string,
-  nome_uni?: string,
+  id_CPF?: number,
   cep_uni?: string,
   rua_uni?: string,
   bairro_uni?: string,
@@ -10,5 +9,6 @@ export interface Cliente{
   complemento_uni?: string,
   cel_uni?: string,
   tel_uni?: string,
+  nome_uni?: string,
 
 }
