@@ -48,7 +48,7 @@ public class Conta_gas {
 	
 	
 	@JsonIgnore
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="codgas_fk", referencedColumnName = "instalacao_cont")
 	private Contrato contrato;
 	

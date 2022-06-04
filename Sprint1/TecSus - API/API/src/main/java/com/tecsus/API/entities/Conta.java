@@ -31,7 +31,7 @@ public abstract class Conta implements Serializable{
 	private Long id_conta;
 	private Long id_usuario;//talvez seja int??
 	private Long id_contrato;//talvez seja int??
-	private byte[] PDF;//obviamente não eh um int, é so por enquanto
+	private int PDF;//obviamente não eh um int, é so por enquanto
 	private int valor_conta_total;
 	
 	@Column(insertable=false, updatable=false)
@@ -40,7 +40,7 @@ public abstract class Conta implements Serializable{
 	
 	
 	public Conta() {}
-	public Conta(Long id_conta, Long id_usuario, Long id_contrato, byte[] pDF, int valor_conta_total) {
+	public Conta(Long id_conta, Long id_usuario, Long id_contrato, int pDF, int valor_conta_total) {
 		super();
 		this.id_conta = id_conta;
 		this.id_usuario = id_usuario;
@@ -83,10 +83,10 @@ public abstract class Conta implements Serializable{
 	public void setId_contrato(Long id_contrato) {
 		this.id_contrato = id_contrato;
 	}
-	public byte[] getPDF() {
+	public int getPDF() {
 		return PDF;
 	}
-	public void setPDF(byte[] pDF) {
+	public void setPDF(int pDF) {
 		PDF = pDF;
 	}
 	public int getValor_conta_total() {

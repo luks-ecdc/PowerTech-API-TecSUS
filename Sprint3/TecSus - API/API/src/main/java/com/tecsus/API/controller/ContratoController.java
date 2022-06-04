@@ -28,6 +28,8 @@ import com.tecsus.API.repository.ConcessionariaRepository;
 import com.tecsus.API.repository.ContratoRepository;
 import com.tecsus.API.repository.UnidadeRepository;
 
+import io.swagger.annotations.ApiOperation;
+
 import org.springframework.http.MediaType;
 
 
@@ -126,13 +128,13 @@ public class ContratoController {
 	        return contratoRepository.save(contrato);
 	    }
 	
-
-	@DeleteMapping("/contrato")
-	public  void deleteContrato(@RequestBody Contrato contrato) {
+	@ApiOperation(value = "Deleta cadastro de contratos")
+	@DeleteMapping("/contratoD{instalacao_cont}")
+	public  void deleteContrato(@PathVariable long instalacao_cont) {
+		
+		Contrato contrato=contratoRepository.findById(instalacao_cont);
 		contratoRepository.delete(contrato);
 	}
-	
-	
 	
 
 }

@@ -28,6 +28,8 @@ import com.tecsus.API.entities.Contrato;
 import com.tecsus.API.repository.Conta_luzRepository;
 import com.tecsus.API.repository.ContratoRepository;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController // Permiti spring reconhecer como uma controller	
 @CrossOrigin(origins="*") // impede conflito de CORS, assim o frontend consegue receber o back
 @RequestMapping(value = "")// defini url que vai consultar a entidade
@@ -129,10 +131,10 @@ public class Conta_luzController {
 	        conta_luz.setContrato(contrato);
 	        return conta_luzRepository.save(conta_luz);
 	    }
-	
-	@DeleteMapping("/conta_luz")
-	public  void deleteConta_luz(@RequestBody Conta_luz conta_luz) {
-		conta_luzRepository.delete(conta_luz);
+	@ApiOperation(value = "Deleta contas de luz no banco de dados")
+	@DeleteMapping("/conta_luzD{id_conta_luz}")
+	public  void deleteConta_luz(@PathVariable(value = "id_conta_luz") long id_conta_luz) {
+		conta_luzRepository.deleteById(id_conta_luz);
 	}
 
 }
