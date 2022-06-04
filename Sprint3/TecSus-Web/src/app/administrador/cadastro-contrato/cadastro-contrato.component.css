@@ -23,6 +23,9 @@ input{
 .margin1{
   margin-left: 135px;
 }
-.border1{
+.border2{
   border-top: 1px solid black;
+}
+.border1{
+  border: 1px solid black;
 }

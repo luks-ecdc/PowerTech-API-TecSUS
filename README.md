@@ -16,7 +16,6 @@
   
 <hr>
 
-## Hi there <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="20px">  </h2>
 
 ###  :space_invader: Quem somos nós:
 
@@ -78,10 +77,6 @@ do contrato)</li>
 <li>Permitir navegação entre campos por TAB ou seta</li>
 
 
-### User Story
-
-
-
 
 <hr>
 
@@ -103,7 +98,7 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 ###  :flags: Backlog do Produto
 
 <img src="https://user-images.githubusercontent.com/37638307/168491314-25242a68-582e-41b1-b0bd-24cc29bd3afc.png" width="400px" />
-
+<img src="https://user-images.githubusercontent.com/37638307/171946928-219e4a71-b299-416f-868f-3ba8243d826b.png"width="120px" />
 
 
 <hr>
@@ -116,49 +111,9 @@ Esse sistema tem seu principal objetivo melhorar o trabalho de digitação com u
 - :heavy_check_mark: Apresentação Sprint 1 - 26/04 - Concluído
 - :heavy_check_mark: [Sprint 2](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint2) - 25/04 a 15/05 - Concluído
 - :heavy_check_mark: Apresentação Sprint 2 - 17/05 - Concluído
-- [ ] [Sprint 3]-  16/05 a 05/06
-- [ ] Apresentação Sprint 3 -
-
-
-### :runner: Sprint 1
-
-| Tarefas  |
-| ------|
-| Documentação e Github |
-| Organização de via de comunicação |
-| Organização de Daylies |
-| Organização de Wireframes|
-| Burndown |
-| Tela Login dos Colaboradores |
-| Tela de trabalho Administrador|
-| Tela de trabalho Gestor|
-| Tela de trabalho Digitador|
-
-
-### :runner: :runner: Sprint 2
-
-| Tarefas  |
-| ------|
-| Cadastro Cliente|
-| Cadastro de Concessionaria|
-| Cadastro de Contrato|
-| Visualização de faturas cadastradas|
-| Tela digitação de cadastro Energia|
-| Tela digitação de cadastro de água|
-| Lista de unidade e contratos cadastrados|
-| Lista de concessionarias cadastradas|
-
-### :runner: :runner: :runner: Sprint 3
-
-| Tarefas  |
-| ------|
-| Tela digitação de cadastro de gás|
-| Tela de upload de PDF/IMG|
-| Dashboard de relatórios das contas cadastradas|
-| Modificação e deleção de informações|
-| Relatatório de falhas|
-| Emissão de alertas para os setores|
-| Refinamento do Sistema (UX)|
+- [ ] [Sprint 3](https://github.com/luks-ecdc/PowerTech-API-TecSUS/tree/main/Sprint3) -  16/05 a 05/06
+- [ ] Apresentação Sprint 3 - 07/06
+- [ ] Feira de Soluções FATEC 15/06
 
 
 ### Competencias Trabalhadas
@@ -185,7 +140,7 @@ Acesse o link para visualizar:
 
 ###  :thumbsup: Tecnologias Utilizadas
 
-<img src="https://user-images.githubusercontent.com/37638307/168495829-5aee7c4f-46d8-4e1a-be98-7e6f2e2c6b76.png" width="600px" />
+<img src="https://user-images.githubusercontent.com/37638307/171958180-9f2bb8ca-83b0-440f-8624-20cf39c73036.png" width="600px" />
 
 <hr>
 
