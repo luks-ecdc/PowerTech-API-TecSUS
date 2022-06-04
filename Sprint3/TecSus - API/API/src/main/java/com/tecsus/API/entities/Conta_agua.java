@@ -89,7 +89,7 @@ public class Conta_agua {
 	//@JsonBackReference
 	
 	@JsonIgnore
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="rgi_agua_fk", referencedColumnName = "instalacao_cont")
 	private Contrato contrato;
 	

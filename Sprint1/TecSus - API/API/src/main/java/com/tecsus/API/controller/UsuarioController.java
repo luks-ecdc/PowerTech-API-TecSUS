@@ -16,15 +16,21 @@ import com.tecsus.API.entities.Usuario;
 import com.tecsus.API.entities.enums.Funcao;
 import com.tecsus.API.repository.UsuarioRepository;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController // Permiti spring reconhecer como uma controller	
-@CrossOrigin // impede conflito de CORS, assim o frontend consegue receber o back
-@RequestMapping(value = "/usuario")// defini url que vai consultar a entidade
+@CrossOrigin (origins="*")// impede conflito de CORS, assim o frontend consegue receber o back
+@RequestMapping(value = "")// defini url que vai consultar a entidade
+@Api(value="Api Rest TecSus")
+
 public class UsuarioController {
 	
 	@Autowired 
 	UsuarioRepository usuarioRepository;
 	
 	@GetMapping // metodo GET
+	@ApiOperation(value="Retorna um todos os usuarios")
 	public List<Usuario> getUsuarios(){
 		return usuarioRepository.findAll();
 	}

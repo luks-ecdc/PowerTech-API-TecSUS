@@ -22,6 +22,8 @@ import com.tecsus.API.repository.Conta_aguaRepository;
 import com.tecsus.API.repository.Conta_gasRepository;
 import com.tecsus.API.repository.ContratoRepository;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController // Permiti spring reconhecer como uma controller	
 @CrossOrigin (origins="*")// impede conflito de CORS, assim o frontend consegue receber o back
 @RequestMapping(value = "")// defini url que vai consultar a entidade
@@ -95,9 +97,11 @@ public class Conta_gasController {
 	    }
 	
 	
-
-	@DeleteMapping("/Conta_gas")
-	public  void deleteConta_gas(@RequestBody Conta_gas conta_gas) {
-		conta_gasRepository.delete(conta_gas);
+	@ApiOperation(value = "Deleta cadastro de contas de gás")
+	@DeleteMapping("/Conta_gasD{id_conta_gas}")
+	public  void deleteConta_gas(@PathVariable long id_conta_gas) {
+		
+		conta_gasRepository.deleteById(id_conta_gas);
 	}
+	
 }
