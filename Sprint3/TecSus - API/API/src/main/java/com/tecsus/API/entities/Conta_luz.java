@@ -85,7 +85,7 @@ public class Conta_luz {
 	private double total_conta;
 	
 	@JsonIgnore
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne 
 	@JoinColumn(name="instalacao_luz_fk", referencedColumnName = "instalacao_cont")
 	private Contrato contrato;
 	

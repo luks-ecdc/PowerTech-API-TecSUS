@@ -95,9 +95,9 @@ public class Conta_aguaController {
 	        return conta_aguaRepository.save(conta_agua);
 	    }
 	
-
-	@DeleteMapping("/Conta_agua")
-	public  void deleteConta_agua(@RequestBody Conta_agua conta_agua) {
-		conta_aguaRepository.delete(conta_agua);
+	@ApiOperation(value = "Deleta contas de água no banco de dados")
+	@DeleteMapping("/Conta_aguaD{id_conta_agua}")
+	public  void deleteConta_agua(@PathVariable(value = "id_conta_agua") long id_conta_agua) {
+		conta_aguaRepository.deleteById(id_conta_agua);
 	}
 }
