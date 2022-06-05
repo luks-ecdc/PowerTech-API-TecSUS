@@ -25,7 +25,7 @@ export class GestorComponent implements OnInit {
         link: './pdf',
         index: 3
       }, {
-        label: 'Buscas',
+        label: 'Buscar',
         link: './buscas',
         index: 3
       },

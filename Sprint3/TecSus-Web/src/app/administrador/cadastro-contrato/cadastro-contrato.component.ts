@@ -11,7 +11,8 @@ import { ContratoService } from 'src/services/contrato.service';
 export class CadastroContratoComponent implements OnInit {
 
   form: FormGroup;
-  contrato: Contrato
+  contrato: Contrato;
+  instalacao: string = "Instalação(RGI)"
 
   constructor(private formBuilder: FormBuilder, private contratoService: ContratoService) { }
 
@@ -30,6 +31,7 @@ export class CadastroContratoComponent implements OnInit {
       consumo_cont: [null, Validators.required],
       Unidade_id_CPF: [null, Validators.required],
       Concessionaria_nome_conces: [null, Validators.required],
+      concessionaria: [null, Validators.required],
 
     })
 
@@ -38,5 +40,11 @@ export class CadastroContratoComponent implements OnInit {
   cadastrarContrato(){
     this.contratoService.createContrato(this.form.value)
   }
-
+  opcao(){
+    if(this.form.value.concessionaria == "Energia"){
+      alert(this.form.value.concessionaria)
+      this.instalacao == "Instalação"
+    }
+    else(this.form.value.concessionaria == "Gás")
+  }
 }

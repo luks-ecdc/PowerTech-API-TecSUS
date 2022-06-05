@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -28,7 +29,7 @@ public class Concessionaria implements Serializable {
 	private String cidade_conces;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "concessionaria")
+	@OneToMany(mappedBy = "concessionaria",cascade = CascadeType.ALL ,orphanRemoval = true)
 	private List<Contrato> contrato;
 	
 	

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -39,7 +40,7 @@ public class Unidade implements Serializable{
 	private String tel_uni;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "unidade")
+	@OneToMany(mappedBy = "unidade",cascade = CascadeType.ALL ,orphanRemoval = true)
 	private List<Contrato> contrato;
 	
 	

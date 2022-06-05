@@ -16,9 +16,11 @@ export class BuscaGestorComponent implements OnInit {
 
   ngOnInit(): void {
     this.filtro = this.formBuilder.group({
+      tabela: [null],
       cpf: [null, Validators.required],
       conta: ["todas", Validators.required],
     })
+    this.filtro.value.tabela = "Unidade"
   }
 
 }

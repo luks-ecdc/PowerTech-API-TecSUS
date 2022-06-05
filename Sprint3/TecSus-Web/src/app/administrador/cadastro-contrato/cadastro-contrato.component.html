@@ -20,10 +20,10 @@
 
   <div class="col-9 cadastro justify-content-end mt-2 ml-3">
     <label class="offset-5">Tipo de Serviço</label>
-    <select formControlName="concessionaria" class="form-select margin1 border1">
-      <option>Água</option>
-      <option>Energia</option>
-      <option>Gás</option>
+    <select (change)="opcao()" formControlName="concessionaria" class="form-select margin1 border1">
+      <option value="Água">Água</option>
+      <option value="Energia">Energia</option>
+      <option value="Gás">Gás</option>
     </select>
   </div>
 
@@ -37,8 +37,8 @@
   </div>
 
   <div class="mt-3 row mb-4">
-    <div class="col-6 cadastro justify-content-end ">
-      <label class="offset-8">Instalação (RGI):</label>
+    <div class="col-6 cadastro justify-content-end mt-2">
+      <label class="offset-8">{{instalacao}}</label>
     </div>
     <div>
       <input ngModel formControlName="instalacao_cont" class="form-control border1 offset-1 ml-5" type="text">
