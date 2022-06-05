@@ -26,6 +26,11 @@ export class TabelaClienteComponent implements OnInit {
 
   }
 
+  deletarUnidade(cpf){
+    console.log(cpf)
+    this.clienteService.deleteCliente(cpf)
+  }
+
   openDialog(): void {
     const dialogRef = this.dialog.open(DeletarComponent, {
       width: '300px',
