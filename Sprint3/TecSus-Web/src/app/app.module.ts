@@ -41,6 +41,8 @@ import { BuscaGestorComponent } from './gestor/busca-gestor/busca-gestor.compone
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
+import { FaturasCadastradasComponent } from './digitador/faturas-cadastradas/faturas-cadastradas.component';
+import { ArquivosComponent } from './digitador/arquivos/arquivos.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
     CadastroContaComponent,
     BuscaGestorComponent,
     ModalDeleteComponent,
+    FaturasCadastradasComponent,
+    ArquivosComponent,
 
   ],
   imports: [

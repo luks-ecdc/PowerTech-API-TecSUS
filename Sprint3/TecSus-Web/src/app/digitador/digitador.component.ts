@@ -25,7 +25,22 @@ export class DigitadorComponent implements OnInit {
         link: './cadastro-fatura',
         index: 1
 
+      },
+
+      {
+        label: 'Faturas Cadastradas',
+        link: './faturas-cadastradas',
+        index: 2
+
+      },
+
+      {
+        label: 'Arquivos',
+        link: './arquivos',
+        index: 3
+
       }
+
     ];
 
     this.router.events.subscribe((res) => {
