@@ -26,7 +26,7 @@
             <thead>
               <tr>
                 <th scope="col">Período</th>
-                <th scope="col">Consumo (kWz)</th>
+                <th scope="col">Consumo (m³)</th>
               </tr>
             </thead>
             <tbody>
@@ -50,12 +50,17 @@
     </div>
 
                  <!-- grafico -->
-    <div class="grafico col-6 row mt-5 chart container-fluid">
+    <div class="grafico mt-5 chart container-fluid">
             <div class="">
                 <canvas #myChart width="400" height="400"></canvas>
             </div> 
-            <div class="">
-                <canvas #myChartEn width="400" height="400"></canvas>
+
+            <div class="mt-2 row justify-content-center">
+              <label class="mt-2">Média</label>  
+              <input class="ml-3 col-2 form-control" type="text" value="777" aria-label="Disabled input example" disabled readonly>
+
+              <label class="ml-5 mt-2">Média de alto consumo</label>  
+              <input class="ml-3 col-2 form-control" type="text" value="777" aria-label="Disabled input example" disabled readonly>
             </div> 
     </div>
 

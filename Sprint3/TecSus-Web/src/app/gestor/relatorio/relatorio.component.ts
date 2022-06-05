@@ -15,7 +15,6 @@ export class RelatorioComponent implements OnInit {
    }
 
    @ViewChild("myChart", {static: true}) myChartGas:ElementRef;
-   @ViewChild("myChart", {static: true}) myChartEn:ElementRef;
    
 
   ngOnInit(): void {
@@ -63,75 +62,32 @@ export class RelatorioComponent implements OnInit {
           }
         }
       },
+
       data: {
         labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
         datasets: [
+
+          {
+            label: "Média Alto Consumo",
+            data: [80, 80, 80, 80, 80, 80],
+            borderColor: "#FF3030",
+            backgroundColor: "#FF3030",
+            type: 'line'
+            
+          },
+
           {
             data: [60, 10, 100, 120, 320, 220],
             borderColor: "#1DF84D",
-            backgroundColor: "#1DF84D",
+            backgroundColor: "#90EE90",
             label: "Gás"
           },
+
+          
+
         ]
       }
-    })
 
-    // grafico 2
-    new Chart(this.myChartEn.nativeElement, {
-      type: 'bar',
-      options: {
-        scales: {
-          x: {
-            ticks: {
-              
-              color: "black"
-            }
-          },
-          y: {
-            weight: 10,
-            max: 400,
-            grid: {
-              drawOnChartArea: false
-            },
-            ticks: {
-              color: "black",
-              count: 6
-            }
-          }
-
-        },
-        elements: {
-          line: {
-            borderWidth: 1
-          },
-          point: {
-            radius: 0
-          }
-        },
-        plugins: {
-          legend: {
-            position: "bottom",
-            labels: {
-              boxWidth: 10,
-              padding: 25,
-              pointStyle: "circle",
-              usePointStyle: true,
-
-            }
-          }
-        }
-      },
-      data: {
-        labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
-        datasets: [
-          {
-            data: [60, 10, 100, 120, 320, 220],
-            borderColor: "#1DF84D",
-            backgroundColor: "#1DF84D",
-            label: "Energia"
-          },
-        ]
-      }
     })
 
   }}
