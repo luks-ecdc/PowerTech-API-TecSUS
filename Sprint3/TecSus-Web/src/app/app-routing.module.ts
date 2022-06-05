@@ -7,12 +7,14 @@ import { CadastroConcessionariaComponent } from './administrador/cadastro-conces
 import { CadastroContaComponent } from './administrador/cadastro-conta/cadastro-conta.component';
 import { CadastroContratoComponent } from './administrador/cadastro-contrato/cadastro-contrato.component';
 import { InformacaoComponent } from './administrador/informacao/informacao.component';
+import { ArquivosComponent } from './digitador/arquivos/arquivos.component';
 import { BuscarDigitadorComponent } from './digitador/buscar-digitador/buscar-digitador.component';
 import { CadastroFaturaComponent } from './digitador/cadastro-fatura/cadastro-fatura.component';
 import { AguaComponent } from './digitador/conta/agua/agua.component';
 import { GasComponent } from './digitador/conta/gas/gas.component';
 import { LuzComponent } from './digitador/conta/luz/luz.component';
 import { DigitadorComponent } from './digitador/digitador.component';
+import { FaturasCadastradasComponent } from './digitador/faturas-cadastradas/faturas-cadastradas.component';
 import { AddPdfComponent } from './gestor/add-pdf/add-pdf.component';
 import { BuscaGestorComponent } from './gestor/busca-gestor/busca-gestor.component';
 import { GestorComponent } from './gestor/gestor.component';
@@ -50,8 +52,14 @@ const routes: Routes = [
         {path: 'agua', component: AguaComponent},
         {path: 'gas', component: GasComponent},
       ]}
-      ,{path: 'buscar-digitador', component: BuscarDigitadorComponent}
-  ]},
+      ,{path: 'buscar-digitador', component: BuscarDigitadorComponent},
+
+      {path: 'faturas-cadastradas', component: FaturasCadastradasComponent},
+
+      {path: 'arquivos', component: ArquivosComponent}
+
+  
+    ]},
 ];
 
 @NgModule({
