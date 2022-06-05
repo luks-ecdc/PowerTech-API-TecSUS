@@ -23,5 +23,12 @@ export class ClienteService {
     return this.httpClient.post(`${API_PATH}/unidade`, unidade).subscribe(data => {
       console.log(data)
     });
+
   }
+  deleteCliente(cpf: string) {
+    return this.httpClient.delete(`${API_PATH}/unidadeD${cpf}`).subscribe(data => {
+      console.log(data)
+    });
+  }
+
 }

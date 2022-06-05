@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Contrato } from 'src/models/contrato.model';
+import { ContratoService } from 'src/services/contrato.service';
 
 @Component({
   selector: 'app-buscar-digitador',
@@ -9,10 +11,19 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class BuscarDigitadorComponent implements OnInit {
 
   form: FormGroup;
-
-  constructor(private formBuilder: FormBuilder) { }
+  contrato: Contrato
+  constructor(private formBuilder: FormBuilder, private contratoService: ContratoService) { }
 
   ngOnInit(): void {
+    this.contratoService.getContrato().subscribe(
+      data => {
+        this.contrato = data
+      }
+    )
   }
 
+
+
 }
+
+
