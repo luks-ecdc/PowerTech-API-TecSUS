@@ -1,30 +1,30 @@
+<form [formGroup]="form">
 <div class="row justify-content-center mt-3">
   <label for="numero" class=" mr-3 mt-3">CPF/CNPJ</label>
-  <input class="col-3 form-control border1 mt-1" type="valor">
+  <input  formControlName="cpf" class="col-3 form-control border1 mt-1" type="valor">
 </div>
 
 <div class="container-fluid mt-2">
   <div class="row justify-content-center">
     <div class="cadastro mt-2">
-      <form [formGroup]="form">
         <label class="mr-2">Pesquisar por</label>
         <select   formControlName="tabela" ngModel class="form-select">
           <option value="Unidade" >Unidade</option>
           <option value="Concessionaria" >Concessionária</option>
           <option value="Contrato">Contrato</option>
         </select>
-      </form>
+      </div>
     </div>
-  </div>
 
 <div class="row justify-content-center">
   <div class="mt-3">
-    <button class="btn btn-outline-primary offset-8">Buscar</button>
+    <button (click)="getCpf()" class="btn btn-outline-primary offset-8">Buscar</button>
   </div>
 </div>
 
 
 </div> -->
-<app-tabela-cliente *ngIf="form.value.tabela == 'Unidade' "></app-tabela-cliente>
+<app-tabela-cliente [cpf]="cpf" *ngIf="form.value.tabela == 'Unidade' "></app-tabela-cliente>
 <app-tabela-concessionaria *ngIf="form.value.tabela == 'Concessionaria' "></app-tabela-concessionaria>
 <app-tabela-contrato *ngIf="form.value.tabela == 'Contrato' "></app-tabela-contrato>
+</form>

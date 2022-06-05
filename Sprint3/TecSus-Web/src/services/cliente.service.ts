@@ -14,8 +14,8 @@ export class ClienteService {
     return this.httpClient.get(`${API_PATH}/unidades`)
   }
 
-  getClienteById(id: number): Observable<any> {
-    return this.httpClient.get(`${API_PATH}/unidade/${id}`)
+  getClienteById(id: string): Observable<any> {
+    return this.httpClient.get(`${API_PATH}/unidade/byId/${id}`)
 
   }
 
