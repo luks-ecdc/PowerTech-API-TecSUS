@@ -43,20 +43,11 @@
 
 ### :clapper: Gif de Apresentação
 
-Tela Administrador
-* <img src="" width="500px" />
-* <img src="" width="500px" />
 
+* <img src="https://user-images.githubusercontent.com/37638307/172077554-e3137a58-a906-4c4d-8672-22484776c6c1.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/172077556-fec5a643-28f5-4459-a2e0-a38bcf147d24.gif" width="500px" />
+* <img src="https://user-images.githubusercontent.com/37638307/172077557-6211465e-3f3c-40d3-968a-4c99f03d9f2f.gif" width="500px" />
 
-Tela Gestor
-
-* <img src="" width="500px" />
-
-
-
-Tela Digitador
-
-* <img src="" width="500px" />
 
 
 
