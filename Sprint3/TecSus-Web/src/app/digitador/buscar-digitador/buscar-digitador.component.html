@@ -1,4 +1,3 @@
-  
 <div class="row justify-content-center mt-2">
   <label for="numero" class=" mr-3 mt-2">CPF/CNPJ</label>
   <input class="col-3 form-control border1" type="valor">
@@ -14,48 +13,49 @@
         <th scope="col">Tipo de serviço</th>
         <th scope="col">Endereço</th>
         <th scope="col">Número</th>
+        <th scope="col">Cep</th>
         <th scope="col">Opções</th>
         <th scope="col">Alerta</th>
       </tr>
     </thead>
     <!-- Para cada item do backend ele criar uma coluna da tabela -->
-    <!-- <tbody *ngFor="let cliente of clientes"> -->
-    <tbody>
+    <tbody *ngFor="let contrato of contratos">
       <tr>
-        <td>Sabesp</td>
-        <td>5115761</td>
-        <td>Água</td>
-        <td>Sabesp</td>
-        <td>Rua Joaquim Teixeira</td>
-        <td><div class="row ml-1">
-          <button mat-menu-item matTooltip="Informação de Contrato" matTooltipPosition="above" class="btn-icon">
-            <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/signing-a-document.png"/></a>
-          </button>
-          <button mat-menu-item matTooltip="Ver Arquivos" matTooltipPosition="above" class="btn-icon">
-            <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/pdf.png"/></a>
-          </button>
-          <button mat-menu-item matTooltip="Visualizar Faturas Cadastradas" matTooltipPosition="above" class="btn-icon">
-            <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/view-file.png"/></a>
-          </button>
-          <button mat-menu-item matTooltip="Adicionar Fatura no Sistema" matTooltipPosition="above" class="btn-icon">
-            <a><img src="https://img.icons8.com/ios/20/undefined/agreement-new.png"/></a>
-          </button>
-          <!-- <button mat-menu-item matTooltip="Excluir" matTooltipPosition="above" class="btn-icon">
-            <a><i class="bi bi-trash"></i></a>
-          </button> -->
-
-        </div>
-      </td>
+        <td>{{contrato.instalacao_cont}}</td>
+        <td>nome contrato</td>
+        <td>{{contrato.servico}}</td>
+        <td>{{contrato.rua_cont}}</td>
+        <td>{{contrato.numero_cont}}</td>
+        <td>{{contrato.cep_cont}}</td>
         <td>
           <div class="row ml-1">
-            <button mat-menu-item matTooltip="Atenção" matTooltipPosition="above" class="btn-icon">
-              <a><img src="https://img.icons8.com/F32300/material-outlined/20/undefined/box-important--v1.png"/></a>
+            <button mat-menu-item matTooltip="Informação de Contrato" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/signing-a-document.png" /></a>
             </button>
-            <button mat-menu-item matTooltip="Ok" matTooltipPosition="above" class="btn-icon">
-              <a><img src="https://img.icons8.com/09BA00/fluency-systems-regular/20/undefined/checked--v1.png"/></a>
+            <button mat-menu-item matTooltip="Gerênciador de Arquivos" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/ios/20/undefined/opened-folder.png" /></a>
+            </button>
+            <button mat-menu-item matTooltip="Dashboard" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/ios/20/undefined/bar-chart--v1.png" /></a>
+            </button>
+            <button mat-menu-item matTooltip="Adicionar Fatura no Sistema" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/ios/20/undefined/agreement-new.png" /></a>
+            </button>
+            <button mat-menu-item matTooltip="Visualizar o Contrato" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/fluency-systems-regular/20/undefined/view-file.png" /></a>
+            </button>
+          </div>
+        <td>
+          <div class="row ml-1">
+            <button mat-menu-item matTooltip="Atenção! Média de alto consumo ultrapassada" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/F32300/material-outlined/20/undefined/box-important--v1.png" /></a>
+            </button>
+            <button  mat-menu-item matTooltip="Tudo certo!" matTooltipPosition="above" class="btn-icon">
+              <a><img src="https://img.icons8.com/09BA00/fluency-systems-regular/20/undefined/checked--v1.png" /></a>
             </button>
           </div>
         </td>
+
       </tr>
     </tbody>
   </table>
