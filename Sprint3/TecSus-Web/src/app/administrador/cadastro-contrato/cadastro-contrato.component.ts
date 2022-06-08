@@ -42,14 +42,14 @@ export class CadastroContratoComponent implements OnInit {
   }
   opcao() {
     if (this.form.value.concessionaria == "Gás") {
-      this.instalacao = "Código de Usuário"
+      this.instalacao = "Código de Usuário:"
 
     }
     else if (this.form.value.concessionaria == "Água") {
-      this.instalacao = "RGI"
+      this.instalacao = "RGI:"
     }
     else{
-      this.instalacao = "Número de Instalação"
+      this.instalacao = "Número de Instalação:"
 
     }
 
