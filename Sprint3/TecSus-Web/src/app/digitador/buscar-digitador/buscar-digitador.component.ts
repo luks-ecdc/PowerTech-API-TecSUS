@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { Contrato } from 'src/models/contrato.model';
 import { ContratoService } from 'src/services/contrato.service';
 
@@ -10,16 +10,18 @@ import { ContratoService } from 'src/services/contrato.service';
 })
 export class BuscarDigitadorComponent implements OnInit {
 
+  filtro:FormGroup
   form: FormGroup;
   contrato: Contrato
   constructor(private formBuilder: FormBuilder, private contratoService: ContratoService) { }
 
   ngOnInit(): void {
-    this.contratoService.getContrato().subscribe(
-      data => {
-        this.contrato = data
-      }
-    )
+    this.filtro = this.formBuilder.group({
+      tabela: [null],
+      cpf: [null, Validators.required],
+      conta: ["todas", Validators.required],
+    })
+    this.filtro.value.tabela = "Unidade"
   }
 
 
