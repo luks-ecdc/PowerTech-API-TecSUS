@@ -1,6 +1,7 @@
   import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContaAguaService } from 'src/services/conta-agua.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-agua',
@@ -9,8 +10,12 @@ import { ContaAguaService } from 'src/services/conta-agua.service';
 })
 export class AguaComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private contaAguaService: ContaAguaService) { }
+  constructor(private _snackBar: MatSnackBar,private formBuilder: FormBuilder, private contaAguaService: ContaAguaService) { }
 
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
+  
   form: FormGroup;
 
   ngOnInit(): void {
@@ -62,5 +67,6 @@ export class AguaComponent implements OnInit {
   criarContaAgua() {
     this.contaAguaService.createContaAgua(this.form.value)
     console.log(this.form.value)
+    this.openSnackBar("Salvo com Sucesso!","OK")
   }
 }

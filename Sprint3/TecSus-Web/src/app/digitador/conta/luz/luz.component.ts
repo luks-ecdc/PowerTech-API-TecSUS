@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContaLuz } from 'src/models/conta_luz.model';
 import { ContaLuzService } from 'src/services/conta-luz.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-luz',
@@ -12,7 +13,11 @@ export class LuzComponent implements OnInit {
 
   contaLuz: ContaLuz
   form: FormGroup
-  constructor(private formBuilder: FormBuilder, private contaLuzService: ContaLuzService) { }
+  constructor(private _snackBar: MatSnackBar,private formBuilder: FormBuilder, private contaLuzService: ContaLuzService) { }
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -51,5 +56,6 @@ export class LuzComponent implements OnInit {
   criarContaLuz() {
     this.contaLuzService.createContaLuz(this.form.value)
     console.log(this.form.value)
+    this.openSnackBar("Salvo com Sucesso!","OK")
   }
 }

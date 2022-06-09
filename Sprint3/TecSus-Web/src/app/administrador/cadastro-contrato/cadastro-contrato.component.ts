@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Contrato } from 'src/models/contrato.model';
 import { ContratoService } from 'src/services/contrato.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-cadastro-contrato',
@@ -14,7 +15,11 @@ export class CadastroContratoComponent implements OnInit {
   contrato: Contrato;
   instalacao: String;
 
-  constructor(private formBuilder: FormBuilder, private contratoService: ContratoService) { }
+  constructor(private _snackBar: MatSnackBar,private formBuilder: FormBuilder, private contratoService: ContratoService) { }
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -39,6 +44,7 @@ export class CadastroContratoComponent implements OnInit {
 
   cadastrarContrato() {
     this.contratoService.createContrato(this.form.value)
+    this.openSnackBar("Salvo com Sucesso!","OK");
   }
   opcao() {
     if (this.form.value.concessionaria == "Gás") {

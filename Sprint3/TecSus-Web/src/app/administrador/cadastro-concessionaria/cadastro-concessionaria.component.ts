@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Concessionaria } from 'src/models/concessionaria.model';
 import { ConcessionariaService } from 'src/services/concessionaria.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-cadastro-concessionaria',
@@ -13,8 +14,12 @@ export class CadastroConcessionariaComponent implements OnInit {
   form: FormGroup;
   concessionaria: Concessionaria
 
-  constructor(private formBuilder: FormBuilder, private concessionariaService: ConcessionariaService) { }
+  constructor(private _snackBar: MatSnackBar,private formBuilder: FormBuilder, private concessionariaService: ConcessionariaService) { }
 
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
+  
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       cnpj_conces: [null, Validators.required],
@@ -31,6 +36,7 @@ export class CadastroConcessionariaComponent implements OnInit {
 
 cadastrarConcessionaria(){
   this.concessionariaService.createCliente(this.form.value)
+  this.openSnackBar("Salvo com Sucesso!","OK")
 }
 
 }

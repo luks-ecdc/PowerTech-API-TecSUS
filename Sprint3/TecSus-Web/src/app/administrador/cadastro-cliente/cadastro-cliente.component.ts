@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Cliente } from '../../../models/cliente.model';
 import { ClienteService } from '../../../services/cliente.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-cadastro-cliente',
   templateUrl: './cadastro-cliente.component.html',
@@ -12,8 +14,12 @@ export class CadastroClienteComponent implements OnInit {
   form: FormGroup;
   cliente: Cliente
 
-  constructor(private formBuilder: FormBuilder, private clienteService: ClienteService) { }
+  constructor(private _snackBar: MatSnackBar,private formBuilder: FormBuilder, private clienteService: ClienteService) { }
 
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
+  
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       id_CPF:[null, Validators.required],
@@ -33,5 +39,6 @@ export class CadastroClienteComponent implements OnInit {
   criarCliente() {
     this.clienteService.createCliente(this.form.value)
     console.log(this.form.value)
+    this.openSnackBar("Salvo com Sucesso!","OK");
   }
 }
