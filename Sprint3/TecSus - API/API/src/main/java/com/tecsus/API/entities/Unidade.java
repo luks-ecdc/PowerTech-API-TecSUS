@@ -27,7 +27,7 @@ public class Unidade implements Serializable{
 	@Id
 	private Long id_CPF;
 	
-	
+	private String rg_uni;
 	private String nomeUni;
 	private String cep_uni;
 	private String rua_uni;
@@ -55,7 +55,7 @@ public class Unidade implements Serializable{
 	public Unidade() {}
 	
 	public Unidade(Long id_CPF, String nome_uni, String cep_uni, String rua_uni, String bairro_uni, String numero_uni,
-			String cidade_uni, String estado_uni, String complemento_uni, String cel_uni, String tel_uni) {
+			String cidade_uni, String estado_uni, String complemento_uni, String cel_uni, String tel_uni, String rg_uni) {
 		super();
 		this.id_CPF = id_CPF;
 		this.nomeUni = nome_uni;
@@ -68,6 +68,7 @@ public class Unidade implements Serializable{
 		this.complemento_uni = complemento_uni;
 		this.cel_uni = cel_uni;
 		this.tel_uni = tel_uni;
+		this.rg_uni = rg_uni;
 	}
 	// Inicio Construtores 
 	
@@ -137,6 +138,14 @@ public class Unidade implements Serializable{
 	public void setTel_uni(String tel_uni) {
 		this.tel_uni = tel_uni;
 	}
+	public String getRg_uni() {
+		return rg_uni;
+	}
+
+	public void setRg_uni(String rg_uni) {
+		this.rg_uni = rg_uni;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id_CPF);

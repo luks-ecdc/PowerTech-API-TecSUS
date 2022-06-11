@@ -36,7 +36,7 @@ public class Contrato implements Serializable{
 		private String numero_cont;
 		private String complemento_cont;
 		private String cep_cont;
-		private String consumo_cont;
+		private String altoconsumo_cont;
 		
 		@JsonIgnore
 		@OneToMany(mappedBy = "contrato",cascade = CascadeType.ALL ,orphanRemoval = true)
@@ -122,7 +122,7 @@ public class Contrato implements Serializable{
 		
         public Contrato() {}
 		public Contrato(Long instalacao_cont, String servico, String rua_cont, String bairro_cont, String cidade_cont,
-				String estado_cont, String numero_cont, String complemento_cont, String cep_cont, String consumo_cont) {
+				String estado_cont, String numero_cont, String complemento_cont, String cep_cont, String altoconsumo_cont) {
 			super();
 			this.instalacao_cont = instalacao_cont;
 			this.servico = servico;
@@ -133,7 +133,7 @@ public class Contrato implements Serializable{
 			this.numero_cont = numero_cont;
 			this.complemento_cont = complemento_cont;
 			this.cep_cont = cep_cont;
-			this.consumo_cont = consumo_cont;
+			this.altoconsumo_cont = altoconsumo_cont;
 		}
 
 		public Long getInstalacao_cont() {
@@ -208,12 +208,12 @@ public class Contrato implements Serializable{
 			this.cep_cont = cep_cont;
 		}
 
-		public String getConsumo_cont() {
-			return consumo_cont;
+		public String getAltoconsumo_cont() {
+			return altoconsumo_cont;
 		}
 
-		public void setConsumo_cont(String consumo_cont) {
-			this.consumo_cont = consumo_cont;
+		public void setAltoconsumo_cont(String consumo_cont) {
+			this.altoconsumo_cont = consumo_cont;
 		}
 
 	}
