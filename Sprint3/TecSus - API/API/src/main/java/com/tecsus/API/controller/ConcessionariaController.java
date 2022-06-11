@@ -46,9 +46,9 @@ public class ConcessionariaController {
 		return concessionariaRepository.save(concessionaria);
 	}
 	
-	@DeleteMapping("/concessionaria")
-	public  void deleteConcessionaria(@RequestBody Concessionaria concessionaria) {
-		concessionariaRepository.delete(concessionaria);
-	}
+	//@DeleteMapping("/concessionaria")
+	//public  void deleteConcessionaria(@RequestBody Concessionaria concessionaria) {
+		//		concessionariaRepository.delete(concessionaria);
+//	}
 	
 }

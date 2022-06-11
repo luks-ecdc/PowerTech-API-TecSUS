@@ -84,12 +84,12 @@ public class Conta_aguaController {
 	}
 	
 	
-	@PutMapping("/conta_agua/{rgi_agua}/contrato/{instalacao_cont}")
+	@PutMapping("/conta_agua/{id_cont_agua}/contrato/{instalacao_cont}")
 	public Conta_agua ColocarContratoNaConta(
-	            @PathVariable Long rgi_agua,
+	            @PathVariable Long id_cont_agua,
 	            @PathVariable Long instalacao_cont
 	    ) {
-	    	 Conta_agua  conta_agua = conta_aguaRepository.findById(rgi_agua).get();
+	    	Conta_agua  conta_agua = conta_aguaRepository.findById(id_cont_agua).get();
 	        Contrato contrato = contratoRepository.findById(instalacao_cont).get();
 	        conta_agua.setContrato(contrato);
 	        return conta_aguaRepository.save(conta_agua);

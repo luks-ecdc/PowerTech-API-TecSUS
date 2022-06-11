@@ -31,6 +31,7 @@ import com.tecsus.API.repository.UnidadeRepository;
 import io.swagger.annotations.ApiOperation;
 
 import org.springframework.http.MediaType;
+import org.springframework.validation.annotation.Validated;
 
 
 @RestController // Permiti spring reconhecer como uma controller	
@@ -125,6 +126,18 @@ public class ContratoController {
 		Contrato  contrato = contratoRepository.findById(instalacao_cont).get();
 	        Concessionaria concessionaria = concessionariaRepository.findById(cnpj_conces).get();
 	        contrato.setConcessionaria(concessionaria);
+	        return contratoRepository.save(contrato);
+	    }
+	
+	@PutMapping("/{instalacao_cont}/concessionaria/{cnpj_conces}/unidade/{id_CPF}")
+	public Contrato atuallizaContratoComCpfeCNPJ(
+	            @PathVariable Long instalacao_cont,
+	            @PathVariable Concessionaria cnpj_conces,
+	            @PathVariable Unidade id_CPF,
+	            @Validated @RequestBody Contrato contrato
+	    ) {
+	        contrato.setUnidade(id_CPF);
+	        contrato.setConcessionaria(cnpj_conces);	        
 	        return contratoRepository.save(contrato);
 	    }
 	

@@ -29,7 +29,7 @@ public class Concessionaria implements Serializable {
 	private String cidade_conces;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "concessionaria",cascade = CascadeType.ALL ,orphanRemoval = true)
+	@OneToMany//(mappedBy = "concessionaria",cascade = CascadeType.ALL ,orphanRemoval = true)
 	private List<Contrato> contrato;
 	
 	
