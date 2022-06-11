@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "tb_unidade")
 public class Unidade implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	
 	
 	@Id
 	private Long id_CPF;
@@ -43,6 +43,7 @@ public class Unidade implements Serializable{
 	@OneToMany(mappedBy = "unidade",cascade = CascadeType.ALL ,orphanRemoval = true)
 	private List<Contrato> contrato;
 	
+	private static final long serialVersionUID = 1L;
 	
 	public List<Contrato> getContrato() {
 		return contrato;
