@@ -11,13 +11,13 @@ import { ContratoService } from 'src/services/contrato.service';
 export class BuscarDigitadorComponent implements OnInit {
 
   form: FormGroup;
-  contrato: Contrato
+  contratos: Contrato[]
   constructor(private formBuilder: FormBuilder, private contratoService: ContratoService) { }
 
   ngOnInit(): void {
     this.contratoService.getContrato().subscribe(
       data => {
-        this.contrato = data
+        this.contratos = data
       }
     )
   }
