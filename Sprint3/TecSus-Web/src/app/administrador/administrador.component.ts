@@ -16,29 +16,29 @@ export class AdministradorComponent implements OnInit {
   ngOnInit(): void {
     // Inicializa a tabas
     this.navLinks = [
-       {
-          label: 'Cadastro de Unidade',
-          link: './cadastro-cliente',
-          index: 0
+      {
+        label: 'Cadastro de Unidade',
+        link: './cadastro-cliente',
+        index: 0
       }, {
         label: 'Cadastro de Concessionaria',
         link: './cadastro-concessionaria',
         index: 1
-      },{
+      }, {
         label: 'Cadastro de Contrato',
         link: './cadastro-contrato',
         index: 2
-      },{
+      }, {
         label: 'Buscar',
         link: './buscar',
         index: 3
       },
 
-  ];
+    ];
 
-  this.router.events.subscribe((res) => {
-    this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
-});
+    this.router.events.subscribe((res) => {
+      this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
+    });
 
   }
 

@@ -47,7 +47,7 @@ export class TabelaClienteComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DeletarComponent, {
+    this.dialog.open(DeletarComponent, {
       width: '300px',
       data: { name: this.nome }
     });

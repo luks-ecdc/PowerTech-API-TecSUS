@@ -17,23 +17,23 @@ export class GestorComponent implements OnInit {
     // Inicializa a tabas
     this.navLinks = [
       {
-          label: 'Relatório dos contratos',
-          link: './relatorio',
-          index: 1
+        label: 'Relatório dos contratos',
+        link: './relatorio',
+        index: 0
       }, {
         label: 'Upload',
         link: './pdf',
-        index: 3
+        index: 1
       }, {
         label: 'Buscar',
         link: './buscas',
-        index: 3
+        index: 2
       },
-  ];
+    ];
 
-  this.router.events.subscribe((res) => {
-    this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
-});
+    this.router.events.subscribe((res) => {
+      this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
+    });
 
   }
 
